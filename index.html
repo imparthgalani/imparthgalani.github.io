@@ -522,7 +522,7 @@
                     </div>
 
                 </div>
-                <div class="text-center"><button type="button" onclick="location.href='certificate.php'" class=" btn btn-info">View All Certificate</button></div>
+                <div class="text-center"><button type="button" onclick="location.href='certificate.html'" class=" btn btn-info">View All Certificate</button></div>
 
             </div>
         </section>
@@ -593,18 +593,7 @@
                                 <textarea class="form-control" name="msg" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
                                 <div class="validate"></div>
                             </div>
-                            <div class="mb-3">
-                                <?php $message = "";
-                           
-                            if(isset($_GET['success']))
-                            {
-                                $message = " Your Message Has Been Sent ! Thank you . ";
-                                echo '<div class="alert alert-success">'.$message.'</div>';
-                                 
-                            }                  
-                
-        
-                           ?>
+                            <div class="mb-3">                             
                             </div>
                             <div class="text-center"><button type="submit" name="submit">Send Message</button></div>
                         </form>
