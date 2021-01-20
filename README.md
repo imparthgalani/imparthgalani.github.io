@@ -1,1 +1,0 @@
-# iamparthgalani.github.io
