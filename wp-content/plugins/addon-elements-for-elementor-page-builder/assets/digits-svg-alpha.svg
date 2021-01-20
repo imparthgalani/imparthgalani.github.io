@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="484px" viewBox="0 0 30 484" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#D8D8D8" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#EEEEEE" stop-opacity="0.5" offset="50.435784%"></stop>
+            <stop stop-color="#D8D8D8" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="0">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="30" height="44"></rect>
+            <text font-family="Roboto-Regular, Roboto" font-size="35" font-weight="normal" fill="#FFFFFF">
+                <tspan x="5.17333984" y="34">0</tspan>
+            </text>
+        </g>
+        <g id="1" transform="translate(0.000000, 44.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="30" height="44"></rect>
+            <text font-family="Roboto-Regular, Roboto" font-size="35" font-weight="normal" fill="#FFFFFF">
+                <tspan x="5.17333984" y="34">1</tspan>
+            </text>
+        </g>
+        <g id="2" transform="translate(0.000000, 88.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="30" height="44"></rect>
+            <text font-family="Roboto-Regular, Roboto" font-size="35" font-weight="normal" fill="#FFFFFF">
+                <tspan x="5.17333984" y="34">2</tspan>
+            </text>
+        </g>
+        <g id="3" transform="translate(0.000000, 132.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="30" height="44"></rect>
+            <text font-family="Roboto-Regular, Roboto" font-size="35" font-weight="normal" fill="#FFFFFF">
+                <tspan x="5.17333984" y="34">3</tspan>
+            </text>
+        </g>
+        <g id="4" transform="translate(0.000000, 176.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="30" height="44"></rect>
+            <text font-family="Roboto-Regular, Roboto" font-size="35" font-weight="normal" fill="#FFFFFF">
+                <tspan x="5.17333984" y="34">4</tspan>
+            </text>
+        </g>
+        <g id="Group" transform="translate(0.000000, 220.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="30" height="44"></rect>
+            <text id="5" font-family="Roboto-Regular, Roboto" font-size="35" font-weight="normal" fill="#FFFFFF">
+                <tspan x="5.17333984" y="34">5</tspan>
+            </text>
+        </g>
+        <g id="Group" transform="translate(0.000000, 264.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="30" height="44"></rect>
+            <text id="6" font-family="Roboto-Regular, Roboto" font-size="35" font-weight="normal" fill="#FFFFFF">
+                <tspan x="5.17333984" y="34">6</tspan>
+            </text>
+        </g>
+        <g id="Group" transform="translate(0.000000, 308.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="30" height="44"></rect>
+            <text id="7" font-family="Roboto-Regular, Roboto" font-size="35" font-weight="normal" fill="#FFFFFF">
+                <tspan x="5.17333984" y="34">7</tspan>
+            </text>
+        </g>
+        <g id="Group" transform="translate(0.000000, 352.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="30" height="44"></rect>
+            <text id="8" font-family="Roboto-Regular, Roboto" font-size="35" font-weight="normal" fill="#FFFFFF">
+                <tspan x="5.17333984" y="34">8</tspan>
+            </text>
+        </g>
+        <g id="Group" transform="translate(0.000000, 396.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="30" height="44"></rect>
+            <text id="9" font-family="Roboto-Regular, Roboto" font-size="35" font-weight="normal" fill="#FFFFFF">
+                <tspan x="5.17333984" y="34">9</tspan>
+            </text>
+        </g>
+        <g id="Group" transform="translate(0.000000, 440.000000)">
+            <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="30" height="44"></rect>
+            <text id="0" font-family="Roboto-Regular, Roboto" font-size="35" font-weight="normal" fill="#FFFFFF">
+                <tspan x="5.17333984" y="34">0</tspan>
+            </text>
+        </g>
+    </g>
+</svg>
