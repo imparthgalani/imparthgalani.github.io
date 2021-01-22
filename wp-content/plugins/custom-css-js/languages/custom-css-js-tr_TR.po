@@ -1,0 +1,560 @@
+# Copyright (C) 2017 Simple Custom CSS and JS
+# This file is distributed under the same license as the Simple Custom CSS and JS package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Custom CSS and JS 3.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/custom-css-js-"
+"svn\n"
+"POT-Creation-Date: 2018-02-08 19:58:14+00:00\n"
+"PO-Revision-Date: 2018-02-08 21:12+0100\n"
+"Last-Translator: Diana Burduja <diana@wootips.com>\n"
+"Language-Team: \n"
+"Language: tr_TR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.6.10\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: custom-css-js.php:53 custom-css-js.php:60
+msgid "Cheatin&#8217; huh?"
+msgstr "Kandırıkçılık ha?"
+
+#: custom-css-js.php:220
+msgctxt "post type general name"
+msgid "Custom Code"
+msgstr "Özel Kod"
+
+#: custom-css-js.php:221
+msgctxt "post type singular name"
+msgid "Custom Code"
+msgstr "Özel Kod"
+
+#: custom-css-js.php:222
+msgctxt "admin menu"
+msgid "Custom CSS & JS"
+msgstr "Özel CSS & JS"
+
+#: custom-css-js.php:223
+msgctxt "add new on admin bar"
+msgid "Custom Code"
+msgstr "Özel Kod"
+
+#: custom-css-js.php:224
+msgctxt "add new"
+msgid "Add Custom Code"
+msgstr "Özel Kod Ekle"
+
+#: custom-css-js.php:225
+msgid "Add Custom Code"
+msgstr "Özel Kod Ekle"
+
+#: custom-css-js.php:226
+msgid "New Custom Code"
+msgstr "Yeni Özel Kod"
+
+#: custom-css-js.php:227
+msgid "Edit Custom Code"
+msgstr "Özel Kodu Düzenle"
+
+#: custom-css-js.php:228
+msgid "View Custom Code"
+msgstr "Özel Kodu Görüntüle"
+
+#: custom-css-js.php:229
+msgid "All Custom Code"
+msgstr "Tüm Özel Kodlar"
+
+#: custom-css-js.php:230
+msgid "Search Custom Code"
+msgstr "Özel Kod ara"
+
+#: custom-css-js.php:231
+msgid "Parent Custom Code:"
+msgstr "Ana Özel Kod:"
+
+#: custom-css-js.php:232
+msgid "No Custom Code found."
+msgstr "Özel Kod bulunmadı."
+
+#: custom-css-js.php:233
+msgid "No Custom Code found in Trash."
+msgstr "Çöp kutusunda özel kod bulunmadı."
+
+#: custom-css-js.php:254
+msgid "Custom CSS and JS code"
+msgstr "Özel CSS ve JS Kodu"
+
+#: custom-css-js.php:299
+msgid "Web Designer"
+msgstr "Web Tasarımcı"
+
+#: custom-css-js.php:394 includes/admin-config.php:58
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: includes/admin-addons.php:42 includes/admin-screens.php:776
+msgid "Available only in <br />Simple Custom CSS and JS Pro"
+msgstr "Sadece <br />Simple Custom CSS and JS Pro<br />versiyonunda mevcut"
+
+#: includes/admin-addons.php:54
+msgid "Preview"
+msgstr "Öngörünüm"
+
+#: includes/admin-addons.php:55
+msgid "Apply only on these URLs"
+msgstr "Sadece bu URL lere uygula"
+
+#: includes/admin-addons.php:56
+msgid "Code Revisions"
+msgstr "Kod revizyonları"
+
+#: includes/admin-addons.php:67
+msgid "Full URL on which to preview the changes ..."
+msgstr "Değişikliklerin öngörünümünü istediğiniz URL in tam adresi …"
+
+#: includes/admin-addons.php:68
+msgid "Preview Changes"
+msgstr "Değişiklikleri ön izle"
+
+#: includes/admin-addons.php:82
+msgid "All Website"
+msgstr "Tüm Web Siteleri"
+
+#: includes/admin-addons.php:83
+msgid "Homepage"
+msgstr "İlk Sayfa"
+
+#: includes/admin-addons.php:84
+msgid "Contains"
+msgstr "içeriyor"
+
+#: includes/admin-addons.php:85
+msgid "Not contains"
+msgstr "içermiyor"
+
+#: includes/admin-addons.php:86
+msgid "Is equal to"
+msgstr "eşit"
+
+#: includes/admin-addons.php:87
+msgid "Not equal to"
+msgstr "eşit değil"
+
+#: includes/admin-addons.php:88
+msgid "Starts with"
+msgstr "Şunla başlıyor"
+
+#: includes/admin-addons.php:89
+msgid "Ends by"
+msgstr "şunla bitiyor"
+
+#: includes/admin-addons.php:100 includes/admin-addons.php:101
+msgid "URL"
+msgstr "URL"
+
+#: includes/admin-addons.php:102
+msgid "Text filter"
+msgstr "Tekst süzgeci"
+
+#: includes/admin-addons.php:103
+msgid "Add"
+msgstr "Ekle"
+
+#: includes/admin-addons.php:114
+msgctxt "revision date format"
+msgid "F j, Y @ H:i:s"
+msgstr "F j, Y @ H:i:s"
+
+#: includes/admin-addons.php:136 includes/admin-addons.php:169
+msgid "Compare"
+msgstr "Karşılaştır"
+
+#: includes/admin-addons.php:137
+msgid "Revision"
+msgstr "Revizyon"
+
+#: includes/admin-addons.php:138 includes/admin-screens.php:283
+msgid "Author"
+msgstr "Yazar"
+
+#: includes/admin-addons.php:139 includes/admin-addons.php:173
+msgid "Delete"
+msgstr "Sil"
+
+#: includes/admin-addons.php:140 includes/admin-addons.php:163
+msgid "Restore"
+msgstr "Geri yükle"
+
+#: includes/admin-config.php:115
+msgid "Save"
+msgstr ""
+
+#: includes/admin-config.php:139
+msgid "Custom CSS & JS Settings"
+msgstr ""
+
+#: includes/admin-config.php:142
+msgid "Editor Settings"
+msgstr ""
+
+#: includes/admin-config.php:195
+msgid "Keep the HTML entities, don't convert to its character"
+msgstr ""
+
+#: includes/admin-config.php:200
+msgid "Encode the HTML entities"
+msgstr ""
+
+#: includes/admin-notices.php:125
+msgid "Get your discount now"
+msgstr "Şimdi indirimi al"
+
+#: includes/admin-notices.php:125 includes/admin-notices.php:190
+msgid "Dismiss this notice"
+msgstr "Bu uyarıyı yoksay"
+
+#: includes/admin-screens.php:93
+msgid "Add Custom CSS"
+msgstr "Özel CSS Ekle"
+
+#: includes/admin-screens.php:96
+msgid "Add Custom JS"
+msgstr "Özel JS Ekle"
+
+#: includes/admin-screens.php:99
+msgid "Add Custom HTML"
+msgstr "Özel HTML Ekle"
+
+#: includes/admin-screens.php:173 includes/admin-screens.php:280
+#: includes/admin-screens.php:1286
+msgid "Active"
+msgstr "Aktif"
+
+#: includes/admin-screens.php:174 includes/admin-screens.php:1289
+msgid "Inactive"
+msgstr ""
+
+#: includes/admin-screens.php:175 includes/admin-screens.php:1262
+#: includes/admin-screens.php:1290
+msgid "Activate"
+msgstr ""
+
+#: includes/admin-screens.php:176 includes/admin-screens.php:1259
+#: includes/admin-screens.php:1287
+msgid "Deactivate"
+msgstr ""
+
+#: includes/admin-screens.php:177 includes/admin-screens.php:325
+#: includes/admin-screens.php:1258
+msgid "The code is active. Click to deactivate it"
+msgstr "Bu kod faal. Devre dışı bırakmak için tıklayınız"
+
+#: includes/admin-screens.php:178 includes/admin-screens.php:328
+#: includes/admin-screens.php:1261
+msgid "The code is inactive. Click to activate it"
+msgstr "Bu kod faal değil. Faal hale getirmek için tıklayınız"
+
+#: includes/admin-screens.php:204
+msgid "Options"
+msgstr "Seçenekler"
+
+#: includes/admin-screens.php:264
+msgid "Add CSS code"
+msgstr "CSS Kodu ekle"
+
+#: includes/admin-screens.php:265
+msgid "Add JS code"
+msgstr "JS Kodu ekle"
+
+#: includes/admin-screens.php:266
+msgid "Add HTML code"
+msgstr "HTML Kodu ekle"
+
+#: includes/admin-screens.php:281
+msgid "Type"
+msgstr "Çeşidi"
+
+#: includes/admin-screens.php:282
+msgid "Title"
+msgstr "Başlık"
+
+#: includes/admin-screens.php:284
+msgid "Date"
+msgstr "Tarih"
+
+#: includes/admin-screens.php:285
+msgid "Modified"
+msgstr "Değiştirilme"
+
+#: includes/admin-screens.php:314
+msgid "%s ago"
+msgstr "%s önce"
+
+#: includes/admin-screens.php:316
+msgid "Y/m/d"
+msgstr "Y/m/d"
+
+#: includes/admin-screens.php:386
+msgid "CSS Codes"
+msgstr ""
+
+#: includes/admin-screens.php:387
+msgid "JS Codes"
+msgstr ""
+
+#: includes/admin-screens.php:388
+msgid "HTML Codes"
+msgstr ""
+
+#: includes/admin-screens.php:391
+msgid "Filter Code Type"
+msgstr ""
+
+#: includes/admin-screens.php:393
+msgid "All Custom Codes"
+msgstr ""
+
+#: includes/admin-screens.php:448
+msgid "Custom Code"
+msgstr "Özel Kod"
+
+#: includes/admin-screens.php:449 includes/admin-screens.php:468
+#: includes/admin-screens.php:489
+msgid "Add CSS Code"
+msgstr "CSS Kodu Ekle"
+
+#: includes/admin-screens.php:450 includes/admin-screens.php:469
+#: includes/admin-screens.php:490
+msgid "Add JS Code"
+msgstr "JS Kodu Ekle"
+
+#: includes/admin-screens.php:451 includes/admin-screens.php:470
+#: includes/admin-screens.php:491
+msgid "Add HTML Code"
+msgstr "HTML Kodu Ekle"
+
+#: includes/admin-screens.php:471
+msgid "Edit CSS Code"
+msgstr ""
+
+#: includes/admin-screens.php:472
+msgid "Edit JS Code"
+msgstr ""
+
+#: includes/admin-screens.php:473
+msgid "Edit HTML Code"
+msgstr ""
+
+#: includes/admin-screens.php:499
+msgid "Code updated"
+msgstr "Kod güncellendi"
+
+#: includes/admin-screens.php:612
+msgid ""
+"/* Add your JavaScript code here.\n"
+"\n"
+"If you are using the jQuery library, then don't forget to wrap your code "
+"inside jQuery.ready() as follows:\n"
+"\n"
+"jQuery(document).ready(function( $ ){\n"
+"    // Your code in here\n"
+"});\n"
+"\n"
+"--\n"
+"\n"
+"If you want to link a JavaScript file that resides on another server "
+"(similar to\n"
+"<script src=\"https://example.com/your-js-file.js\"></script>), then please "
+"use\n"
+"the \"Add HTML Code\" page, as this is a HTML code that links a JavaScript "
+"file.\n"
+"\n"
+"End of comment */ "
+msgstr ""
+
+#: includes/admin-screens.php:634
+msgid ""
+"<!-- Add HTML code to the header or the footer.\n"
+"\n"
+"For example, you can use the following code for loading the jQuery library "
+"from Google CDN:\n"
+"<script src=\"https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min."
+"js\"></script>\n"
+"\n"
+"or the following one for loading the Bootstrap library from MaxCDN:\n"
+"<link rel=\"stylesheet\" href=\"https://stackpath.bootstrapcdn.com/"
+"bootstrap/4.3.1/css/bootstrap.min.css\" integrity=\"sha384-"
+"ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T\" "
+"crossorigin=\"anonymous\">\n"
+"\n"
+"-- End of the comment --> "
+msgstr ""
+
+#: includes/admin-screens.php:660
+msgid ""
+"/* Add your CSS code here.\n"
+"\n"
+"For example:\n"
+".example {\n"
+"    color: red;\n"
+"}\n"
+"\n"
+"For brushing up on your CSS knowledge, check out http://www.w3schools.com/"
+"css/css_syntax.asp\n"
+"\n"
+"End of comment */ "
+msgstr ""
+
+#: includes/admin-screens.php:692
+msgid "Last edited by %1$s on %2$s at %3$s"
+msgstr ""
+
+#: includes/admin-screens.php:694
+msgid "Last edited on %1$s at %2$s"
+msgstr ""
+
+#: includes/admin-screens.php:791
+msgid "Linking type"
+msgstr "Linkleme çeşidi"
+
+#: includes/admin-screens.php:796
+msgid "External File"
+msgstr "Harici Dosya"
+
+#: includes/admin-screens.php:800
+msgid "Internal"
+msgstr "Dahili"
+
+#: includes/admin-screens.php:806 includes/admin-screens.php:894
+msgid "Where on page"
+msgstr "Sayfanın neresinde"
+
+#: includes/admin-screens.php:811 includes/admin-screens.php:899
+msgid "Header"
+msgstr "Üstbaşlık (Header)"
+
+#: includes/admin-screens.php:815 includes/admin-screens.php:903
+msgid "Footer"
+msgstr "Altbaşlık (Footer)"
+
+#: includes/admin-screens.php:821 includes/admin-screens.php:909
+msgid "Where in site"
+msgstr "Sitede nerede"
+
+#: includes/admin-screens.php:826 includes/admin-screens.php:914
+msgid "In Frontend"
+msgstr "Önyüzde"
+
+#: includes/admin-screens.php:830 includes/admin-screens.php:918
+msgid "In Admin"
+msgstr "Yönetici panelinde"
+
+#: includes/admin-screens.php:834
+msgid "On Login Page"
+msgstr ""
+
+#: includes/admin-screens.php:840
+msgid "CSS Preprocessor"
+msgstr "CSS Önişleyici"
+
+#: includes/admin-screens.php:845
+msgid "None"
+msgstr "Yok"
+
+#: includes/admin-screens.php:848
+msgid "Less"
+msgstr "Less"
+
+#: includes/admin-screens.php:851
+msgid "SASS (only SCSS syntax)"
+msgstr "SASS (sadece SCSS yazımı)"
+
+#: includes/admin-screens.php:857
+msgid "Minify the code"
+msgstr "Kodu küçült"
+
+#: includes/admin-screens.php:864 includes/admin-screens.php:945
+msgid "Priority"
+msgstr "Öncelik"
+
+#: includes/admin-screens.php:869 includes/admin-screens.php:950
+msgctxt "1 is the highest priority"
+msgid "1 (highest)"
+msgstr "1 (En yüksek)"
+
+#: includes/admin-screens.php:878 includes/admin-screens.php:959
+msgctxt "10 is the lowest priority"
+msgid "10 (lowest)"
+msgstr "10 (en düşük)"
+
+#: includes/admin-screens.php:924
+msgid "On which device"
+msgstr "Hangi cihazlarda"
+
+#: includes/admin-screens.php:930
+msgid "Desktop"
+msgstr "Masaüstü"
+
+#: includes/admin-screens.php:934
+msgid "Mobile"
+msgstr "Mobil"
+
+#: includes/admin-screens.php:938
+msgid "Both"
+msgstr "Her ikisi"
+
+#: includes/admin-screens.php:1096
+msgid "The %s directory could not be created"
+msgstr "%s klasörü oluşturulamadı"
+
+#: includes/admin-screens.php:1097
+msgid "Please run the following commands in order to make the directory"
+msgstr "Klasör oluşturmak için lütfen aşağıdaki komutları çalıştırın"
+
+#: includes/admin-screens.php:1105
+msgid ""
+"The %s directory is not writable, therefore the CSS and JS files cannot be "
+"saved."
+msgstr ""
+"%s klasörü yazılabilir değil, o yüzden CSS ve JS dosyaları kaydedilemedi."
+
+#: includes/admin-screens.php:1106
+msgid "Please run the following command to make the directory writable"
+msgstr "Lütfen klasörü yazılabilir yapmak için aşağıdaki komutu çalıştırın"
+
+#: includes/admin-warnings.php:55
+msgid ""
+"Please remove the <b>custom-css-js</b> post type from the <b>qTranslate "
+"settings</b> in order to avoid some malfunctions in the Simple Custom CSS & "
+"JS plugin. Check out <a href=\"%s\" target=\"_blank\">this screenshot</a> "
+"for more details on how to do that."
+msgstr ""
+"Simple Custom CSS & JS eklentisinde işlev bozukluklarından kaçınmak için "
+"lütfen <b>qTranslate ayarlarından </b>  <b>custom-css-js</b> yazı tipini "
+"kaldırınız. Bunu nasıl yapacağınızın detayları hakkında  <a href=“%s” "
+"target=“_blank”>bu ekran görüntüsüne </a> bakınız."
+
+#. Plugin Name of the plugin/theme
+msgid "Simple Custom CSS and JS"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://wordpress.org/plugins/custom-css-js/"
+msgstr "https://wordpress.org/plugins/custom-css-js/"
+
+#. Description of the plugin/theme
+msgid "Easily add Custom CSS or JS to your website with an awesome editor."
+msgstr ""
+"Websitenize harika bir düzenleyici ile özel CSS veya JS i kolayca ekleyin."
+
+#. Author of the plugin/theme
+msgid "Diana Burduja"
+msgstr "Diana Burduja"
+
+#. Author URI of the plugin/theme
+msgid "https://www.silkypress.com/"
+msgstr "https://www.silkypress.com/"
+
+#~ msgid "Toggle active"
+#~ msgstr "Aktiflik durumunu değiştir"

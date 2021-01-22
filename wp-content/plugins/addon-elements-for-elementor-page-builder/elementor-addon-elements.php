@@ -5,7 +5,7 @@
  * Description: Add new elements to Elementor page builder plugin.
  * Plugin URI: https://www.elementoraddons.com/elements-addon-elements/
  * Author: WP Vibes
- * Version: 1.9
+ * Version: 1.9.1
  * Author URI: https://wpvibes.com/
  * Elementor tested up to: 3.1.0
  * Elementor Pro tested up to: 3.0.9
@@ -16,7 +16,7 @@ define('EAE_FILE', __FILE__);
 define('EAE_URL', plugins_url('/', __FILE__));
 define('EAE_PATH', plugin_dir_path(__FILE__));
 define('EAE_SCRIPT_SUFFIX', defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ? '' : '.min');
-define('EAE_VERSION', '1.9');
+define('EAE_VERSION', '1.9.1');
 
 
 if (!function_exists('_is_elementor_installed')) {

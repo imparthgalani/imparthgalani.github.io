@@ -14,6 +14,8 @@ class Plugin
 	public $module_manager;
 
 	public static $helper = null;
+	private static $show_notice = true;
+
 	public static function get_instance()
 	{
 		if (!isset(self::$instance)) {
@@ -43,7 +45,7 @@ class Plugin
 		$this->module_manager = new Managers\Module_Manager();
 
 		$this->eae_review();
-		$this->check_form_used();
+		$this->fv_download_box();
 	}
 
 	function eae_elementor_init()
@@ -378,7 +380,8 @@ class Plugin
 		$status = $review['status'];
 
 		if ($status !== 'done') {
-			if ($status == '' && $remind_later == '') {
+			if ($status == '' && $remind_later == '' && self::$show_notice) {
+				self::$show_notice = false;
 ?>
 				<div class="notice notice-success is-dismissible">
 					<p><?php _e('I hope you are enjoying using <b>Elementor Addon Elements</b>. Could you please do a BIG favor and give it a 5-star rating on WordPress.org ? <br/> Just to help us spread the word and boost our motivation. <br/><b>~ Anand Upadhyay</b>', 'wts-eae'); ?></p>
@@ -407,6 +410,15 @@ class Plugin
 		update_option('eae_review', $review, false);
 	}
 
+	function fv_download_box(){
+		if (isset($_GET['fv_download_later'])) {
+            add_action('admin_notices', [$this, 'fv_download_later']);
+        } else if (isset($_GET['fv_not_interested'])) {
+            add_action('admin_notices', [$this, 'fv_not_interested']);
+        } else {
+            $this->check_form_used();
+        }
+	}
 	function check_form_used()
 	{
 		$query = array(
@@ -432,6 +444,18 @@ class Plugin
 
 	function fv_add_box()
 	{
+		$download_later = get_transient('fv_download_later');
+
+		$fv_downloaded = get_option('fv_downloaded');
+		
+		//echo 'notice '. self::$show_notice;
+		if($fv_downloaded === 'done' || $download_later){
+			return;
+		}
+		if(!self::$show_notice){
+			return;
+		}
+		self::$show_notice = false;
 		?>
 		<div class="fv-add-box notice notice-success is-dismissible">
 			<div class="fv-logo">
@@ -457,7 +481,7 @@ class Plugin
 				</div> */
 				?>
 				<div>
-					<p><?php _e('Look like you are using <b>Elementor Forms</b>! <br/>Save your form submission to database. <br/>Download <b>Form Vibes</b>', 'wpv-fv'); ?></p>
+					<p><?php _e('I hope you are enjoying using <b>Elementor Addon Elements</b>. Here is another useful plugin by us - <b>Form Vibes</b>. <br/>If you are using Elementor Pro Form, then you can capture form submissions within WordPress Admin.', 'wpv-fv'); ?></p>
 
 					<p>
 						<?php echo '<a class="eae-notice-link" style="padding: 5px;"  href="' . admin_url() . 'plugin-install.php?s=form+vibes&tab=search&type=term">Download Now</a>' ?>
@@ -469,6 +493,18 @@ class Plugin
 		</div>
 <?php
 	}
+
+	function fv_download_later()
+    {
+        set_transient('fv_download_later', 'show again', WEEK_IN_SECONDS);
+    }
+
+    function fv_not_interested()
+    {
+        //set_transient( 'fv_review_done', 'Already Reviewed !', 3 * MONTH_IN_SECONDS );
+
+        update_option('fv_downloaded', 'done', false);
+    }
 }
 
 Plugin::get_instance();

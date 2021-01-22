@@ -4,7 +4,7 @@ Tags: elementor, elements, addons, elementor addon, elementor widget, page-build
 Requires at least: 5.0
 Requires PHP: 5.6
 Tested up to: 5.6
-Stable tag: 1.9
+Stable tag: 1.9.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -12,40 +12,63 @@ Add new elements to Elementor page builder.
 
 == Description ==
 
-This plugin adds new widgets to Elementor Page Builder.
+Add more power to your Elementor page builder experience by using our 23+ easy to use widgets and extensions. 
+Incorporate these creative elements in your WordPress website, to make it look more attractive and accessible than before.
 
-For more details and demo check our official site http://www.elementoraddons.com/
+== Elementor Addon Elements Features ==
 
-Current Addon Elements:
+We have built 23+ useful widgets and extensions to enhance your Elementor Page Building experience.
 
-* Thumbnail Gallery (new)
-* Content Switcher (new)
-* Progress Bar 
-* Dual Button 
-* Animated Background Color (new)
-* Timeline (new)
-* Info Circle (new)
-* Comparison Table (new)
-* Info Circle (new)
-* Background Slider
-* Modal Popup
-* Flip Box
-* Text Separator 
-* Price Table
-* Post List
-* Animated Text
-* After/Before Image Compare
-* Split Text
-* Google Map (with ability to add styles from Snazzy Maps)
-* Twitter (Show profile timeline, hashtag feed, tweet, follow and hashtag button)
-* Shape Separator (Deprecated.. use shape separator available with Elementor)
+1. [Timeline](https://www.elementoraddons.com/elements-addon-elements/timeline-for-elementor/) - Create a stunning horizontal timeline for your posts, page, custom post types, or for any static text.
+2. [Info Circle](https://www.elementoraddons.com/elements-addon-elements/info-circle-for-elementor/) - Present your content in an attractive circle layout, using pre-defined styles.
+3. [Comparison Table](https://www.elementoraddons.com/elements-addon-elements/comparison-table-for-elementor/) - Add a beautiful table to compare products and services.
+4. [Content Switcher](https://www.elementoraddons.com/elements-addon-elements/content-switcher-for-elementor/) - Switch between multiple contents like Primary or Secondary. 
+5. [Thumbnail Slider](https://www.elementoraddons.com/elements-addon-elements/thumbnail-slider-for-elementor/) - Add a responsive slider with custom thumbnails and transition effects.
+6. [After/Before Image Compare](https://www.elementoraddons.com/elements-addon-elements/after-before-image-compare/) - Let your viewers compare between the before and after versions of an image.
+7. [Filterable Gallery](https://www.elementoraddons.com/elements-addon-elements/advance-gallery-for-elementor/) - Create a gallery for custom content or custom posts.
+8. [Wrapper Link](https://www.elementoraddons.com/tutorial/make-section-column-clickable-elementor/) (Clickable Section/Column) - Make sections and columns clickable by assigning links to them.
+9. [Particle Background](https://www.elementoraddons.com/elements-addon-elements/particle-background/) - Add creative particle background effects to section to attract visitors.
+10. [Background Slider](https://www.elementoraddons.com/elements-addon-elements/background-image-slider/) - Add sliders to the background to make them appealing.
+11. [Animated Gradient Background Slider](https://www.elementoraddons.com/elements-addon-elements/animated-gradient-background/) - Add eye-catching backgrounds to your Elementor sections and columns. 
+12. [Modal Popup](https://www.elementoraddons.com/elements-addon-elements/modal-popup-elementor/) - Add a Read More button on the post archive that opens the content in a popup.
+13. [Google Map](https://www.elementoraddons.com/elements-addon-elements/google-map/) - Show Google map on your website with various styling options.
+14. [Twitter Feed](https://www.elementoraddons.com/elements-addon-elements/twitter-feed/) - Exhibit your Twitter feed in different styles.
+15. [Progress Bar](https://www.elementoraddons.com/elements-addon-elements/progress-bar/) - Add Progress Bar with four pre-defined skins, which can be customized accordingly.
+16. [Animated Text](https://www.elementoraddons.com/elements-addon-elements/animated-text/) - Add stylish headings to your Elementor website.
+17. [Text Separator](https://www.elementoraddons.com/elements-addon-elements/text-separator/) - Separate your text using fancy dividers.
+18. [Flip Box](https://www.elementoraddons.com/elements-addon-elements/flip-box-elementor/) - Use animated Flip Boxes to highlight any content on your page. 
+19. [Split Text](https://www.elementoraddons.com/elements-addon-elements/split-text/) - Present heading in two distinct styles.
+20. [Dual Button](https://www.elementoraddons.com/elements-addon-elements/dual-button-for-elementor/) - Design the call to action buttons more attractively and elegantly.
+21. [Price Table](https://www.elementoraddons.com/elements-addon-elements/price-table-elementor-page-builder/) - Present your pricing plans in a stylish table layout. 
+22. [Post List](https://www.elementoraddons.com/elements-addon-elements/post-list/) - Design your blog posts in a listed manner.
+23. [Shape Separator](https://www.elementoraddons.com/elements-addon-elements/shape-separator-elementor-page-builder/) - Add beautiful shapes to sections.
 
-Many more elements coming soon...
 
-Also try our premium plugin "AnyWhere Elementor Pro" to create Global Post Layouts with Elementor
-http://www.elementoraddons.com/anywhere-elementor-pro/
+### Fully Customizable
+Each widget comes with multiple options and controls, using which you can easily customize your designs as you want.
 
-Note: This plugin is an addon of Elementor Page Builder (https://wordpress.org/plugins/elementor/) and will only work with Elementor Page Builder installed.
+### Light Weight and Instant Loading
+Code is optimized for fast loading and instant live editing with no extra resources. 
+
+### Expert Support
+We have a highly efficient support team who are always ready to help you. Ask your queries in Support Forum or contact us directly.
+
+### Widgets Control option
+You can enable and disable widgets to make page loading faster. Disable unnecessary elements to keep the site lite.
+
+### [Elementor](https://wordpress.org/plugins/elementor/) Page Builder is Required For This Plugin
+
+
+### 🧑‍💻 Documentation and Support
+* We have extensive [Documentation](https://eaedocs.elementoraddons.com/) and [Tutorials](https://www.elementoraddons.com/blog/) for each feature, which you can go through to know the functionalities well.
+* For any questions, you can contact us directly through our [Contact Page](https://www.elementoraddons.com/contact-us/).
+* For more details, visit [Elementor Addon Elements](https://www.elementoraddons.com/)
+
+
+### Other Plugins
+✅ [AnyWhere Elementor Pro](https://www.elementoraddons.com/anywhere-elementor-pro/)
+✅ [Form Vibes](https://wordpress.org/plugins/form-vibes/)
+
 
 == Installation ==
 
@@ -75,6 +98,8 @@ Column gap => No gap
 
 == Changelog ==
 
+= 1.9.1 =
+* Fixed: Admin notice issue
 
 = 1.9 =
 * New Widget : Thumb Gallery
@@ -131,7 +156,7 @@ Column gap => No gap
 * Fix : Text Separator blank icon migration issue resolved
 * Fix : Modal Popup Close button icon migration issue resolved
 
-== 1.6.1 =
+= 1.6.1 =
 * Icon Migration from Font Awesome 4 to Font Awesome 5.
 * Fixed issue with SVG display
 * Modal Popup Close Button Spacing option added.

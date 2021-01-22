@@ -1,0 +1,9 @@
+Simple CSS is licensed under the GNU General Public License v2 or later
+More details here: http://www.gnu.org/licenses/gpl-2.0.html
+
+== CodeMirror ==
+
+The CSS editor uses CodeMirror to format your CSS.
+
+CodeMirror License: https://codemirror.net/LICENSE
+MIT License - http://opensource.org/licenses/mit-license.html
