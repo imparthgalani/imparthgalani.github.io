@@ -1,0 +1,2313 @@
+# Copyright (C) 2020 blc
+# This file is distributed under the same license as the blc package.
+msgid ""
+msgstr ""
+"Project-Id-Version: blc\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"x-generator: babel-plugin-wp-i18n\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.4.1\n"
+"Last-Translator: \n"
+"Language: hu_HU\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#. translators: %s: PHP version
+#: blocksy-companion.php:53
+msgid "Blocksy requires PHP version %s+, plugin is currently NOT RUNNING."
+msgstr ""
+"A Blocksy használatához a(z) %s+ PHP verzió szükséges, a bővítmény jelenleg "
+"NEM FUT."
+
+#. translators: %s: WordPress version
+#: blocksy-companion.php:65
+msgid ""
+"Blocksy requires WordPress version %s+. Because you are using an earlier "
+"version, the plugin is currently NOT RUNNING."
+msgstr ""
+"A Blocksy használatához a WordPress %s+ verziója szükséges. Mivel egy "
+"korábbi verziót használ, a bővítmény jelenleg nem fut."
+
+#: framework/extensions-manager.php:222
+msgid "Custom Fonts"
+msgstr "Egyéni betűtípusok"
+
+#: framework/extensions-manager.php:223,
+#: framework/premium/extensions/adobe-typekit/config.php:5,
+#: framework/premium/extensions/custom-fonts/config.php:4
+msgid "Upload unlimited number of custom fonts."
+msgstr "Töltsön fel korlátlan számú egyéni betűtípust."
+
+#: framework/extensions-manager.php:234
+msgid "Sidebars"
+msgstr "Oldalsáv"
+
+#: framework/extensions-manager.php:235,
+#: framework/premium/extensions/sidebars/config.php:4
+msgid "Create unlimited number of custom sidebars."
+msgstr "Hozzon létre korlátlan számú egyéni oldalsáv."
+
+#: framework/extensions-manager.php:246
+msgid "White Label"
+msgstr "Fehér címke"
+
+#: framework/extensions-manager.php:247,
+#: framework/premium/extensions/white-label/config.php:4
+msgid "Change theme/companion branding"
+msgstr "Téma/kísérő márkajelzésének módosítása"
+
+#: framework/theme-integration.php:40,
+#: framework/extensions/widgets/widgets/ct-facebook/options.php:16,
+#: framework/extensions/widgets/widgets/ct-facebook/view.php:12,
+#: framework/extensions/widgets/widgets/ct-facebook/widget.php:13
+msgid "Facebook"
+msgstr "Facebook"
+
+#: framework/theme-integration.php:41
+msgid "Twitter"
+msgstr "Twitter"
+
+#: framework/theme-integration.php:42
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: framework/theme-integration.php:43
+msgid "Dribbble"
+msgstr "Dribbble"
+
+#: framework/theme-integration.php:44
+msgid "Instagram"
+msgstr "Instagram"
+
+#: framework/theme-integration.php:98
+msgid "Companion"
+msgstr "Kiegészítő"
+
+#: framework/widgets-manager.php:75
+msgid "Default widget name"
+msgstr "Alapértelmezett widget név"
+
+#: framework/widgets-manager.php:81
+msgid "Display online support infomation"
+msgstr "Online támogatási információk megjelenítése"
+
+#: framework/widgets-manager.php:142
+msgid "Widget Title"
+msgstr "Widget címe"
+
+#: framework/features/conditions-manager.php:208
+msgid "Entire Website"
+msgstr "A teljes weboldal"
+
+#: framework/features/conditions-manager.php:213
+msgid "Basic"
+msgstr "Alap"
+
+#: framework/features/conditions-manager.php:217
+msgid "Singulars"
+msgstr "Egyes oldalak"
+
+#: framework/features/conditions-manager.php:222
+msgid "Archives"
+msgstr "Archívum"
+
+#: framework/features/conditions-manager.php:228,
+#: framework/extensions/trending/customizer.php:4,
+#: framework/extensions/widgets/widgets/ct-posts/options.php:11,
+#: framework/extensions/widgets/widgets/ct-posts/options.php:98,
+#: framework/extensions/widgets/widgets/ct-posts/view.php:129,
+#: framework/extensions/widgets/widgets/ct-posts/widget.php:13
+msgid "Posts"
+msgstr "Bejegyzések"
+
+#: framework/features/conditions-manager.php:232
+msgid "Single Post"
+msgstr "Egyszerű bejegyzés"
+
+#: framework/features/conditions-manager.php:237
+msgid "All Post Archives"
+msgstr "Minden Post Archívum"
+
+#: framework/features/conditions-manager.php:242
+msgid "Post Categories"
+msgstr "Bejegyzés kategóriák"
+
+#: framework/features/conditions-manager.php:247
+msgid "Post Tags"
+msgstr "Címkék"
+
+#: framework/features/conditions-manager.php:253,
+#: framework/extensions/widgets/widgets/ct-posts/options.php:12
+msgid "Pages"
+msgstr "Oldalak"
+
+#: framework/features/conditions-manager.php:257
+msgid "Single Page"
+msgstr "Egy oldal"
+
+#: framework/features/conditions-manager.php:297
+msgid "Specific"
+msgstr "Különleges"
+
+#: framework/features/conditions-manager.php:301
+msgid "Post ID"
+msgstr "Bejegyzés ID"
+
+#: framework/features/conditions-manager.php:306
+msgid "Page ID"
+msgstr "Oldal ID"
+
+#: framework/features/conditions-manager.php:311
+msgid "Taxonomy ID"
+msgstr "Taxonómiaazonosító"
+
+#: framework/features/conditions-manager.php:317
+msgid "Other Pages"
+msgstr "Más oldalak"
+
+#: framework/features/conditions-manager.php:321
+msgid "404"
+msgstr "404"
+
+#: framework/features/conditions-manager.php:326
+msgid "Search"
+msgstr "Keresés"
+
+#: framework/features/conditions-manager.php:331
+msgid "Blog"
+msgstr "Blog"
+
+#: framework/features/conditions-manager.php:336
+msgid "Front Page"
+msgstr "Kezdő oldal"
+
+#: framework/features/conditions-manager.php:348
+msgid "Author"
+msgstr "Szerző"
+
+#: framework/features/dynamic-css.php:46
+msgid "Dynamic CSS Output"
+msgstr "Dinamikus CSS kimenet"
+
+#: framework/features/dynamic-css.php:50
+msgid ""
+"The strategy of outputing the dynamic CSS. File - all the CSS code will be "
+"placed in a static file, otherwise it will be placed inline in head."
+msgstr ""
+"A stratégia kimeneti dinamikus CSS. Fájl - az összes CSS-kód egy statikus "
+"fájlba kerül, különben a fejbe kerül."
+
+#: framework/features/dynamic-css.php:52
+msgid "File"
+msgstr "Fájl"
+
+#: framework/features/dynamic-css.php:53
+msgid "Inline"
+msgstr "Egysorban"
+
+#: framework/features/dynamic-css.php:63
+msgid "Emojis Script"
+msgstr "Emojis parancsfájl"
+
+#: framework/features/dynamic-css.php:67
+msgid ""
+"Disable WordPress emojis script if you don't use them in order to improve "
+"the performance. "
+msgstr ""
+"Tiltsa wordpress emojis script, ha nem használja őket annak érdekében, hogy "
+"javítsa a teljesítményt. "
+
+#: framework/features/google-analytics.php:50
+msgid "Google Analytics"
+msgstr "Google Analytics"
+
+#: framework/features/google-analytics.php:54
+msgid "Insert here your Google Analytics tracking ID"
+msgstr "Itt szúrhatja be a Google Analytics nyomon követési azonosítóját"
+
+#: framework/features/google-analytics.php:60
+msgid "IP Anonymization"
+msgstr "IP névtelenítés"
+
+#: framework/features/google-analytics.php:63
+msgid ""
+"Enable Google Analytics IP anonymization feature <a href=\"https://"
+"developers.google.com/analytics/devguides/collection/gtagjs/ip-anonymization"
+"\">(more info)</a>."
+msgstr ""
+"Engedélyezze a Google Analytics IP-anonimizálási funkcióját <a href="
+"\"https://developers.google.com/analytics/devguides/collection/gtagjs/ip-"
+"anonymization\">(további információ).</a>."
+
+#: framework/features/opengraph-meta-data.php:17
+msgid "Opengraph Meta Data"
+msgstr "Opengraph Meta adatok"
+
+#: framework/features/opengraph-meta-data.php:20
+msgid ""
+"Display a preview image and text excerpt when a link to your site is shared."
+msgstr ""
+"Előnézeti kép és szöveg részlet megjelenítése a webhelyre mutató hivatkozás "
+"megosztásakor."
+
+#: framework/features/opengraph-meta-data.php:29
+msgid "Facebook Page URL"
+msgstr "Facebook oldal URL-je"
+
+#: framework/features/opengraph-meta-data.php:36
+msgid "Facebook App ID"
+msgstr "Facebook App ID"
+
+#: framework/features/opengraph-meta-data.php:43
+msgid "Twitter Username"
+msgstr "Twitter felhasználónév"
+
+#: framework/extensions/cookies-consent/config.php:4
+msgid "Cookies Consent"
+msgstr "Cookie-k hozzájárulása"
+
+#: framework/extensions/cookies-consent/config.php:5
+msgid "Enable this extension in order to comply with the GDPR regulations."
+msgstr ""
+"Engedélyezze ezt a kiterjesztést, hogy megfeleljen a GDPR-előírásoknak."
+
+#: framework/extensions/cookies-consent/customizer.php:4
+msgid "Cookie Consent"
+msgstr "Cookie hozzájárulás"
+
+#: framework/extensions/cookies-consent/customizer.php:18,
+#: framework/extensions/mailchimp/customizer.php:12,
+#: framework/extensions/trending/customizer.php:39,
+#: framework/features/header/items/account/options.php:5
+msgid "General"
+msgstr "Általános"
+
+#: framework/extensions/cookies-consent/customizer.php:31
+msgid "Type 1"
+msgstr "1-es típus"
+
+#: framework/extensions/cookies-consent/customizer.php:36
+msgid "Type 2"
+msgstr "2-es típus"
+
+#: framework/extensions/cookies-consent/customizer.php:43
+msgid "Cookie period"
+msgstr "Cookie-időszak"
+
+#: framework/extensions/cookies-consent/customizer.php:51
+msgid "One hour"
+msgstr "Egy óra"
+
+#: framework/extensions/cookies-consent/customizer.php:52
+msgid "One day"
+msgstr "Egy nap"
+
+#: framework/extensions/cookies-consent/customizer.php:53
+msgid "One week"
+msgstr "Egy hét"
+
+#: framework/extensions/cookies-consent/customizer.php:54
+msgid "One month"
+msgstr "Egy hónap"
+
+#: framework/extensions/cookies-consent/customizer.php:55
+msgid "Three months"
+msgstr "Három hónap"
+
+#: framework/extensions/cookies-consent/customizer.php:56
+msgid "Six months"
+msgstr "Hat hónap"
+
+#: framework/extensions/cookies-consent/customizer.php:57
+msgid "One year"
+msgstr "Egy év"
+
+#: framework/extensions/cookies-consent/customizer.php:58
+msgid "Forever"
+msgstr "Örökre"
+
+#: framework/extensions/cookies-consent/customizer.php:65,
+#: framework/premium/features/content-blocks/hooks-manager.php:90,
+#: framework/premium/features/content-blocks/hooks-manager.php:96,
+#: framework/premium/features/content-blocks/hooks-manager.php:102,
+#: framework/premium/features/content-blocks/hooks-manager.php:108,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:72,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:98,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:125,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:152,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:179,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:206
+msgid "Content"
+msgstr "Tartalom"
+
+#: framework/extensions/cookies-consent/customizer.php:67,
+#: framework/extensions/cookies-consent/helpers.php:28
+msgid ""
+"We use cookies to ensure that we give you the best experience on our website."
+msgstr ""
+"Cookie-kat használunk annak érdekében, hogy a legjobb élményt nyújtsuk Önnek "
+"a weboldalunkon."
+
+#: framework/extensions/cookies-consent/customizer.php:79
+msgid "Button text"
+msgstr "Gomb szöveg"
+
+#: framework/extensions/cookies-consent/customizer.php:82,
+#: framework/extensions/cookies-consent/helpers.php:31
+msgid "Accept"
+msgstr "Elfogadás"
+
+#: framework/extensions/cookies-consent/customizer.php:90,
+#: framework/extensions/mailchimp/customizer.php:147,
+#: framework/extensions/trending/customizer.php:138,
+#: framework/features/header/items/account/options.php:164
+msgid "Design"
+msgstr "Kinézet"
+
+#: framework/extensions/cookies-consent/customizer.php:95,
+#: framework/extensions/trending/customizer.php:143
+msgid "Font Color"
+msgstr "Betűszín"
+
+#: framework/extensions/cookies-consent/customizer.php:112,
+#: framework/extensions/cookies-consent/customizer.php:142,
+#: framework/extensions/cookies-consent/customizer.php:167,
+#: framework/extensions/mailchimp/customizer.php:169,
+#: framework/extensions/mailchimp/customizer.php:200,
+#: framework/extensions/mailchimp/customizer.php:225,
+#: framework/extensions/trending/customizer.php:160,
+#: framework/features/header/items/account/options.php:188
+msgid "Initial"
+msgstr "Kezdeti"
+
+#: framework/extensions/cookies-consent/customizer.php:118,
+#: framework/extensions/cookies-consent/customizer.php:147,
+#: framework/extensions/mailchimp/customizer.php:175,
+#: framework/extensions/mailchimp/customizer.php:205,
+#: framework/extensions/trending/customizer.php:166,
+#: framework/features/header/items/account/options.php:193
+msgid "Hover"
+msgstr "Hover"
+
+#: framework/extensions/cookies-consent/customizer.php:126,
+#: framework/extensions/mailchimp/customizer.php:183
+msgid "Button Color"
+msgstr "Gomb szín"
+
+#: framework/extensions/cookies-consent/customizer.php:154,
+#: framework/extensions/mailchimp/customizer.php:212
+msgid "Background Color"
+msgstr "Háttérszín"
+
+#: framework/extensions/cookies-consent/customizer.php:179
+msgid "Maximum Width"
+msgstr "Maximális szélesség"
+
+#: framework/extensions/cookies-consent/customizer.php:202,
+#: framework/extensions/cookies-consent/helpers.php:76
+msgid "I accept the %sPrivacy Policy%s"
+msgstr "Elfogadom az %sAdatvédelmi nyilatkozatot%s"
+
+#: framework/extensions/cookies-consent/customizer.php:206
+msgid "This text will appear under each comment form and subscribe form."
+msgstr ""
+"Ez a szöveg jelenik meg az egyes megjegyzésűrlapok alatt, és előfizetnek."
+
+#: framework/extensions/cookies-consent/readme.php:1,
+#: framework/extensions/mailchimp/readme.php:1,
+#: framework/extensions/woocommerce-extra/readme.php:1
+msgid "Instructions"
+msgstr "Lépések"
+
+#: framework/extensions/cookies-consent/readme.php:4
+msgid ""
+"After installing and activating the Cookies Consent extension you will be "
+"able to configure it from this location:"
+msgstr ""
+"A Cookie-k hozzájárulási bővítményének telepítése és aktiválása után ezen a "
+"helyen állíthatja be:"
+
+#: framework/extensions/cookies-consent/readme.php:9,
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:160,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:31
+msgid "Customizer"
+msgstr "Testreszabható"
+
+#: framework/extensions/cookies-consent/readme.php:13
+msgid "Navigate to %s and customize the notification to meet your needs."
+msgstr ""
+"Nyissa meg a következőt: %s, és az igényeknek megfelelően testreszabja az "
+"értesítést."
+
+#: framework/extensions/cookies-consent/readme.php:16
+msgid "Customizer ➝ Cookie Consent"
+msgstr "Testreszabható , cookie-hozzájárulás"
+
+#: framework/extensions/cookies-consent/readme.php:25
+msgid "W3 Total Cache Support"
+msgstr "W3 teljes gyorsítótár-támogatás"
+
+#: framework/extensions/cookies-consent/readme.php:28
+msgid ""
+"If you encounter problems with W3 Total Cache plugin, please follow these "
+"steps:"
+msgstr ""
+"Ha problémákba ütközik a W3 Total Cache beépülő modullal, kövesse az alábbi "
+"lépéseket:"
+
+#: framework/extensions/cookies-consent/readme.php:35
+msgid ""
+"Navigate to %sPerformance ➝ Page Cache%s and scroll to the %sRejected cookies"
+"%s option."
+msgstr ""
+"Keresse meg a(z) %sPerformance • Page Cache% (Oldalgyorsítótár% ) lapot, és "
+"görgessen a(z) %sRejected cookies%s beállításhoz."
+
+#: framework/extensions/cookies-consent/readme.php:45
+msgid ""
+"In the text field there, insert this value: "
+"%sblocksy_cookies_consent_accepted%s."
+msgstr ""
+"Az ott lévő szövegmezőbe szúrja be ezt az értéket: "
+"%sblocksy_cookies_consent_accepted%s."
+
+#: framework/extensions/cookies-consent/readme.php:53,
+#: framework/extensions/cookies-consent/readme.php:88
+msgid "Make sure to purge all caches from settings."
+msgstr ""
+"Győződjön meg arról, hogy törli az összes gyorsítótárat a beállításokból."
+
+#: framework/extensions/cookies-consent/readme.php:60
+msgid "WP Fastest Cache Support"
+msgstr "WP Fastest Cache támogatás"
+
+#: framework/extensions/cookies-consent/readme.php:63
+msgid ""
+"If you encounter problems with WP Fastest Cache plugin, please follow these "
+"steps:"
+msgstr ""
+"Ha problémákba ütközik a WP Fastest Cache beépülő modul, kérjük, kövesse az "
+"alábbi lépéseket:"
+
+#: framework/extensions/cookies-consent/readme.php:70
+msgid "Navigate to %sExclude%s and scroll to the %sExclude Cookies%s option."
+msgstr ""
+"Keresse meg a következőt: %sExclude%s, és görgessen a(z) %sExclude Cookies%s "
+"beállításhoz."
+
+#: framework/extensions/cookies-consent/readme.php:80
+msgid ""
+"Click on Add new rule and insert this value: "
+"%sblocksy_cookies_consent_accepted%s."
+msgstr ""
+"Kattintson az Új szabály hozzáadása gombra, és szúrja be ezt az értéket: "
+"%sblocksy_cookies_consent_accepted%s."
+
+#: framework/extensions/mailchimp/config.php:4
+msgid "Mailchimp"
+msgstr "Mailchimp"
+
+#: framework/extensions/mailchimp/config.php:5
+msgid ""
+"Display a Mailchimp subscribe form with the help of a widget or a block."
+msgstr ""
+"Mailchimp feliratkozási űrlap megjelenítése widget vagy blokk segítségével."
+
+#: framework/extensions/mailchimp/customizer.php:4
+msgid "Subscribe Form"
+msgstr "Űrlap feliratkozása"
+
+#: framework/extensions/mailchimp/customizer.php:18,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:15,
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:16,
+#: framework/extensions/widgets/widgets/ct-advertisement/options.php:15,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:15,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:65,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:91,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:118,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:145,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:172,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:199,
+#: framework/extensions/widgets/widgets/ct-facebook/options.php:13,
+#: framework/extensions/widgets/widgets/ct-posts/options.php:95,
+#: framework/extensions/widgets/widgets/ct-quote/options.php:15,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:15
+msgid "Title"
+msgstr "Cím"
+
+#: framework/extensions/mailchimp/customizer.php:21,
+#: framework/extensions/mailchimp/helpers.php:36
+msgid "Newsletter Updates"
+msgstr "Hírlevél frissítések"
+
+#: framework/extensions/mailchimp/customizer.php:27,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:23
+msgid "Message"
+msgstr "Üzenet"
+
+#: framework/extensions/mailchimp/customizer.php:29,
+#: framework/extensions/mailchimp/helpers.php:40,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:25,
+#: framework/extensions/mailchimp/ct-mailchimp/view.php:16
+msgid "Enter your email address below to subscribe to our newsletter"
+msgstr "Adja meg e-mail címét az alábbi feliratkozni hírlevelünkre"
+
+#: framework/extensions/mailchimp/customizer.php:42,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:32
+msgid "List Source"
+msgstr "Lista forrása"
+
+#: framework/extensions/mailchimp/customizer.php:49,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:39,
+#: framework/extensions/widgets/widgets/ct-posts/options.php:156
+#: framework/premium/static/js/footer/BuilderTemplates.js:41
+#: framework/premium/static/js/footer/CreateFooter.js:94
+#: framework/premium/static/js/header/CreateHeader.js:94
+msgid "Default"
+msgstr "Alapértelmezett"
+
+#: framework/extensions/mailchimp/customizer.php:50,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:40,
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:47
+msgid "Custom"
+msgstr "Egyedi"
+
+#: framework/extensions/mailchimp/customizer.php:62,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:50
+#: framework/extensions/mailchimp/dashboard-static/js/EditCredentials.js:104
+msgid "List ID"
+msgstr "Lista ID"
+
+#: framework/extensions/mailchimp/customizer.php:80,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:62
+msgid "Name Field"
+msgstr "Név mező"
+
+#: framework/extensions/mailchimp/customizer.php:93,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:74
+msgid "Name Label"
+msgstr "Név címke"
+
+#: framework/extensions/mailchimp/customizer.php:95,
+#: framework/extensions/mailchimp/helpers.php:51,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:76,
+#: framework/extensions/mailchimp/ct-mailchimp/view.php:51
+msgid "Your name"
+msgstr "Neved"
+
+#: framework/extensions/mailchimp/customizer.php:105,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:85
+msgid "Mail Label"
+msgstr "Levelezési címke"
+
+#: framework/extensions/mailchimp/customizer.php:107,
+#: framework/extensions/mailchimp/helpers.php:52,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:87,
+#: framework/extensions/mailchimp/ct-mailchimp/view.php:52
+msgid "Your email"
+msgstr "E-mail cím"
+
+#: framework/extensions/mailchimp/customizer.php:114,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:93
+msgid "Button Label"
+msgstr "Gombfelirat"
+
+#: framework/extensions/mailchimp/customizer.php:116,
+#: framework/extensions/mailchimp/helpers.php:45,
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:95,
+#: framework/extensions/mailchimp/ct-mailchimp/view.php:19
+msgid "Subscribe"
+msgstr "Feliratkozás"
+
+#: framework/extensions/mailchimp/customizer.php:126
+msgid "Visibility"
+msgstr "Láthatóság"
+
+#: framework/extensions/mailchimp/customizer.php:137,
+#: framework/extensions/trending/customizer.php:128
+msgid "Desktop"
+msgstr "Asztali"
+
+#: framework/extensions/mailchimp/customizer.php:138,
+#: framework/extensions/trending/customizer.php:129
+msgid "Tablet"
+msgstr "Táblagép"
+
+#: framework/extensions/mailchimp/customizer.php:139,
+#: framework/extensions/trending/customizer.php:130,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:114
+msgid "Mobile"
+msgstr "Mobil"
+
+#: framework/extensions/mailchimp/customizer.php:152,
+#: framework/features/header/items/account/options.php:169
+msgid "Content Color"
+msgstr "Tartalom színe"
+
+#: framework/extensions/mailchimp/customizer.php:232,
+#: framework/extensions/trending/customizer.php:93
+msgid "Container Inner Spacing"
+msgstr "Konténer belső térköze"
+
+#: framework/extensions/mailchimp/extension.php:90
+msgid "Disable Subscribe Form"
+msgstr "Feliratkozási űrlap letiltása"
+
+#: framework/extensions/mailchimp/helpers.php:111,
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:83
+#: static/js/screens/SiteExport.js:86
+msgid "Name"
+msgstr "Név"
+
+#: framework/extensions/mailchimp/helpers.php:114,
+#: framework/features/header/account-modal.php:74,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:168
+msgid "Email"
+msgstr "E-mail"
+
+#: framework/extensions/mailchimp/readme.php:4
+msgid ""
+"After installing and activating the Mailchimp extension you will have two "
+"possibilities to show your subscribe form:"
+msgstr ""
+"A Mailchimp kiterjesztés telepítése és aktiválása után két lehetősége van az "
+"előfizetési űrlap bemutatására:"
+
+#: framework/extensions/mailchimp/readme.php:9
+msgid "Mailchimp Widget"
+msgstr "Mailchimp Widget"
+
+#: framework/extensions/mailchimp/readme.php:13
+msgid "Navigate to %s and place the widget in any widget area you want."
+msgstr ""
+"Keresse meg a következőt: %s, és helyezze el a widgetet a kívánt "
+"vezérlőterületre."
+
+#: framework/extensions/mailchimp/readme.php:16
+msgid "Appearance ➝ Widgets"
+msgstr "Megjelenés ➝ Widgets"
+
+#: framework/extensions/mailchimp/readme.php:24
+msgid "Mailchimp Block"
+msgstr "Mailchimp blokk"
+
+#: framework/extensions/mailchimp/readme.php:28
+msgid "Navigate to %s and customize the form and more."
+msgstr ""
+"Keresse meg a következőt: %s, és szabja testre az űrlapot és még sok mást."
+
+#: framework/extensions/mailchimp/readme.php:31
+msgid "Customizer ➝ Single Posts"
+msgstr "Testreszabás ➝ Single Hozzászólások"
+
+#: framework/extensions/trending/config.php:4
+msgid "Trending Block"
+msgstr "Felkapott blokk"
+
+#: framework/extensions/trending/config.php:5
+msgid ""
+"Display a trending list of posts, products or custom post types at the "
+"bottom of your website."
+msgstr ""
+"A webhely alján látható bejegyzések, termékek vagy egyéni bejegyzéstípusok "
+"felkapott listája."
+
+#: framework/extensions/trending/customizer.php:8
+msgid "Products"
+msgstr "Termékek"
+
+#: framework/extensions/trending/customizer.php:26
+msgid "Trending Posts"
+msgstr "Felkapott hozzászólások"
+
+#: framework/extensions/trending/customizer.php:65
+msgid "Trending From"
+msgstr "Felkapott from"
+
+#: framework/extensions/trending/customizer.php:73,
+#: framework/extensions/widgets/widgets/ct-posts/options.php:194
+msgid "All Time"
+msgstr "Összes idő"
+
+#: framework/extensions/trending/customizer.php:74
+msgid "Last 24 Hours"
+msgstr "Elmúlt 24 óra"
+
+#: framework/extensions/trending/customizer.php:75
+msgid "Last 7 Days"
+msgstr "Utolsó 7 nap"
+
+#: framework/extensions/trending/customizer.php:76
+msgid "Last Month"
+msgstr "Előző hónap"
+
+#: framework/extensions/trending/customizer.php:116
+msgid "Container Visibility"
+msgstr "A konténer láthatósága"
+
+#: framework/extensions/trending/customizer.php:174
+msgid "Container Background"
+msgstr "Konténer háttere"
+
+#: framework/extensions/widgets/config.php:4
+msgid ""
+"Popular/Recent Posts, Advertisement, Contact Info, Mailchimp Subscribe, "
+"Social Icons and more."
+msgstr ""
+"Népszerű / Legutóbbi hozzászólások, Reklám, Contact Info, Mailchimp "
+"Feliratkozás, Szociális ikonok és így tovább."
+
+#: framework/extensions/woocommerce-extra/config.php:4
+msgid "WooCommerce Extra"
+msgstr "WooCommerce Extra"
+
+#: framework/extensions/woocommerce-extra/config.php:5
+msgid "WooCommerce extra functionality."
+msgstr "WooCommerce extra funkció."
+
+#: framework/extensions/woocommerce-extra/customizer.php:5
+msgid "Quick View"
+msgstr "Gyorsnézet"
+
+#: framework/extensions/woocommerce-extra/helpers.php:65
+msgid "Go to product page"
+msgstr "Ugrás a terméklapra"
+
+#: framework/extensions/woocommerce-extra/helpers.php:158
+msgid "Select options"
+msgstr "Opciók választása"
+
+#: framework/extensions/woocommerce-extra/readme.php:4
+msgid ""
+"After installing and activating the WooCommerce Extra extension you will "
+"have these features:"
+msgstr ""
+"A WooCommerce Extra bővítmény telepítése és aktiválása után a következő "
+"funkciókkal rendelkezik:"
+
+#: framework/extensions/woocommerce-extra/readme.php:9
+msgid "Product Quick View"
+msgstr "Termék gyorsnézet"
+
+#: framework/extensions/woocommerce-extra/readme.php:13
+msgid "Navigate to %s and enable or disable it."
+msgstr "Keresse meg a következőt: %s, és engedélyezze vagy tiltsa le."
+
+#: framework/extensions/woocommerce-extra/readme.php:16
+msgid "Customizer ➝ WooCommerce Archives ➝ Card Options"
+msgstr "Testreszabás ➝ WooCommerce Archives ➝ Kártya opciók"
+
+#: framework/features/header/account-modal.php:20,
+#: framework/features/header/items/account/options.php:61
+msgid "Login"
+msgstr "Belépés"
+
+#: framework/features/header/account-modal.php:24
+msgid "Sign Up"
+msgstr "Regisztráció"
+
+#: framework/features/header/account-modal.php:34
+msgid "Email Address"
+msgstr "E-mail cím"
+
+#: framework/features/header/account-modal.php:39
+msgid "Password"
+msgstr "Jelszó"
+
+#: framework/features/header/account-modal.php:46
+msgid "Remember Me"
+msgstr "Emlékezz rám"
+
+#: framework/features/header/account-modal.php:50
+msgid "Forgot Password?"
+msgstr "Elfelejtette jelszavát?"
+
+#: framework/features/header/account-modal.php:56
+msgid "Log In"
+msgstr "Bejelentkezés"
+
+#: framework/features/header/account-modal.php:69
+msgid "Username"
+msgstr "Felhasználónév"
+
+#: framework/features/header/account-modal.php:79
+msgid "Registration confirmation will be emailed to you"
+msgstr "A regisztráció visszaigazolását e-mailben küldjük el Önnek"
+
+#: framework/features/header/account-modal.php:84
+msgid "Register"
+msgstr "Regisztráció"
+
+#: framework/features/header/account-modal.php:97
+msgid "Username or Email Address"
+msgstr "Felhasználónév vagy e-mail cím"
+
+#: framework/features/header/account-modal.php:103
+msgid "Get New Password"
+msgstr "Új jelszó kérése"
+
+#: framework/features/header/account-modal.php:111
+msgid "Back to login"
+msgstr "Vissza a belépéshez"
+
+#: framework/premium/features/content-blocks.php:32
+msgid "Debug Hooks"
+msgstr "Hibakeresési horgok"
+
+#: framework/premium/features/content-blocks.php:189
+msgid "Location & Priority"
+msgstr "Hely és prioritás"
+
+#: framework/premium/features/content-blocks.php:201
+msgid "Select location"
+msgstr "Helyszín kiválasztása"
+
+#: framework/premium/features/content-blocks.php:217
+#: framework/premium/static/js/footer/EditConditions.js:108
+#: static/js/header/EditConditions.js:110
+msgid "Display Conditions"
+msgstr "Megjelenítési feltételek"
+
+#: framework/premium/features/content-blocks.php:273
+msgid "Shortcode"
+msgstr "Rövid kód"
+
+#: framework/premium/features/content-blocks.php:354
+msgid "Enable Classic Editor"
+msgstr "Klasszikus szerkesztő engedélyezése"
+
+#: framework/premium/features/content-blocks.php:355
+msgid "Enable Code Editor"
+msgstr "Kódszerkesztő engedélyezése"
+
+#: framework/premium/features/content-blocks.php:382,
+#: framework/premium/features/content-blocks.php:388
+msgid "Content Blocks"
+msgstr "Tartalmi blokkok"
+
+#: framework/premium/features/content-blocks.php:383
+msgid "Content Block"
+msgstr "Tartalomblokk"
+
+#: framework/premium/features/content-blocks.php:384
+msgid "Add New"
+msgstr "Új hozzáadása"
+
+#: framework/premium/features/content-blocks.php:385
+msgid "Add New Content Block"
+msgstr "Új tartalomblokk hozzáadása"
+
+#: framework/premium/features/content-blocks.php:386
+msgid "Edit Content Block"
+msgstr "Tartalom blokk szerkesztése"
+
+#: framework/premium/features/content-blocks.php:387
+msgid "New Content Block"
+msgstr "Új tartalomblokk"
+
+#: framework/premium/features/content-blocks.php:389
+msgid "View Content Block"
+msgstr "Tartalomblokk megtekintése"
+
+#: framework/premium/features/content-blocks.php:390
+msgid "Search Content Blocks"
+msgstr "Tartalomblokkok keresése"
+
+#: framework/premium/features/content-blocks.php:391
+msgid "Nothing found"
+msgstr "Nincs találat"
+
+#: framework/premium/features/content-blocks.php:392
+msgid "Nothing found in Trash"
+msgstr "Semmi sem található a Lomtárban"
+
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:18,
+#: framework/extensions/mailchimp/ct-mailchimp/view.php:12
+msgid "Newsletter"
+msgstr "Hírlevél"
+
+#: framework/extensions/mailchimp/ct-mailchimp/options.php:101
+msgid "Content Alignment"
+msgstr "Tartalom igazítása"
+
+#: framework/extensions/mailchimp/ct-mailchimp/widget.php:13
+msgid "Mailchimp Subscribe"
+msgstr "Mailchimp feliratkozás"
+
+#: framework/extensions/mailchimp/ct-mailchimp/widget.php:14
+msgid "Mailchimp subscribe form"
+msgstr "Mailchimp feliratkozási űrlap"
+
+#: framework/premium/extensions/adobe-typekit/config.php:4
+msgid "Adobe Typekit"
+msgstr "Adobe Typekit"
+
+#: framework/premium/extensions/sidebars/form.php:3
+msgid "Create Sidebar/Widget Area"
+msgstr "Oldalsáv/widgetterület létrehozása"
+
+#: framework/premium/extensions/sidebars/form.php:6
+msgid ""
+"In order to create a new sidebar/widget area simply enter a name in the "
+"input below and click the Create Sidebar button."
+msgstr ""
+"Annak érdekében, hogy hozzon létre egy új oldalsáv / widget terület "
+"egyszerűen írja be a nevét a bemeneti alatt, és kattintson a Create Oldalsáv "
+"gombra."
+
+#: framework/premium/extensions/sidebars/form.php:16
+msgid "Create Sidebar"
+msgstr "Oldalsáv létrehozása"
+
+#: framework/premium/extensions/sidebars/form.php:20
+msgid "Available Sidebars/Widget Areas"
+msgstr "Elérhető oldalsávok/widget területek"
+
+#: framework/premium/features/content-blocks/hooks-manager.php:11,
+#: framework/premium/features/content-blocks/hooks-manager.php:20,
+#: framework/premium/features/content-blocks/hooks-manager.php:30,
+#: framework/premium/features/content-blocks/hooks-manager.php:39,
+#: framework/premium/features/content-blocks/hooks-manager.php:48
+msgid "In <head>"
+msgstr "A(z) <head>"
+
+#: framework/premium/features/content-blocks/hooks-manager.php:13,
+#: framework/premium/features/content-blocks/hooks-manager.php:22,
+#: framework/premium/features/content-blocks/hooks-manager.php:32
+msgid "Head"
+msgstr "Fejléc"
+
+#: framework/premium/features/content-blocks/hooks-manager.php:41,
+#: framework/premium/features/content-blocks/hooks-manager.php:50
+msgid "Header"
+msgstr "Fejléc"
+
+#: framework/premium/features/content-blocks/hooks-manager.php:62
+msgid "Dynamic Sidebar Before"
+msgstr "Dinamikus oldalsáv előtte"
+
+#: framework/premium/features/content-blocks/hooks-manager.php:63,
+#: framework/premium/features/content-blocks/hooks-manager.php:70,
+#: framework/premium/features/content-blocks/hooks-manager.php:78
+msgid "Sidebar"
+msgstr "Oldalsáv"
+
+#: framework/premium/features/content-blocks/hooks-manager.php:69
+msgid "Dynamic Sidebar"
+msgstr "Dinamikus oldalsáv"
+
+#: framework/premium/features/content-blocks/hooks-manager.php:77
+msgid "Dynamic Sidebar After"
+msgstr "Dinamikus oldalsáv utána"
+
+#: framework/premium/features/content-blocks/hooks-manager.php:196,
+#: framework/premium/features/content-blocks/hooks-manager.php:203,
+#: framework/premium/features/content-blocks/hooks-manager.php:211
+msgid "WooCommerce"
+msgstr "WooCommerce"
+
+#: framework/premium/features/content-blocks/hooks-manager.php:221,
+#: framework/premium/features/content-blocks/hooks-manager.php:229,
+#: framework/premium/features/content-blocks/hooks-manager.php:237
+msgid "WordPress Footer"
+msgstr "WordPress lábléc"
+
+#: framework/premium/features/content-blocks/hooks-manager.php:222,
+#: framework/premium/features/content-blocks/hooks-manager.php:230,
+#: framework/premium/features/content-blocks/hooks-manager.php:238
+msgid "Footer"
+msgstr "Lábléc"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:19,
+#: framework/extensions/widgets/widgets/ct-about-me/view.php:12,
+#: framework/extensions/widgets/widgets/ct-about-me/widget.php:14
+msgid "About me"
+msgstr "Rólam"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:24
+msgid "Type"
+msgstr "Típus"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:32
+msgid "Simple"
+msgstr "Egyszerű"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:33
+msgid "Boxed"
+msgstr "Boxed"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:38,
+#: framework/extensions/widgets/widgets/ct-advertisement/options.php:23,
+#: framework/extensions/widgets/widgets/ct-posts/options.php:132,
+#: framework/extensions/widgets/widgets/ct-posts/options.php:151
+msgid "Source"
+msgstr "Forrás"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:46
+msgid "From WP"
+msgstr "A WP-től"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:58
+msgid "User"
+msgstr "Felhasználó"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:73
+msgid "Avatar"
+msgstr "Avatar"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:77,
+#: framework/extensions/widgets/widgets/ct-advertisement/options.php:62,
+#: framework/extensions/widgets/widgets/ct-quote/options.php:51
+msgid "Select Image"
+msgstr "Kép választás"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:78,
+#: framework/extensions/widgets/widgets/ct-advertisement/options.php:63,
+#: framework/extensions/widgets/widgets/ct-quote/options.php:52
+msgid "Change Image"
+msgstr "Képcsere"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:86,
+#: framework/extensions/widgets/widgets/ct-about-me/view.php:40,
+#: framework/extensions/widgets/widgets/ct-quote/options.php:35,
+#: framework/extensions/widgets/widgets/ct-quote/view.php:18
+msgid "John Doe"
+msgstr "Kis János"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:91,
+#: framework/extensions/widgets/widgets/ct-posts/widget.php:14
+msgid "Description"
+msgstr "Leírás"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:102,
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:109,
+#: framework/features/header/items/account/options.php:97
+msgid "Avatar Size"
+msgstr "Avatar mérete"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:115,
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:191,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:62
+msgid "Small"
+msgstr "Kicsi"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:116,
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:192,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:63
+msgid "Medium"
+msgstr "Közepes"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:117,
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:193,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:64
+msgid "Large"
+msgstr "Nagy"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:122
+msgid "Avatar Shape"
+msgstr "Avatar alak"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:130,
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:206,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:77
+msgid "Rounded"
+msgstr "Kerekített"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:131,
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:207,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:78
+msgid "Square"
+msgstr "Négyzet"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:153
+msgid "Social Channels"
+msgstr "Közösségi csatornák"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:156,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:27
+msgid "You can configure social URLs in %s."
+msgstr "A közösségi URL-címeket a következőben is konfigurálhatja: %s."
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:184,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:55
+msgid "Icons Size"
+msgstr "Ikonok mérete"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:198,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:69
+msgid "Icons Shape Type"
+msgstr "Ikonok alakzattípusa"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:205,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:76
+msgid "None"
+msgstr "Nincs"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:217,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:88
+msgid "Shape Fill Type"
+msgstr "Alakzat kitöltési típusa"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:224,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:95
+msgid "Solid"
+msgstr "Szolíd"
+
+#: framework/extensions/widgets/widgets/ct-about-me/options.php:225,
+#: framework/extensions/widgets/widgets/ct-socials/options.php:96
+msgid "Outline"
+msgstr "Körvonal"
+
+#: framework/extensions/widgets/widgets/ct-about-me/view.php:98
+msgid "View Profile"
+msgstr "Profil Megtekintése"
+
+#: framework/extensions/widgets/widgets/ct-about-me/widget.php:13
+msgid "About Me"
+msgstr "Névjegy"
+
+#: framework/extensions/widgets/widgets/ct-advertisement/options.php:18,
+#: framework/extensions/widgets/widgets/ct-advertisement/view.php:12,
+#: framework/extensions/widgets/widgets/ct-advertisement/widget.php:13,
+#: framework/extensions/widgets/widgets/ct-advertisement/widget.php:14
+msgid "Advertisement"
+msgstr "Reklám (Hirdetés Banner)"
+
+#: framework/extensions/widgets/widgets/ct-advertisement/options.php:31
+msgid "Code"
+msgstr "Kód"
+
+#: framework/extensions/widgets/widgets/ct-advertisement/options.php:32
+msgid "Image"
+msgstr "Obrázek"
+
+#: framework/extensions/widgets/widgets/ct-advertisement/options.php:42
+msgid "Ad Code"
+msgstr "Hirdetéskód"
+
+#: framework/extensions/widgets/widgets/ct-advertisement/options.php:58
+msgid "Upload Image"
+msgstr "Kép feltöltése"
+
+#: framework/extensions/widgets/widgets/ct-advertisement/options.php:68
+msgid "Ad URL"
+msgstr "Hirdetés URL-címe"
+
+#: framework/extensions/widgets/widgets/ct-advertisement/options.php:76,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:225
+msgid "Open link in new tab"
+msgstr "Új ablakban"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:18,
+#: framework/extensions/widgets/widgets/ct-contact-info/view.php:12,
+#: framework/extensions/widgets/widgets/ct-contact-info/widget.php:13
+msgid "Contact Info"
+msgstr "Kapcsolat Infó"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:23
+msgid "Text"
+msgstr "Szöveg"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:37,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:66,
+#: framework/extensions/widgets/widgets/ct-contact-info/view.php:24
+msgid "Address:"
+msgstr "Cím:"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:44,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:92,
+#: framework/extensions/widgets/widgets/ct-contact-info/view.php:31
+msgid "Phone:"
+msgstr "Telefonszám:"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:52,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:119,
+#: framework/extensions/widgets/widgets/ct-contact-info/view.php:39
+msgid "Mobile:"
+msgstr "Mobil:"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:61
+msgid "Address"
+msgstr "Cím"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:79,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:105,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:132,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:159,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:186,
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:213
+msgid "Link (optional)"
+msgstr "Hivatkozás (választható)"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:86
+msgid "Phone"
+msgstr "Telefon"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:141
+msgid "Fax"
+msgstr "Fax"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:146
+msgid "Fax:"
+msgstr "Fax:"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:173
+msgid "Email:"
+msgstr "Email:"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:195
+msgid "Website"
+msgstr "Weboldal"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/options.php:200
+msgid "Website:"
+msgstr "Weboldal:"
+
+#: framework/extensions/widgets/widgets/ct-contact-info/widget.php:14
+msgid "Contact info"
+msgstr "Kapcsolat infó"
+
+#: framework/extensions/widgets/widgets/ct-facebook/options.php:22
+msgid "Page URL"
+msgstr "Lap URL-címe"
+
+#: framework/extensions/widgets/widgets/ct-facebook/options.php:30
+msgid "Profile Photos"
+msgstr "Profilfotók"
+
+#: framework/extensions/widgets/widgets/ct-facebook/options.php:36
+msgid "Timeline"
+msgstr "Idővonal"
+
+#: framework/extensions/widgets/widgets/ct-facebook/options.php:42
+msgid "Cover Photo"
+msgstr "Borítókép"
+
+#: framework/extensions/widgets/widgets/ct-facebook/options.php:48
+msgid "Small Header"
+msgstr "Kicsi fejléc"
+
+#: framework/extensions/widgets/widgets/ct-facebook/widget.php:14
+msgid "Facebook like box"
+msgstr "Facebook like doboz"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:37
+msgid "Category"
+msgstr "Kategória"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:38
+msgid "All categories"
+msgstr "Összes kategória"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:43
+msgid "Taxonomy"
+msgstr "Taxonomy"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:44
+msgid "All taxonomies"
+msgstr "Minden taxonómia"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:103
+msgid "Widget Design"
+msgstr "Widget Kinézet"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:108
+msgid "Without Thumbnails"
+msgstr "Bélyegképek nélkül"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:109
+msgid "Small Thumbnails"
+msgstr "Kis bélyegképek"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:110
+msgid "Large Thumbnails"
+msgstr "Nagy méretű bélyegképek"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:111
+msgid "First Thumbnail Large"
+msgstr "Első miniatűr nagy"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:112
+msgid "Rounded Thumbnails"
+msgstr "Lekerekített bélyegképek"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:113
+msgid "Numbered"
+msgstr "Számozott"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:120
+msgid "Post Type"
+msgstr "Bejegyzés típusa"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:137
+msgid "Taxonomies"
+msgstr "Taxonómiák"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:138,
+#: framework/extensions/widgets/widgets/ct-posts/options.php:157
+msgid "Custom Query"
+msgstr "Egyedi lekérdezés"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:176
+msgid "Sort by"
+msgstr "Rendezés"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:181
+msgid "Recent"
+msgstr "Legutóbbi"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:182
+msgid "Most Commented"
+msgstr "Legtöbb hozzászólással bíró"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:189
+msgid "Order by"
+msgstr "Rendezés"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:195
+msgid "1 Week"
+msgstr "1 hét"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:196
+msgid "1 Month"
+msgstr "1 hónap"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:197
+msgid "3 Months"
+msgstr "3 hónap"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:198
+msgid "6 Months"
+msgstr "6 hónap"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:199
+msgid "1 Year"
+msgstr "1 év"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:206
+msgid "Posts Count"
+msgstr "Bejegyzések száma"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:268
+msgid "Pages Count"
+msgstr "Oldalak száma"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:279
+msgid "Show Date"
+msgstr "Dátum megjelenítése"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:285
+msgid "Show Comments"
+msgstr "Mutassuk a hozzászólásokat"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:291
+msgid "Show Excerpt"
+msgstr "Mutassa a kivonatot"
+
+#: framework/extensions/widgets/widgets/ct-posts/options.php:302
+msgid "Excerpt Lenght"
+msgstr "Kivonat hossza"
+
+#: framework/extensions/widgets/widgets/ct-quote/options.php:18,
+#: framework/extensions/widgets/widgets/ct-quote/view.php:12,
+#: framework/extensions/widgets/widgets/ct-quote/widget.php:13,
+#: framework/extensions/widgets/widgets/ct-quote/widget.php:14
+msgid "Quote"
+msgstr "Idézet"
+
+#: framework/extensions/widgets/widgets/ct-quote/options.php:23
+msgid "Quote text"
+msgstr "Idézet szövege"
+
+#: framework/extensions/widgets/widgets/ct-quote/options.php:32
+msgid "Author Name"
+msgstr "Szerző neve"
+
+#: framework/extensions/widgets/widgets/ct-quote/options.php:41
+msgid "Author Label"
+msgstr "Szerző címkéje"
+
+#: framework/extensions/widgets/widgets/ct-quote/options.php:47
+msgid "Author Avatar"
+msgstr "Szerző Avatara"
+
+#. translators: %s here is the author name
+#: framework/extensions/widgets/widgets/ct-quote/view.php:49
+msgid "By %s"
+msgstr "Szerző: %s"
+
+#: framework/extensions/widgets/widgets/ct-socials/options.php:18,
+#: framework/extensions/widgets/widgets/ct-socials/view.php:11,
+#: framework/extensions/widgets/widgets/ct-socials/widget.php:14
+msgid "Social Icons"
+msgstr "Közösségi média ikonok"
+
+#: framework/extensions/widgets/widgets/ct-socials/widget.php:15
+msgid "Social channels icons"
+msgstr "Közösségi csatornák ikonjai"
+
+#: framework/features/header/items/account/options.php:38
+msgid "Icon Size"
+msgstr "Ikonméret"
+
+#: framework/features/header/items/account/options.php:56,
+#: framework/features/header/items/account/view.php:39,
+#: framework/features/header/items/account/view.php:40
+msgid "Label"
+msgstr "Címke"
+
+#: framework/features/header/items/account/options.php:119
+msgid "My Account"
+msgstr "Fiókom"
+
+#: framework/features/header/items/account/options.php:126
+msgid "Action"
+msgstr "Művelet"
+
+#: framework/features/header/items/account/options.php:131
+msgid ""
+"Set the action you want to make when clicking on the element whyile you are "
+"logged in."
+msgstr ""
+"Állítsa be a kívánt műveletet, ha rákattint az elem whyile van bejelentkezve."
+
+#: framework/features/header/items/account/options.php:135
+msgid "Profile Page"
+msgstr "Profiloldal"
+
+#: framework/features/header/items/account/options.php:136
+msgid "Dashboard Page"
+msgstr "Vezérlőpult oldal"
+
+#: framework/features/header/items/account/options.php:137
+msgid "Logout"
+msgstr "Kilépés"
+
+#: framework/features/header/items/account/options.php:138
+msgid "Custom Page"
+msgstr "Egyéni lap"
+
+#: framework/features/header/items/account/options.php:149
+msgid "Custom Page Link"
+msgstr "Egyéni laphivatkozás"
+
+#: framework/features/header/items/account/options.php:201
+msgid "Item Margin"
+msgstr "Elem margó"
+
+#: framework/features/header/items/account/options.php:211
+msgid "Background"
+msgstr "Háttér"
+
+#: framework/premium/features/premium-header/items/contacts/config.php:4
+msgid "Contacts"
+msgstr "Kapcsolatok"
+
+#: framework/premium/features/premium-header/items/language-switcher/config.php:5
+msgid "Language Switcher"
+msgstr "Nyelvváltó"
+
+#: framework/premium/features/premium-header/items/search-input/config.php:4
+msgid "Search Input"
+msgstr "Keresési mező"
+
+#: framework/extensions/mailchimp/admin-static/js/ListPicker.js:14
+#: framework/extensions/mailchimp/admin-static/js/ListPicker/Implementation.js:59
+#: framework/extensions/mailchimp/dashboard-static/js/EditCredentials.js:120
+#: static/js/screens/SiteExport.js:146
+msgid "Loading..."
+msgstr "Betöltés..."
+
+#: framework/extensions/mailchimp/admin-static/js/ListPicker/Implementation.js:60
+#: framework/extensions/mailchimp/dashboard-static/js/ListPicker.js:85
+msgid "Invalid API Key..."
+msgstr "Érvénytelen API-kulcs..."
+
+#: framework/extensions/mailchimp/admin-static/js/ListPicker/Implementation.js:88
+#: framework/extensions/mailchimp/dashboard-static/js/ListPicker.js:113
+msgid "Select list..."
+msgstr "Lista kijelölése..."
+
+#: framework/extensions/mailchimp/dashboard-static/js/EditCredentials.js:122
+#: framework/extensions/mailchimp/dashboard-static/js/Mailchimp.js:74
+#: framework/premium/extensions/adobe-typekit/static/js/AdobeTypekit.js:72
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/CustomFonts.js:71
+#: framework/premium/extensions/white-label/dashboard-static/js/WhiteLabel.js:75
+#: static/js/screens/Extensions.js:79
+msgid "Activate"
+msgstr "Aktiválás"
+
+#: framework/extensions/mailchimp/dashboard-static/js/EditCredentials.js:123
+#: framework/premium/extensions/sidebars/static/js/SettingsManager.js:95
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:487
+#: framework/premium/static/js/footer/EditConditions.js:157
+msgid "Save Settings"
+msgstr "Beállítások mentése"
+
+#: framework/extensions/mailchimp/dashboard-static/js/EditCredentials.js:74
+msgid "MailChimp Credentials"
+msgstr "MailChimp hitelesítő adatok"
+
+#: framework/extensions/mailchimp/dashboard-static/js/EditCredentials.js:78
+msgid ""
+"Enter your MailChimp credentials in the form below. More info on how to "
+"generate an API key can be found %shere%s."
+msgstr ""
+"Adja meg MailChimp hitelesítő adatait az alábbi űrlapon. További információ "
+"az API-kulcs létrehozásáról: %shere%s."
+
+#: framework/extensions/mailchimp/dashboard-static/js/EditCredentials.js:90
+msgid "API Key"
+msgstr "API kulcs"
+
+#: framework/extensions/mailchimp/dashboard-static/js/ListPicker.js:84
+msgid "Loading"
+msgstr "Betöltés"
+
+#: framework/extensions/mailchimp/dashboard-static/js/Mailchimp.js:73
+#: framework/premium/extensions/adobe-typekit/static/js/AdobeTypekit.js:71
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/CustomFonts.js:70
+#: framework/premium/extensions/white-label/dashboard-static/js/WhiteLabel.js:74
+#: static/js/screens/Extensions.js:78
+msgid "Deactivate"
+msgstr "Kikapcsolás"
+
+#: framework/extensions/mailchimp/dashboard-static/js/hooks/useActivationWithRequirements.js:61
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:94
+msgid "Configure"
+msgstr "Beállítás"
+
+#: framework/premium/extensions/adobe-typekit/static/js/EditSettings.js:122
+msgid "Project ID"
+msgstr "Projektazonosító"
+
+#: framework/premium/extensions/adobe-typekit/static/js/EditSettings.js:132
+msgid "Save"
+msgstr "Mentés"
+
+#: framework/premium/extensions/adobe-typekit/static/js/EditSettings.js:144
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:38
+msgid "Variations"
+msgstr "Változatok"
+
+#: framework/premium/extensions/adobe-typekit/static/js/EditSettings.js:92
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/EditSettings.js:77
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:92
+msgid "Edit Settings"
+msgstr "Beállítások szerkesztése"
+
+#: framework/premium/extensions/adobe-typekit/static/js/EditSettings.js:94
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/EditSettings.js:79
+msgid "Add/Edit Fonts"
+msgstr "Betűtípusok hozzáadása/szerkesztése"
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:23
+msgid "Custom Fonts Settings"
+msgstr "Egyéni betűtípusok beállításai"
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:25
+msgid ""
+"Here you can see all your custom fonts that could be used in all typography "
+"options across the theme."
+msgstr ""
+"Itt láthatja az összes egyéni betűtípust, amelyet a téma összes tipográfiai "
+"beállításában használhat."
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:51
+msgid "Edit Font"
+msgstr "Szerkesztés"
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:67
+msgid "Remove Font"
+msgstr "Betűtípus eltávolítása"
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:77
+msgid ""
+"There are no custom fonts at the moment, hit the button below and upload "
+"some."
+msgstr ""
+"Jelenleg nincsenek egyéni betűtípusok, nyomja meg az alábbi gombot, és "
+"töltsön fel néhányat."
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/AllFonts.js:89
+msgid "Upload Font"
+msgstr "Betűtípus feltöltése"
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:154
+msgid "Change"
+msgstr "Változtatás"
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:155
+msgid "Choose"
+msgstr "Válassz"
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:164
+#: framework/premium/static/js/options/DisplayCondition.js:95
+#: static/js/options/DisplayCondition.js:93
+msgid "Select variation"
+msgstr "Változat kiválasztása"
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:208
+msgid "Upload Custom Font"
+msgstr "Egyéni betűtípus feltöltése"
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:212
+msgid ""
+"Upload only the %s.woff2%s font file format (see browser coverage %shere%s). "
+"Use %sthis converter tool%s if you don't have this font format."
+msgstr ""
+"Csak a(z) %s.woff2%s betűkészlet fájlformátumot töltse fel (lásd a böngésző "
+"lefedettségét %shere%s). Használja a következő %sthis converter tool%s ha "
+"nem rendelkezik ezzel a betűtípusformátummal."
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:236
+msgid "Font Name"
+msgstr "Betűtípus neve"
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:284
+msgid "Back to All Fonts"
+msgstr "Vissza az összes betűtípushoz"
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:306
+msgid "Save Custom Font"
+msgstr "Egyéni betűtípus mentése"
+
+#: framework/premium/extensions/custom-fonts/dashboard-static/js/Uploader.js:74
+msgid "Add Variation"
+msgstr "Új variáció"
+
+#: framework/premium/extensions/sidebars/static/js/SettingsManager.js:56
+msgid "%s Display Conditions"
+msgstr "%s megjelenítési feltételek"
+
+#: framework/premium/extensions/sidebars/static/js/SettingsManager.js:61
+msgid "Add one or more conditions in order to display your sidebar."
+msgstr "Adjon hozzá egy vagy több feltételt az oldalsáv megjelenítéséhez."
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:105
+msgid "White Label Settings"
+msgstr "Fehér címke beállításai"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:108
+msgid ""
+"Remove any link that points to Blocksy website and change the dashboard "
+"identity. These options are mostly used by agencies and developers who are "
+"building websites for clients."
+msgstr ""
+"Távolítson el minden olyan hivatkozást, amely a Blocksy webhelyre mutat, és "
+"módosítsa az irányítópult identitását. Ezeket a lehetőségeket többnyire "
+"ügynökségek és fejlesztők használják, akik weboldalakat építenek az ügyfelek "
+"számára."
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:117
+msgid "Agency Details"
+msgstr "Cég adatai"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:122
+msgid "Agency Name"
+msgstr "Cég neve"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:145
+msgid "Agency URL"
+msgstr "Ügynökség URL-címe"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:168
+msgid "Agency Support/Contact Form URL"
+msgstr "Ügynökségi támogatási/kapcsolatfelvételi űrlap URL-címe"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:198
+msgid "Theme Details"
+msgstr "Téma részletek"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:203
+msgid "Theme Name"
+msgstr "Téma neve"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:226
+msgid "Theme Description"
+msgstr "Téma leírása"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:251
+msgid "Theme Screenshot URL"
+msgstr "Téma képernyőképe URL-címe"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:333
+msgid "Choose File"
+msgstr "Kiválasztás a Fájlkezelőből"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:337
+msgid ""
+"You can insert the link to a self hosted image or upload one. The "
+"reccomended image size is 1200px wide by 900px tall."
+msgstr ""
+"Beszúrhatja a hivatkozást egy saját otthont kép vagy feltölteni egyet. A "
+"javasolt kép mérete 1200px széles és 900px magas."
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:350
+msgid "Plugin Details"
+msgstr "A bővítmény részletei"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:355
+msgid "Plugin Name"
+msgstr "Bővítmény neve"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:378
+msgid "Plugin Description"
+msgstr "Plugin leírása"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:441
+msgid "Hide Starter Sites Tab"
+msgstr "Kezdőhelyek lap elrejtése"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:458
+msgid "Hide White Label Extension"
+msgstr "Fehér címkekiterjesztés elrejtése"
+
+#: framework/premium/extensions/white-label/dashboard-static/js/EditSettings.js:470
+msgid ""
+"Please note that the white label extension will be hidden if this option is "
+"enabled. In order to bring it back you have to hit the SHIFT key and click "
+"on the dashboard logo."
+msgstr ""
+"Kérjük, vegye figyelembe, hogy a fehér címke bővítmény el lesz rejtve, ha ez "
+"a beállítás engedélyezve van. Annak érdekében, hogy vissza van, hogy elérje "
+"a SHIFT gombot, és kattintson a műszerfal logóját."
+
+#: framework/premium/static/js/footer/BuilderTemplates.js:34
+msgid "Pick footer"
+msgstr "Válasszon láblécet"
+
+#: framework/premium/static/js/footer/BuilderTemplates.js:42
+#: framework/premium/static/js/footer/CreateFooter.js:98
+#: framework/premium/static/js/header/CreateHeader.js:98
+msgid "Secondary"
+msgstr "Másodlagos"
+
+#: framework/premium/static/js/footer/BuilderTemplates.js:43
+#: framework/premium/static/js/footer/CreateFooter.js:102
+#: framework/premium/static/js/header/CreateHeader.js:102
+msgid "Centered"
+msgstr "Középre igazított"
+
+#: framework/premium/static/js/footer/CreateFooter.js:134
+msgid "Create New Footer"
+msgstr "Új élőláb létrehozása"
+
+#: framework/premium/static/js/footer/CreateFooter.js:34
+msgid "New Footer"
+msgstr "Új lábléc"
+
+#: framework/premium/static/js/footer/CreateFooter.js:45
+msgid "Create Footer"
+msgstr "Élőláb létrehozása"
+
+#: framework/premium/static/js/footer/CreateFooter.js:56
+msgid "Footer name"
+msgstr "Élőláb neve"
+
+#: framework/premium/static/js/footer/CreateFooter.js:72
+#: framework/premium/static/js/header/CreateHeader.js:72
+msgid "Copy data from"
+msgstr "Adatok másolása innen"
+
+#: framework/premium/static/js/footer/CreateFooter.js:84
+msgid "Picker Footer"
+msgstr "Picker lábléc"
+
+#: framework/premium/static/js/footer/EditConditions.js:110
+msgid "Add one or more conditions in order to display your footer."
+msgstr "Adjon hozzá egy vagy több feltételt a lábléc megjelenítéséhez."
+
+#: framework/premium/static/js/footer/EditConditions.js:95
+msgid "Conditions"
+msgstr "Feltételek"
+
+#: framework/premium/static/js/footer/PreviewedFooter.js:23
+msgid "Previewed Footer"
+msgstr "Előnézeti élőláb"
+
+#: framework/premium/static/js/footer/PreviewedFooter.js:32
+msgid "Preview Footers"
+msgstr "Előnézet láblécek"
+
+#: framework/premium/static/js/header/CloneItem.js:67
+msgid "Clone Item"
+msgstr "Cikk másolása"
+
+#: framework/premium/static/js/header/CloneItem.js:93
+msgid "Remove Item"
+msgstr "Tétel eltávolítása"
+
+#: framework/premium/static/js/header/CreateHeader.js:134
+msgid "Create New Header"
+msgstr "Új fej létrehozása"
+
+#: framework/premium/static/js/header/CreateHeader.js:34
+msgid "New Header"
+msgstr "Új fejléc"
+
+#: framework/premium/static/js/header/CreateHeader.js:45
+msgid "Create Header"
+msgstr "Fej létrehozása"
+
+#: framework/premium/static/js/header/CreateHeader.js:56
+msgid "Header name"
+msgstr "Fejléc neve"
+
+#: framework/premium/static/js/header/CreateHeader.js:84
+msgid "Picker header"
+msgstr "Választó fejléce"
+
+#: framework/premium/static/js/options/DisplayCondition.js:118
+#: static/js/options/DisplayCondition.js:116
+msgid "Select rule"
+msgstr "Szabály kijelölése"
+
+#: framework/premium/static/js/options/DisplayCondition.js:141
+#: static/js/options/DisplayCondition.js:142
+msgid "Select post"
+msgstr "Bejegyzés kijelölése"
+
+#: framework/premium/static/js/options/DisplayCondition.js:172
+#: static/js/options/DisplayCondition.js:180
+msgid "Select taxonomy"
+msgstr "A taxonómia kiválasztása"
+
+#: framework/premium/static/js/options/DisplayCondition.js:228
+#: static/js/options/DisplayCondition.js:236
+msgid "Add New Condition"
+msgstr "Új feltétel hozzáadása"
+
+#: framework/premium/static/js/options/DisplayCondition.js:97
+#: static/js/options/DisplayCondition.js:95
+msgid "Include"
+msgstr "Tartalmazza"
+
+#: framework/premium/static/js/options/DisplayCondition.js:98
+#: static/js/options/DisplayCondition.js:96
+msgid "Exclude"
+msgstr "Kizár"
+
+#: static/js/components/BetaConsent.js:45
+msgid "Receive βeta Updates"
+msgstr "Βeta frissítések fogadása"
+
+#: static/js/components/BetaConsent.js:51
+msgid ""
+"Receive beta updates for Blocksy theme and companion and help us test the "
+"new versions. Please note that installing beta versions is not recommended "
+"on production sites."
+msgstr ""
+"Béta frissítések engedélyezése Blocksy témához és kiterjesztéséhez, és segít "
+"tesztelni az új verziók. Kérjük, vegye figyelembe, hogy a bétaverziók "
+"telepítése nem ajánlott az élő oldalakon."
+
+#: static/js/dashboard.js:30
+msgid "Starter Sites"
+msgstr "Kezdő oldalak"
+
+#: static/js/dashboard.js:42
+msgid "Extensions"
+msgstr "Kiterjesztések"
+
+#: static/js/header/EditConditions.js:112
+msgid "Add one or more conditions in order to display your header."
+msgstr "Adjon hozzá egy vagy több feltételt a fejléc megjelenítéséhez."
+
+#: static/js/header/EditConditions.js:151
+msgid "Save Conditions"
+msgstr "Feltételek mentése"
+
+#: static/js/header/PanelsManager.js:42
+msgid "Global Header"
+msgstr "Globális fejléc"
+
+#: static/js/helpers/SubmitSupport.js:13
+msgid "Support"
+msgstr "Támogatás"
+
+#: static/js/helpers/SubmitSupport.js:15
+msgid ""
+"Got a question or need some help with the theme? You can always submit a "
+"support ticket, and our team will help you out."
+msgstr ""
+"Kérdése van, vagy segítségre van szüksége? Bármikor beküldhetsz egy "
+"támogatási jegyet, és csapatunk segít."
+
+#: static/js/helpers/SubmitSupport.js:25
+msgid "Submit a Ticket"
+msgstr "Jegy beküldése"
+
+#: static/js/helpers/useActivationAction.js:81
+msgid ""
+"Upgrade to the Pro version and get instant full access to all premium "
+"extensions and features."
+msgstr ""
+"Frissítsen a Pro verzióra, és azonnali teljes hozzáférést kap az összes "
+"prémium bővítményhez és funkcióhoz."
+
+#: static/js/helpers/useActivationAction.js:88
+msgid "Upgrade Now"
+msgstr "Frissítés most"
+
+#: static/js/options/DisplayCondition.js:143
+msgid "Select page"
+msgstr "Oldal kiválasztása"
+
+#: static/js/screens/DemoInstall.js:112
+msgid "Loading Starter Sites..."
+msgstr "Kezdő weboldalak betöltése..."
+
+#: static/js/screens/DemoInstall.js:124
+msgid ""
+"Connection to <b>demo.creativethemes.com</b> server didn't worked -- this is "
+"required for downloading the starter sites. You need to contact your hosting "
+"provider to figure out why your server can't reach to our server."
+msgstr ""
+"A <b>demo.creativethemes.com</b> kiszolgálóval való kapcsolat nem működött - "
+"ez szükséges az indító webhelyek letöltéséhez. Kapcsolatba kell lépnie a "
+"tárhelyszolgáltatóval, hogy kiderítse, miért nem tudja a szervere elérni a "
+"szerverünket."
+
+#: static/js/screens/DemoInstall/DemoInstaller.js:66
+msgid "Installing"
+msgstr "Telepítés"
+
+#: static/js/screens/DemoInstall/DemoInstaller.js:69
+msgid ""
+"Please be patient and don't refresh this page, the import process may take a "
+"while, this also depends on your server."
+msgstr ""
+"Kérjük, legyen türelemmel, és ne frissítse ezt az oldalt, az importálási "
+"folyamat eltarthat egy ideig, ez is függ a szerver."
+
+#: static/js/screens/DemoInstall/DemoToInstall.js:288
+msgid "Back"
+msgstr "Vissza"
+
+#: static/js/screens/DemoInstall/DemoToInstall.js:328
+msgid "Install"
+msgstr "Telepítés"
+
+#: static/js/screens/DemoInstall/DemoToInstall.js:329
+msgid "Next"
+msgstr "Következő"
+
+#: static/js/screens/DemoInstall/DemosList.js:56
+msgid "Preview"
+msgstr "Előnézet"
+
+#: static/js/screens/DemoInstall/DemosList.js:65
+msgid "Modify"
+msgstr "Módosítás"
+
+#: static/js/screens/DemoInstall/DemosList.js:66
+msgid "Import"
+msgstr "Importálás"
+
+#: static/js/screens/DemoInstall/Installer/InstallCompleted.js:23
+msgid "Starter Site Imported Successfully"
+msgstr "Kezdőoldal importálása sikeresen"
+
+#: static/js/screens/DemoInstall/Installer/InstallCompleted.js:26
+msgid "Now you can view your website or start customizing it"
+msgstr "Most már megtekintheti webhelyét, vagy elkezdheti testre szabni"
+
+#: static/js/screens/DemoInstall/Installer/InstallCompleted.js:34
+msgid "Customize"
+msgstr "Testreszabás"
+
+#: static/js/screens/DemoInstall/Installer/InstallCompleted.js:41
+msgid "View site"
+msgstr "Webhely megtekintése"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:12
+msgid "copying child theme sources"
+msgstr "másolás, gyermektéma-források"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:16
+msgid "activating child theme"
+msgstr "aktiválás, gyermektéma"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:21
+msgid "installing plugin %s"
+msgstr "telepítés: %s"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:28
+msgid "activating plugin %s"
+msgstr "aktiválás: %s"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:34
+msgid "downloading demo widgets"
+msgstr "bemutató widgetek letöltése"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:38
+msgid "installing demo widgets"
+msgstr "demó widget telepítése"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:42
+msgid "downloading demo options"
+msgstr "bemutató beállítások letöltése"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:46
+msgid "importing images from customizer"
+msgstr "képek importálása testreszabottból"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:50
+msgid "import customizer options"
+msgstr "testreszabási beállítások importálása"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:54
+msgid "activating required extensions"
+msgstr "aktiválás, szükséges bővítmények"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:58
+msgid "removing previously installed posts"
+msgstr "eltávolítás, korábban telepített bejegyzések"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:62
+msgid "removing previously installed taxonomies"
+msgstr "eltávolítás, korábban telepített taxonómiák"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:66
+msgid "removing default WordPress pages"
+msgstr "eltávolítás, alapértelmezett WordPress oldalak"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:70
+msgid "resetting customizer options"
+msgstr "testreszabási beállítások visszaállítása"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:74
+msgid "resetting widgets"
+msgstr "alap widgetek visszaállítása"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:89
+msgid "users"
+msgstr "felhasználó"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:90
+msgid "terms"
+msgstr "szerződések"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:91
+msgid "images"
+msgstr "képek"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:92
+msgid "posts"
+msgstr "cikkek"
+
+#: static/js/screens/DemoInstall/Installer/messages.js:93
+msgid "comments"
+msgstr "hozzászólások"
+
+#: static/js/screens/DemoInstall/Installer/useInstaller.js:106
+msgid "Child theme"
+msgstr "Gyereksablon"
+
+#: static/js/screens/DemoInstall/Installer/useInstaller.js:112
+msgid "Required plugins"
+msgstr "Szükséges bővítmények"
+
+#: static/js/screens/DemoInstall/Installer/useInstaller.js:120
+msgid "Fake Required plugins"
+msgstr "Hamis szükséges bővítmények"
+
+#: static/js/screens/DemoInstall/Installer/useInstaller.js:126
+#: static/js/screens/DemoInstall/Wizzard/ModifyDemo.js:49
+msgid "Erase content"
+msgstr "Tartalom törlése"
+
+#: static/js/screens/DemoInstall/Installer/useInstaller.js:132
+msgid "Final touches"
+msgstr "Utolsó simítások"
+
+#: static/js/screens/DemoInstall/Installer/useInstaller.js:138
+msgid "Import options"
+msgstr "Beállítások importálása"
+
+#: static/js/screens/DemoInstall/Installer/useInstaller.js:145
+msgid "Import widgets"
+msgstr "Widgetek importálása"
+
+#: static/js/screens/DemoInstall/Installer/useInstaller.js:152
+msgid "Import content"
+msgstr "Tartalom importálása"
+
+#: static/js/screens/DemoInstall/Installer/useInstaller.js:98
+msgid "Register demo"
+msgstr "Demó regisztrálása"
+
+#: static/js/screens/DemoInstall/Wizzard/ChildTheme.js:100
+msgid ""
+"You already have a child theme properly installed and activated. Move on."
+msgstr ""
+"Már van egy gyermektéma megfelelően telepítve és aktiválva. Lépjünk tovább."
+
+#: static/js/screens/DemoInstall/Wizzard/ChildTheme.js:106
+msgid "Learn more about child themes"
+msgstr "További információ a gyermektémákról"
+
+#: static/js/screens/DemoInstall/Wizzard/ChildTheme.js:70
+msgid ""
+"We strongly recommend to install the child theme, this way you will have "
+"freedom to make changes without breaking the parent theme."
+msgstr ""
+"Javasoljuk, hogy telepítse a gyermek témát, így szabadon módosíthatja "
+"anélkül, hogy megtörné a szülő témát."
+
+#: static/js/screens/DemoInstall/Wizzard/ChildTheme.js:77
+msgid ""
+"We strongly recommend to activate the child theme, this way you will have "
+"freedom to make changes without breaking the parent theme."
+msgstr ""
+"Javasoljuk, hogy aktiválja a gyermek témát, így szabadon módosíthatja "
+"anélkül, hogy megtörné a szülő témát."
+
+#: static/js/screens/DemoInstall/Wizzard/ChildTheme.js:93
+msgid "Install Child Theme"
+msgstr "Gyermektéma telepítése"
+
+#: static/js/screens/DemoInstall/Wizzard/ChildTheme.js:94
+msgid "Activate Child Theme"
+msgstr "Gyermektéma aktiválása"
+
+#: static/js/screens/DemoInstall/Wizzard/Content.js:28
+msgid "Import Content"
+msgstr "Tartalom importálása"
+
+#: static/js/screens/DemoInstall/Wizzard/Content.js:31
+msgid ""
+"This will import posts, pages, comments, navigation menus, custom fields, "
+"terms and custom posts"
+msgstr ""
+"Ez importálja a bejegyzéseket, oldalakat, megjegyzéseket, navigációs "
+"menüket, egyéni mezőket, kifejezéseket és egyéni bejegyzéseket"
+
+#: static/js/screens/DemoInstall/Wizzard/Content.js:71
+msgid "Clean Install"
+msgstr "Tiszta telepítés"
+
+#: static/js/screens/DemoInstall/Wizzard/Content.js:73
+msgid ""
+"This option will remove the previous imported content and will perform a "
+"fresh and clean install."
+msgstr ""
+"Ez a beállítás eltávolítja a korábbi importált tartalmat, és friss és tiszta "
+"telepítést hajt végre."
+
+#: static/js/screens/DemoInstall/Wizzard/ModifyDemo.js:120
+msgid "This starter site is already installed"
+msgstr "Ez az indítówebhely már telepítve van"
+
+#: static/js/screens/DemoInstall/Wizzard/ModifyDemo.js:125
+msgid "Starter Site Removed"
+msgstr "Kezdő oldalak eltávolítva"
+
+#: static/js/screens/DemoInstall/Wizzard/ModifyDemo.js:134
+msgid "Dismiss"
+msgstr "Elutasít"
+
+#: static/js/screens/DemoInstall/Wizzard/ModifyDemo.js:143
+msgid "What steps do you want to perform next?"
+msgstr "Milyen lépéseket szeretne végrehajtani a következő lépésekkel?"
+
+#: static/js/screens/DemoInstall/Wizzard/ModifyDemo.js:155
+msgid "Remove"
+msgstr "Eltávolítás"
+
+#: static/js/screens/DemoInstall/Wizzard/ModifyDemo.js:164
+msgid "Reinstall"
+msgstr "Újratelepítés"
+
+#: static/js/screens/DemoInstall/Wizzard/ModifyDemo.js:42
+msgid "Deactivate demo plugins"
+msgstr "Demóbővítmények inaktiválása"
+
+#: static/js/screens/DemoInstall/Wizzard/PickBuilder.js:66
+msgid "Choose Page Builder"
+msgstr "Oldalszerkesztő kiválasztása"
+
+#: static/js/screens/DemoInstall/Wizzard/PickBuilder.js:69
+msgid ""
+"This demo template was built and is available to be used with one of these "
+"page builders. Please select your prefered one in order to continue."
+msgstr ""
+"Ez a demó sablon készült, és elérhető lehet használni az egyik ilyen oldal "
+"építők. Kérjük, válassza ki a kívánt egyet a folytatáshoz."
+
+#: static/js/screens/DemoInstall/Wizzard/Plugins.js:57
+msgid "Install & Activate Plugins"
+msgstr "Telepítése & Bővítmények aktiválása"
+
+#: static/js/screens/DemoInstall/Wizzard/Plugins.js:59
+msgid ""
+"The following plugins are required for this starter site in order to work "
+"properly."
+msgstr ""
+"A következő bővítmények szükségesek ehhez a kezdő webhelyhez a megfelelő "
+"működéshez."
+
+#: static/js/screens/Extensions.js:198
+msgid "Loading Extensions Status..."
+msgstr "Bővítmények betöltési állapota..."
+
+#: static/js/screens/Extensions.js:220
+msgid "Free Extensions"
+msgstr "Ingyenes bővítmények"
+
+#: static/js/screens/Extensions.js:224
+msgid "Pro Extensions"
+msgstr "Pro bővítmények"
+
+#: static/js/screens/OptIn.js:55
+msgid "Stay Updated"
+msgstr "Legyen naprakész"
+
+#: static/js/screens/OptIn.js:58
+msgid ""
+"Never miss an important update - opt in to our security & feature updates "
+"notifications, and non-sensitive diagnostic tracking."
+msgstr ""
+"Soha ne hagyjon ki egy fontos frissítést - jelentkezzen biztonsági és "
+"funkciófrissítési értesítéseinkre és a nem érzékeny diagnosztikai nyomon "
+"követésre."
+
+#: static/js/screens/OptIn.js:69
+msgid "Allow & Continue"
+msgstr "Engedélyezés és folytatás"
+
+#: static/js/screens/SiteExport.js:107
+msgid "PRO"
+msgstr "Pro"
+
+#: static/js/screens/SiteExport.js:121
+msgid "Builder"
+msgstr "Szerkesztő"
+
+#: static/js/screens/SiteExport.js:132
+msgid "Plugins"
+msgstr "Bővítmények"
+
+#: static/js/screens/SiteExport.js:147
+msgid "Export site"
+msgstr "Webhely exportálása"
+
+#: static/js/screens/SiteExport.js:72
+msgid "Site export"
+msgstr "Weboldal exportálása"
+
+#: static/js/screens/SiteExport.js:98
+msgid "Preview URL"
+msgstr "URL-cím előnézete"

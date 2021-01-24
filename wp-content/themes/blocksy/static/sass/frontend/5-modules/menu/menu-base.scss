@@ -1,0 +1,44 @@
+.menu {
+	display: flex;
+	--listIndent: 0;
+	--listItemSpacing: 0;
+	--listStyleType: none;
+	--contentSpacing: 0;
+
+	a:not(:empty) {
+		display: flex;
+		align-items: center;
+		position: relative;
+		text-align: initial;
+		padding: var(--menu-item-padding, 0px);
+		border-radius: var(--menu-item-radius, 0px);
+	}
+}
+
+
+// first level
+.menu > li > a {
+	white-space: nowrap;
+	justify-content: center;
+	height: var(--menu-item-height, 100%);
+	--menu-item-padding: 0 calc(var(--menu-items-spacing, 25px) / 2);
+}
+
+
+// stretch menu
+[data-stretch] {
+	width: 100%;
+
+	> ul {
+		justify-content: space-between !important;
+	}
+}
+
+
+// create menu notice
+.ct-create-menu {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	font-size: 14px;
+}

@@ -1,0 +1,48 @@
+.ct-featured-image {
+	@include media-breakpoint-down (md) {
+		margin-bottom: 30px;
+	}
+
+	@include media-breakpoint-up (lg) {
+		margin-bottom: 50px;
+	}
+
+	&.alignwide,
+	&.alignfull {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	&.alignwide {
+		.ct-image-container {
+			width: var(--container-width);
+			max-width: var(--block-wide-max-width);
+		}
+	}
+
+	&.alignfull {
+		.ct-image-container {
+			width: calc(100vw - (var(--frame-size, 0px) * 2));
+		}
+	}
+
+	figcaption {
+		--fontSize: 14px;
+		text-align: center;
+		margin-top: 5px;
+	}
+}
+
+// boundless image
+[data-structure*="boxed"] {
+	.ct-boundless {
+		max-width: initial;
+		margin-left: calc(var(--boxed-content-spacing) * -1);
+		margin-right: calc(var(--boxed-content-spacing) * -1);
+
+		&:first-child {
+			margin-top: calc(var(--boxed-content-spacing) * -1);
+		}
+	}
+}

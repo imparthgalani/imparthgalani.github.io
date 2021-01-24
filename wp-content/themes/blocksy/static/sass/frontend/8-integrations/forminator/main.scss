@@ -1,0 +1,24 @@
+@import 'pagination-steps';
+@import 'pagination-footer';
+@import 'response-message';
+
+.forminator-design--none {
+	
+	label {
+		display: block;
+	}
+
+	.forminator-hidden {
+		display: none !important;
+	}
+
+	.forminator-description {
+		display: flex;
+		font-size: 12px;
+
+		span {
+			text-align: right;
+			margin-left: auto;
+		}
+	}
+}

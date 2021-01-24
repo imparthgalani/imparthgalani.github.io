@@ -1,0 +1,79 @@
+#review_form {
+	position: sticky;
+	top: 70px;
+
+	.comment-reply-title {
+		color: var(--headingColor);
+	}
+
+	#commentform {
+		display: flex;
+		flex-direction: column;
+
+		> * {
+			margin: 0 0 15px 0;
+
+			&.form-submit {
+				order: 10;
+				margin-bottom: 0;
+			}
+		}
+
+		.comment-form-cookies-consent {
+			order: 9;
+			margin-bottom: 20px;
+		}
+	}
+
+	.comment-form-rating {
+		label {
+			margin: 0;
+		}
+		
+		select {
+			display: none;
+			visibility: hidden;
+		}
+	}
+
+	.comment-form-author,
+	.comment-form-email,
+	.comment-form-comment {
+		position: relative;
+
+		> label {
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: flex;
+			align-items: center;
+			font-size: 15px;
+			height: 45px;
+			padding-left: 17px;
+			color: rgba(44, 62, 80, 0.5);
+			opacity: 1;
+			visibility: visible;
+			transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+						transform 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+						visibility 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		}
+
+		> textarea,
+		> input[type="email"],
+		> input[type="text"] {
+			&:focus {
+				+ label {
+					opacity: 0;
+					visibility: hidden;
+					transform: translate3d( 20px, 0, 0 );
+				}
+			}
+
+			&:valid {
+				+ label {
+					display: none;
+				}
+			}
+		}
+	}
+}

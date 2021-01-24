@@ -1,0 +1,24 @@
+[data-cards="boxed"] {
+
+	.boundless-image {
+		width: initial;
+		margin-left: calc(var(--cardSpacing, 35px) * -1);
+		margin-right: calc(var(--cardSpacing, 35px) * -1);
+
+		&:first-child {
+			margin-top: calc(var(--cardSpacing, 35px) * -1);
+		}
+
+		&:last-child {
+			margin-bottom: calc(var(--cardSpacing, 35px) * -1);
+		}
+	}
+}
+
+// Featured image border radius
+[data-cards="simple"],
+[data-layout="gutenberg"] {
+	.ct-image-container {
+		border-radius: var(--borderRadius, 0px);
+	}
+}

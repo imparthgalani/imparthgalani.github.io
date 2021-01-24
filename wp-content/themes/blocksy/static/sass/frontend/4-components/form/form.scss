@@ -1,0 +1,46 @@
+select,
+textarea,
+input[type='url'],
+input[type='tel'],
+input[type='text'],
+input[type='date'],
+input[type='email'],
+input[type='number'],
+input[type='search'],
+input[type='password'],
+span.select2-container--default .select2-selection--single {
+	width: var(--formWidth, 100%);
+	height: var(--formInputHeight, 40px);
+	color: var(--formTextInitialColor, var(--color));
+	font-family: inherit;
+	font-size: var(--formFontSize, 15px);
+	padding: var(--formPadding, 0 10px);
+	appearance: none;
+	border-radius: var(--formBorderRadius, 3px);
+	border: var(--formBorderSize) var(--formBorderStyle, solid) var(--formBorderInitialColor);
+	transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+	&:focus {
+		outline: none;
+		color: var(--formTextFocusColor, var(--color));
+		border-color: var(--formBorderFocusColor);
+	}
+
+	@include input-placeholder {
+		opacity: 0.6;
+		color: inherit;
+	}
+}
+
+select {
+	padding-right: 30px;
+	background-image: url("data:image/svg+xml,%3Csvg width='21' height='13' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M18.5.379L20.621 2.5 10.5 12.621.379 2.5 2.5.379l8 8z' fill='%234F5D6D' fill-rule='nonzero'/%3E%3C/svg%3E");
+	background-repeat: no-repeat, repeat;
+	background-size: 8px auto, 100%;
+	background-position: var(--background-position, right 15px top 50%, 0 0);
+}
+
+textarea {
+	--formPadding: 15px;
+	line-height: 1.5;
+}

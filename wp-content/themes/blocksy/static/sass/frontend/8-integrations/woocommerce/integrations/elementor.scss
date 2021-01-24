@@ -1,0 +1,36 @@
+.woocommerce div.product.elementor {
+
+	// cart actions
+	.ct-cart-actions {
+		grid-column-gap: 0;
+
+		.added_to_cart {
+			margin-left: 10px;
+		}
+	}
+
+	// tabs
+	.woocommerce-tabs .panel {
+		border-top: none !important;
+	}
+}
+
+.elementor-widget-container {
+	.flex-viewport {
+		margin-bottom: 20px;
+	}
+
+	.flex-control-thumbs {
+		margin: 0 -10px;
+		
+		li {
+			padding: 0 10px 10px 10px;
+		}
+	}
+}
+
+.elementor-section-wrap {
+	form.woocommerce-checkout {
+		--display: initial;
+	}
+}

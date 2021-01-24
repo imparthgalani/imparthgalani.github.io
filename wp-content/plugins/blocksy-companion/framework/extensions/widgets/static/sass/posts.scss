@@ -1,0 +1,132 @@
+.ct-posts-widget ul {
+	--listItemSpacing: 20px;
+
+	a {
+		display: var(--display, grid);
+	}
+
+	.ct-image-container {
+		align-self: start;
+	}
+
+	.ct-entry-content {
+		align-self: center;
+	}
+
+	.ct-post-title {
+		--fontSize: 15px;
+		--lineHeight: 1.5;
+		--fontWeight: 500;
+		word-break: break-word;
+	}
+
+	.ct-entry-excerpt {
+		margin-top: 5px;
+		font-size: 13px;
+		color: var(--color);
+	}
+
+	.ct-entry-meta {
+		color: var(--color);
+		
+		span:not(:last-child) {
+			&:after {
+				content: '/';
+				margin: 0 3px;
+			}
+		}
+	}
+
+	
+	&[data-type="rounded"],
+	&[data-type="large-small"],
+	&[data-type="small-thumbs"] {
+		a {
+			grid-template-columns: 25% 1fr;
+			grid-column-gap: 20px;
+		}
+	}
+
+
+	&[data-type="no-thumbs"] a {
+		--display: block;
+	}
+
+	&[data-type="large-thumbs"] {
+		--listItemSpacing: 25px;
+
+		a {
+			--display: block;
+
+			.ct-image-container {
+				margin-bottom: 12px;
+			}
+
+			.ct-post-title {
+				--fontSize: 17px;
+				--fontWeight: 600;
+			}
+		}
+	}
+
+	&[data-type="large-small"] li:first-child {
+		--listItemSpacing: 30px;
+
+		a {
+			--display: block;
+
+			.ct-image-container {
+				margin-bottom: 20px;
+			}
+
+			.ct-post-title {
+				--fontSize: 17px;
+				--fontWeight: 600;
+			}
+		}
+	}
+
+	&[data-type="rounded"] {
+		.ct-image-container {
+			overflow: hidden;
+			border-radius: 100%;
+			-webkit-mask-image: -webkit-radial-gradient(white, black);
+		}
+	}
+
+	&[data-type="numbered"] {
+		counter-reset: ct-counter;
+
+		a {
+			grid-template-columns: 34px 1fr;
+			grid-column-gap: 15px;
+
+			&:before {
+				counter-increment: ct-counter;
+				content: counter(ct-counter);
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 34px;
+				height: 34px;
+				font-size: 12px;
+				font-weight: 700;
+				border-radius: 100%;
+				border: 1px solid #E5E5E5;
+				transition: var(--transition);
+			}
+
+			&:hover {
+				&:before {
+					color: #fff;
+					border-color: var(--paletteColor1);
+					background: var(--paletteColor1);
+				}
+			}
+		}
+
+		.ct-post-title {
+			@include lhCrop(1.65);
+		}
+	}
+}

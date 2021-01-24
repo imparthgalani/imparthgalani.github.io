@@ -1,0 +1,46 @@
+.entry-content .page-links {
+	margin-bottom: -10px !important;
+}
+
+.page-links {
+	--borderColor: #e0e5eb;
+
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	font-size: 13px;
+	font-weight: 500;
+	border-top: 1px solid var(--borderColor);
+	padding-top: calc(var(--contentSpacing) + 1.5em);
+	margin-top: calc(var(--contentSpacing) + 1.5em);
+
+	a,
+	.current,
+	.post-pages-label {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 38px;
+		min-width: 38px;
+		padding: 0 10px;
+		margin-right: 10px;
+		margin-bottom: 10px;
+		border-radius: 3px;
+		border: 1px solid var(--borderColor);
+	}
+
+	.current {
+		color: #fff;
+		--borderColor: var(--paletteColor1);
+		background: var(--paletteColor1);
+	}
+
+	a {
+		--linkInitialColor: var(--color);
+
+		&:hover {
+			--borderColor: var(--paletteColor1);
+			box-shadow: 0px 0px 0px 1px var(--paletteColor1);
+		}
+	}
+}

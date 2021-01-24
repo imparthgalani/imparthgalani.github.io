@@ -1,0 +1,37 @@
+.woocommerce-widget-layered-nav-list li {
+	display: flex;
+	align-items: center;
+
+	a {
+		&:before {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			top: -0.1em;
+			content: '';
+			width: 16px;
+			height: 16px;
+			margin-right: 10px;
+			border-radius: 3px;
+			border-width: var(--formBorderSize);
+			border-style: solid;
+			background: rgba(255, 255, 255, 0.5);
+			border-color: var(--radioCheckboxInitialColor);
+		}
+	}
+
+	&.chosen a:before {
+		content: '✓';
+		font-size: 12px;
+		line-height: 16px;
+		color: #fff;
+		border-color: var(--radioCheckboxAccentColor);
+		background: var(--radioCheckboxAccentColor);
+	}
+
+	.count {
+		font-size: 15px;
+		margin-left: auto;
+	}
+}

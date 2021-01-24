@@ -1,0 +1,67 @@
+#main-container {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	min-height: calc(100vh - var(--admin-bar, 0px));
+
+	.site-main {
+		flex-grow: 1;
+	}
+}
+
+// Layout containers
+[class*='ct-container'] {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ct-container,
+.ct-container-narrow {
+	width: var(--container-width);
+}
+
+
+// Default container
+.ct-container {
+	max-width: var(--container-max-width);
+}
+
+
+// Narrow container
+.ct-container-narrow {
+	max-width: var(--narrow-container-max-width);
+}
+
+
+// Fluid container
+.ct-container-fluid {
+	@include media-breakpoint-down(sm) {
+		width: 88vw;
+	}
+
+	@include media-breakpoint-only(md) {
+		width: 90vw;
+	}
+
+	@include media-breakpoint-up(lg) {
+		width: calc(100vw - 100px);
+	}
+}
+
+
+// wide & boxex
+[data-structure*="boxed"] > section {
+	box-shadow: var(--box-shadow);
+	border-radius: var(--border-radius);
+	padding: var(--boxed-content-spacing);
+}
+
+
+// Page verticla spacing
+[data-v-spacing*='top'] {
+	padding-top: var(--content-vertical-spacing);
+}
+
+[data-v-spacing*='bottom'] {
+	padding-bottom: var(--content-vertical-spacing);
+}

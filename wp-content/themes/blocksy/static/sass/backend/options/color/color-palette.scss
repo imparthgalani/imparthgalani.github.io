@@ -1,0 +1,41 @@
+.ct-color-palettes {
+	position: relative;
+	margin: 0 -15px;
+
+	li {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+		position: relative;
+		height: 50px;
+		padding: 0 15px 0 15px;
+		margin-bottom: 12px;
+		border-radius: 100px;
+		background: transparent;
+		box-sizing: border-box;
+		transition: background 0.15s ease;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+		
+		&:hover,
+		&.active {
+			background: rgba(255, 255, 255, 1);
+			// box-shadow: 0px 0px 0px 1px $accent_color;
+		}
+
+		> label {
+			display: flex;
+			align-items: center;
+			height: 100%;
+			font-size: 12px;
+			font-weight: 500;
+		}
+	}
+}
+
+.ct-color-palette-modal {
+	--modal-y-offset-plus: 10px;
+}

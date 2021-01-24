@@ -1,0 +1,31 @@
+[data-forms='modern'] select,
+[data-forms='modern'] textarea,
+[data-forms='modern'] input[type='url'],
+[data-forms='modern'] input[type='tel'],
+[data-forms='modern'] input[type='text'],
+[data-forms='modern'] input[type='date'],
+[data-forms='modern'] input[type='email'],
+[data-forms='modern'] input[type='number'],
+[data-forms='modern'] input[type='search'],
+[data-forms='modern'] input[type='password'],
+[data-forms='modern'] span.select2-container--default .select2-selection--single {
+	--formBorderRadius: 0;
+	border-top: 0;
+	border-left: 0;
+	border-right: 0;
+	background-color: transparent;
+}
+
+
+[data-forms='modern'] form {
+	--formPadding: 0;
+
+	textarea {
+		--formPadding: 15px 0;
+	}
+}
+
+// select
+[data-forms='modern'] select {
+	--background-position: right 5px top 50%, 0 0;
+}

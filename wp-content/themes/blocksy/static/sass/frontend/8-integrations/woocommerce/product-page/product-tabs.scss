@@ -1,0 +1,75 @@
+.product > .woocommerce-tabs {
+	padding-top: 60px;
+}
+
+.woocommerce-tabs {
+	.tabs {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-bottom: 55px;
+		--listIndent: 0;
+		--listItemSpacing: 0;
+		--listStyleType: none;
+
+		&:before, &:after {
+			content: '' !important;
+			display: block;
+			flex: 1 0 auto;
+			position: relative !important;
+			border: none;
+			width: auto;
+			height: 1px;
+			background: var(--border-color);
+
+			@include media-breakpoint-down (sm) {
+				display: none;
+			}
+		}
+
+		li {
+			margin-top: 0;
+			border: 1px solid var(--border-color);
+
+			@include media-breakpoint-down (sm) {
+				width: 100%;
+				
+				&:not(:first-child) {
+					margin-top: -1px;
+				}
+			}
+
+			@include media-breakpoint-up (md) {
+				flex: 0 1 auto;
+				margin-right: -1px;
+			}
+
+			&.active, &:hover {
+				background: rgba(242, 244, 247, 0.7);
+				border-bottom-color: var(--border-color);
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 40px;
+				padding: 0 25px;
+				font-size: 12px;
+				font-weight: 600;
+				letter-spacing: 0.1em;
+				text-transform: uppercase;
+				--linkInitialColor: var(--color);
+				--linkHoverColor: var(--color);
+			}
+		}
+	}
+
+	.panel {
+		> h2:first-child {
+			--fontSize: 20px;
+			margin-bottom: 30px;
+		}
+	}
+}

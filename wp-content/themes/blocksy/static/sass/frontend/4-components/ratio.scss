@@ -1,0 +1,32 @@
+[class*='ct-image-container'] {
+	[class*='ct-ratio'] {
+		display: block;
+		width: 100%;
+		height: 0;
+		padding-bottom: 100%;
+	}
+}
+
+[class*='ct-image-container'] {
+	display: var(--display, inline-flex);
+	overflow: hidden;
+	-webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.ct-image-container {
+	position: relative;
+	width: 100%;
+	z-index: 0;
+
+	img, picture {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100% !important;
+		border-radius: inherit;
+		object-fit: cover;
+		object-position: center center;
+	}
+}

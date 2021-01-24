@@ -262,7 +262,7 @@ Inter variable font. Usage:
 	font-weight: 100 900; /* stylelint-disable-line font-weight-notation */
 	font-style: normal;
 	font-display: swap;
-	src: url(https://www.parthgalani.me/wp-content/themes/twentytwenty/assets/fonts/inter/Inter-upright-var.woff2) format("woff2");
+	src: url(./assets/fonts/inter/Inter-upright-var.woff2) format("woff2");
 }
 
 @font-face {
@@ -270,7 +270,7 @@ Inter variable font. Usage:
 	font-weight: 100 900; /* stylelint-disable-line font-weight-notation */
 	font-style: italic;
 	font-display: swap;
-	src: url(https://www.parthgalani.me/wp-content/themes/twentytwenty/assets/fonts/inter/Inter-italic-var.woff2) format("woff2");
+	src: url(./assets/fonts/inter/Inter-italic-var.woff2) format("woff2");
 }
 
 

@@ -1,0 +1,24 @@
+.content-wide {
+
+	[data-structure*="default"] {
+		.entry-content {
+			> * {
+				margin-left: auto !important;
+				margin-right: auto !important;
+
+				&:not(.alignfull) {
+					width: var(--container-width) !important;
+				}
+
+				&:not(.alignwide):not(.alignfull) {
+					max-width: var(--block-max-width) !important;
+				}
+			}
+
+			> .alignwide {
+				max-width: var(--block-wide-max-width);
+			}
+		}
+	}
+	
+}

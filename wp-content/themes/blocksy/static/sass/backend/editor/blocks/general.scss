@@ -1,0 +1,96 @@
+.ct-structure-narrow {
+	--block-max-width: 750px;
+	--wide-block-max-width: 1100px;
+}
+
+.ct-structure-normal {
+	@media (max-width: 1449px) {
+		--block-max-width: 800px;
+	}
+
+	@media (min-width: 1450px) {
+		--block-max-width: 1100px;
+		--wide-block-max-width: 1350px;
+	}
+}
+
+
+
+.wp-block {
+	max-width: var(--block-max-width);
+}
+
+.wp-block[data-align="wide"] {
+	max-width: var(--wide-block-max-width) !important;
+}
+
+
+// getwid
+div.wp-block-getwid-section {
+	.wp-block-getwid-section__wrapper {
+		.wp-block-getwid-section__inner-wrapper {
+			max-width: var(--block-max-width);	
+		}
+	}
+}
+
+
+// stackable
+[data-type^="ugb/"][data-align=full]>*>.ugb-main-block {
+
+	&.ugb--has-block-background {
+		padding-left: 30px;
+		padding-right: 30px;
+
+		> .ugb-inner-block--center {
+			max-width: var(--block-max-width) !important;
+		}
+
+		> .ugb-inner-block--wide {
+			max-width: var(--wide-block-max-width) !important;
+		}
+	}
+}
+
+
+// qubely
+.editor-styles-wrapper {
+	.qubely-section,
+	.qubely-block-wrapper-block {
+		h1, h2, h3, h4, h5, h6 {
+			margin: 0;
+		}
+	}
+}
+
+.block-editor-block-list__block {
+	&[data-type="qubely/row"],
+	&[data-type="qubely/column"],
+	&[data-type="qubely/button"],
+	&[data-type="qubely/wrapper"],
+	&[data-type="qubely/heading"],
+	&[data-type="qubely/videopopup"],
+	&[data-type="qubely/buttongroup"] {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+.qubely-section .qubely-container {
+	max-width: var(--block-max-width) !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+
+
+	> .qubely-row > div,
+	> .qubely-row > div > div,
+	> .qubely-row > div > div > [data-type="qubely/column"],
+	> .qubely-row > div > div > [data-type="qubely/column"] > div,
+	> .qubely-row > div > div > [data-type="qubely/column"] > div > .qubely-column,
+	> .qubely-row > div > div > [data-type="qubely/column"] > div > .qubely-column > .qubely-column-inner {
+		min-height: inherit !important;
+	}
+}
+
+
+

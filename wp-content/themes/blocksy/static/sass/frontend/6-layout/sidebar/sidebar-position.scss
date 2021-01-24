@@ -1,0 +1,22 @@
+@include media-breakpoint-up(lg) {
+	[data-sidebar] {
+		display: grid;
+		grid-column-gap: var(--sidebarGap);
+	}
+
+	[data-sidebar='right'] {
+		grid-template-columns: minmax(100px, 1fr) var(--sidebarWidth);
+	}
+
+	[data-sidebar='left'] {
+		grid-template-columns: var(--sidebarWidth) minmax(100px, 1fr);
+
+		> section {
+			order: 2;
+		}
+
+		> aside {
+			order: 1;
+		}
+	}
+}

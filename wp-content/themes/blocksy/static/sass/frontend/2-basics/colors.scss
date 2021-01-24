@@ -1,0 +1,73 @@
+body {
+	color: var(--color);
+
+	::selection {
+		color: var(--selectionTextColor);
+		background-color: var(--selectionBackgroundColor);
+	}
+}
+
+
+// headings
+h1, h2, h3, h4, h5, h6 {
+	color: var(--headingColor);
+}
+
+
+// links
+a {
+	color: var(--linkInitialColor);
+
+	&:hover {
+		color: var(--linkHoverColor);
+	}
+}
+
+
+// hr line
+hr {
+	background-color: var(--formBorderInitialColor);
+}
+
+
+// editor color palettes
+.has-palette-color-1-color {
+	color: var(--paletteColor1) !important;
+}
+
+.has-palette-color-2-color {
+	color: var(--paletteColor2) !important;
+}
+
+.has-palette-color-3-color {
+	color: var(--paletteColor3) !important;
+}
+
+.has-palette-color-4-color {
+	color: var(--paletteColor4) !important;
+}
+
+.has-palette-color-5-color {
+	color: var(--paletteColor5) !important;
+}
+
+// background color
+.has-palette-color-1-background-color {
+	background-color: var(--paletteColor1) !important;
+}
+
+.has-palette-color-2-background-color {
+	background-color: var(--paletteColor2) !important;
+}
+
+.has-palette-color-3-background-color {
+	background-color: var(--paletteColor3) !important;
+}
+
+.has-palette-color-4-background-color {
+	background-color: var(--paletteColor4) !important;
+}
+
+.has-palette-color-5-background-color {
+	background-color: var(--paletteColor5) !important;
+}

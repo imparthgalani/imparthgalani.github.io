@@ -1,0 +1,20 @@
+.single-product {
+
+	.related, .up-sells {
+		display: var(--visibility);
+		margin-top: 50px;
+
+		> h2 {
+			--fontSize: 20px;
+			margin-bottom: 30px;	
+		}		
+	}
+}
+
+[data-structure="wide"] ~ {
+
+	.related, .up-sells {
+		padding-top: 40px;
+		border-top: 1px solid var(--border-color);
+	}
+}

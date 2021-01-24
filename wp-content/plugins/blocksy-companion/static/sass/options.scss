@@ -1,0 +1,29 @@
+@import 'options/display-conditions';
+@import 'options/animated-checkbox';
+@import 'options/import-export';
+
+.toplevel_page_ct-dashboard {
+
+	.wp-menu-image img {
+		max-width: 18px;
+		height: auto;
+	}
+
+	a[href*='ct-dashboard-pricing'] {
+		display: none !important;
+	}
+}
+
+// .activate-license.blocksy-companion {
+// 	display: none !important;
+// }
+
+[data-slug="blocksy-companion"] {
+	.upgrade {
+		display: none;
+	}
+}
+
+.fs-field-beta_program {
+	display: none;
+}

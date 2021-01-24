@@ -1,0 +1,54 @@
+.ct-cart-form {
+	display: grid;
+
+	@include media-breakpoint-down (md) {
+		grid-row-gap: 70px;
+	}
+
+	@include media-breakpoint-up (lg) {
+		grid-template-columns: 1fr 420px;
+		grid-column-gap: 70px;
+	}
+
+	h2 {
+		--fontSize: 17px;
+	}
+}
+
+
+.woocommerce-cart {
+
+	.woocommerce-cart-form {
+		@include media-breakpoint-up (md) {
+			padding: 5px 0 30px 0;
+		}
+	}
+
+	// table
+	table.cart {
+		--table-border-style: dashed;
+
+		@include media-breakpoint-up (md) {
+			--table-padding: 1.5em 0.7em;
+		}
+	}
+
+	// form actions
+	.actions {
+		padding: 1.5em 0 0 0;
+		text-align: right;
+		border-bottom: none;
+
+		&:before {
+			display: none;
+		}
+
+		.button {
+			--buttonMinHeight: var(--formInputHeight);
+			
+			@include media-breakpoint-down (sm) {
+				width: 100%;
+			}
+		}
+	}
+}

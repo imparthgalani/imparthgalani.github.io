@@ -1,0 +1,12 @@
+a {
+	transition: none !important;
+}
+
+[data-reveal] {
+	opacity: initial !important;
+	transform: initial !important;
+}
+
+.ct-image-container-static > img {
+	display: none !important;
+}

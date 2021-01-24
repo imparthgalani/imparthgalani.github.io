@@ -1,0 +1,20 @@
+:root {
+
+	// default values
+	--border: none;
+	--colorActive: var(--colorHover);
+	--transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+	// lists
+	--listIndent: 2.5em;
+	--listItemSpacing: 0.3em;
+
+	// container width
+	@include media-breakpoint-down(sm) {
+		--container-width: 88vw;
+	}
+
+	@include media-breakpoint-up(md) {
+		--container-width: 90vw;
+	}
+}

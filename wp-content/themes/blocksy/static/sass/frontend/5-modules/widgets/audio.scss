@@ -1,0 +1,8 @@
+.widget_media_audio {
+	font-size: 0;
+
+	.wp-audio-shortcode {
+		z-index: 0;
+		min-height: 45px !important;
+	}
+}

@@ -1,0 +1,11 @@
+.ct-footer {
+	.ct-widget {
+		&:not(:first-child) {
+			margin-top: var(--items-gap);
+		}
+
+		> *:not(.widget-title) {
+			color: var(--color);
+		}
+	}
+}

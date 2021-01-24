@@ -1,0 +1,20 @@
+.ct-activation-action-modal {
+	color: #687c93;
+	text-align: center;
+	padding: 30px;
+
+	svg {
+		width: 65px;
+		height: 65px;
+	}
+	
+	h2 {
+		color: #3e5667;
+	}
+
+	button {
+		--buttonHeight: 42px;
+		--buttonPadding: 20px;
+		--buttonFontSize: 14px;
+	}
+}

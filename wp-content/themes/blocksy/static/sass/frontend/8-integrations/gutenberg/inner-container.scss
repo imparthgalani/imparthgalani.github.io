@@ -1,0 +1,49 @@
+[data-structure*="wide"] {
+	[class*="_inner-container"] {
+		width: 100% !important;
+
+		> * {
+			margin-left: auto;
+			margin-right: auto;
+
+			&:not(.alignfull) {
+				width: var(--inner-block-width);
+			}
+
+			&:not(.alignwide):not(.alignfull) {
+				max-width: var(--block-max-width);
+			}
+		}
+
+		> .alignwide {
+			max-width: var(--block-wide-max-width);
+		}
+	}
+}
+
+
+// Inner container width
+.entry-content {
+
+	// normal & wide parent block
+	> *:not(.alignfull) [class*="_inner-container"] {
+		--inner-block-width: calc(100% - 60px);
+	}
+
+
+	// full parent block
+	> .alignfull [class*="_inner-container"] {
+		// --inner-block-width: var(--container-width);
+
+
+		// INNER + INNER LEVEL / normal & wide parent block inside full block
+		> *:not(.alignfull) [class*="_inner-container"] {
+			--inner-block-width: calc(100% - 100px);
+		}
+
+		// INNER + INNER LEVEL / full parent block parent block inside full block
+		> .alignfull [class*="_inner-container"] {
+			--inner-block-width: var(--container-width);
+		}
+	}
+}

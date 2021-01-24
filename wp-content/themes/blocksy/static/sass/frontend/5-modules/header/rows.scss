@@ -1,0 +1,26 @@
+// row box shadow
+header {
+	[data-row] {
+		position: var(--position, relative);
+		box-shadow: var(--box-shadow);
+		border-top: var(--borderTop);
+		border-bottom: var(--borderBottom);
+
+		> div {
+			border-top: var(--borderTop);
+			border-bottom: var(--borderBottom);
+		}
+	}
+
+	[data-row='top'] {
+		z-index: 3;
+	}
+
+	[data-row='middle'] {
+		z-index: 2;
+	}
+
+	[data-row='bottom'] {
+		z-index: 1;
+	}
+}

@@ -1,0 +1,16 @@
+.gdpr-confirm-policy {
+
+	label {
+		a {
+			text-decoration: underline;
+		}
+
+		&:after {
+			content: '*';
+			font-size: 15px;
+			font-weight: 600;
+			line-height: normal;
+			margin-left: 3px;
+		}
+	}
+}

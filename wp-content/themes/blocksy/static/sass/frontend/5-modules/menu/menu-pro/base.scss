@@ -1,0 +1,46 @@
+[class*='ct-mega-menu'] {
+
+	.ct-column-heading {
+		font-size: 15px;
+		font-weight: 700;
+		color: var(--color);
+	}
+
+	.entry-content {
+		color: var(--color);
+		padding: var(--menu-item-padding, 0);
+		margin: var(--menu-item-margin, 0);
+	}
+
+	.ct-disabled-link {
+		pointer-events: none;
+	}
+}
+
+
+// hover effect
+[data-dropdown*='simple'] [class*="ct-mega-menu"] {
+
+	.entry-content,
+	.sub-menu > li > a {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}
+
+[data-dropdown*='solid'] [class*="ct-mega-menu"] {
+
+	.sub-menu {
+		--menu-item-padding: var(--dropdown-items-spacing, 13px);
+	}
+}
+
+[data-dropdown*='padded'] [class*="ct-mega-menu"] {
+	--dropdown-items-padding: 0;
+	
+	.entry-content,
+	.sub-menu > li {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

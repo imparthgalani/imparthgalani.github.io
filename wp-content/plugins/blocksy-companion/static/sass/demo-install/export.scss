@@ -1,0 +1,33 @@
+.ct-export {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.ct-site-export {
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+
+	label {
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 0;
+	}
+
+	input[type="checkbox"] {
+		margin: 0;
+	}
+
+	textarea,
+	input[type="text"] {
+		width: 60%;
+	}
+
+	textarea {
+		min-height: 80px;
+	}
+
+	button {
+		margin-top: 20px;
+	}
+}

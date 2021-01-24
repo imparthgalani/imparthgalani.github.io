@@ -1,0 +1,66 @@
+.woocommerce-info, 
+.woocommerce-error, 
+.woocommerce-message {
+	position: relative;
+	font-size: 16px;
+	color: var(--color);
+	padding: 18px 15px 18px 65px;
+	margin-bottom: 45px;
+	border-radius: 5px;
+	clear: both;
+	background: var(--background-color);
+	--linkInitialColor: var(--color);
+
+	@include media-breakpoint-down (xs) {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.button {
+		--buttonMinHeight: 45px;
+		--padding: 5px 20px;
+
+		@include media-breakpoint-down (xs) {
+			order: 1;
+			margin-top: 12px;
+		}
+
+		@include media-breakpoint-up (sm) {
+			margin: -9px -5px -9px 0;
+		}
+	}
+
+	.button {
+		float: right;
+	}
+
+	&:before {
+		position: absolute;
+		top: 21px;
+		left: 25px;
+		width: 20px;
+		height: 20px;
+		font-family: 'woo';
+		content: '\e901';
+		font-size: 20px;
+		line-height: 20px;
+		opacity: 0.9;
+	}
+
+	&:after {
+		display: table;
+		content: '';
+		clear: both;
+	}
+}
+
+.woocommerce-error {
+	--listIndent: 0;
+	--listItemSpacing: 0;
+	--listStyleType: none;
+
+	.button {
+		--buttonInitialColor: #b92c3e;
+		--buttonHoverColor: #9c2131;
+	}
+}

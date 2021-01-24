@@ -1,0 +1,27 @@
+.ct-header-text {
+	display: flex;
+	align-items: center;
+	max-width: var(--maxWidth);
+	color: var(--color);
+	--headingColor: var(--color);
+
+	.entry-content {
+		width: 100%;
+	}
+}
+
+[data-items] .ct-header-text {
+	padding: 5px 0;
+}
+
+// alignment
+[data-column="middle"] .ct-header-text {
+	text-align: center;
+}
+
+[data-column="start"] [data-items="secondary"],
+[data-column="end"] [data-items="primary"] {
+	.ct-header-text {
+		text-align: right;
+	}
+}

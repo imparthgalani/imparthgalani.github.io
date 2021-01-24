@@ -1,0 +1,47 @@
+.ct-lazy,
+.ct-lazy-loading,
+.ct-lazy-loading-start {
+	background: rgba(252, 252, 252, 0.5);
+}
+
+.ct-lazy,
+.ct-lazy-loading-start {
+	> picture,
+	> img {
+		opacity: 0;
+	}
+
+	> [data-loader] {
+		opacity: 1;
+		animation-play-state: running;
+	}
+}
+
+.ct-lazy-loading {
+	> picture,
+	> img {
+		opacity: 1;
+	}
+
+	> [data-loader] {
+		opacity: 0;
+		animation-play-state: running;
+	}
+}
+
+.ct-lazy-loading-start,
+.ct-lazy-loading {
+	&:not(.ct-lazy-static) {
+		> picture,
+		> img,
+		> [data-loader] {
+			transition: opacity 0.5s ease-in;
+		}
+	}
+}
+
+// Loader
+.ct-lazy-loaded > [data-loader] {
+	display: none;
+	visibility: hidden;
+}

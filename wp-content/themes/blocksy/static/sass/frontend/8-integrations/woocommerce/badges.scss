@@ -1,0 +1,31 @@
+.onsale,
+.out-of-stock-badge {
+	display: inline-flex !important;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	z-index: 1;
+	top: var(--badgeTop, 15px);
+	left: var(--badgeLeft, 15px);
+	height: var(--badgeHeight, 28px);
+	border-radius: var(--badgeRadius, 3px);
+	padding: var(--badgePadding, 0 10px) !important;
+	font-size: var(--badgeFontSize, 13px);
+	font-weight: 600;
+	line-height: 0;
+	text-transform: uppercase;
+	margin: 0 !important;
+	color: var(--badge-text-color, #fff);
+	background-color: var(--badge-background-color, var(--paletteColor1));
+}
+
+.onsale {
+	&[data-shape="circle"] {
+		--badgeFontSize: 11px;
+		--badgeHeight: 45px;
+		--badgePadding: 3px;
+		--badgeRadius: 200px;
+		
+		min-width: 45px;
+	}
+}

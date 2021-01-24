@@ -1,0 +1,46 @@
+.ct-share-box[data-type="type-1"] {
+
+	> div {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+		border: var(--border);
+		overflow: hidden;
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 50px;
+		margin-right: -1px;
+		margin-bottom: -1px;
+		border-right: var(--border);
+		border-bottom: var(--border);
+
+		svg {
+			--icon-size: 18px;
+			fill: currentColor;
+		}
+	}
+}
+
+// box location
+.ct-share-box {
+	&[data-location="top"] {
+		margin-bottom: var(--margin);
+	}
+
+	&[data-location="bottom"] {
+		margin-top: var(--margin);
+		
+		&:not(:last-child) {
+			margin-bottom: var(--margin);
+		}
+	}
+}
+
+.hero-section[data-type="type-1"] {
+	+ .ct-share-box[data-location="top"] {
+		margin-top: var(--margin);
+	}
+}

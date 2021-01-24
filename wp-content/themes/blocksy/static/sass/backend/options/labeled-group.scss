@@ -1,0 +1,18 @@
+.ct-labeled-group-item {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: 10px;
+
+	> label {
+		font-size: 11px;
+		opacity: 0.8;
+		// margin-top: 5px;
+		margin-right: auto;
+		cursor: default;
+	}
+
+	.ct-background-modal-wrapper {
+		width: 100%;
+	}
+}

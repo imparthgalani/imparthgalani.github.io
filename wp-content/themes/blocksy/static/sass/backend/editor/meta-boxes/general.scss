@@ -1,0 +1,16 @@
+.edit-post-layout__metaboxes:not(:empty) {
+	padding: 0 0 24px 0;
+	background: #fff;
+
+	.edit-post-meta-boxes-area {
+		margin: auto;
+	}
+
+	.postbox-header {
+		padding: 0 12px;
+	}
+
+	.postbox > .inside {
+		padding: 0 12px 20px 12px;
+	}
+}

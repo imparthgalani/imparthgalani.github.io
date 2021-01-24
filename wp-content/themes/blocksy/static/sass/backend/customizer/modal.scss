@@ -1,0 +1,40 @@
+.wp-customizer [data-reach-dialog-overlay] {
+	z-index: 999999;
+	--modal-left: 0;
+}
+
+.ct-export-modal,
+.ct-reset-options,
+.ct-import-export-modal {
+	--modal-width: 450px;
+	--modal-min-height: 270px;
+	--modal-padding: 45px;
+	text-align: center;
+
+	.close-button {
+		display: none;
+	}
+}
+
+.ct-import-export-modal {
+	svg {
+		fill: #3e5667;
+		margin: auto;
+		margin-bottom: 15px;
+		animation: spin 4s linear infinite reverse;
+	}
+}
+
+.ct-export-modal {
+	.ct-export-options {
+		margin: 10px 0 20px;
+	}
+
+	.ct-checkbox-container {
+		padding-left: 15px;
+		padding-right: 15px;
+		margin-bottom: 10px;
+		border-radius: 4px;
+		border: 1px solid rgba(179, 189, 201, 0.3);
+	}
+}

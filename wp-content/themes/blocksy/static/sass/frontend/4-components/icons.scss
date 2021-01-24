@@ -1,0 +1,80 @@
+.ct-icon-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--icon-color, var(--linkInitialColor));
+	width: var(--icon-container-size);
+	height: var(--icon-container-size);
+	border-radius: var(--border-radius);
+	transition: color 0.12s cubic-bezier(.455,.03,.515,.955),
+				background-color 0.12s cubic-bezier(.455,.03,.515,.955),
+				border-color 0.12s cubic-bezier(.455,.03,.515,.955);
+
+	svg {
+		fill: currentColor;
+		width: var(--icon-size, 15px);
+		height: var(--icon-size, 15px);
+
+		> * {
+			transition: none;
+		}
+	}
+}
+
+
+// icon size
+[data-icon-size="medium"] {
+	--icon-size: 20px;
+}
+
+[data-icon-size="large"] {
+	--icon-size: 25px;
+}
+
+
+// icon shape
+[data-icons-type] {
+	> * {
+		transition: none;
+
+		&:hover {
+			.ct-icon-container {
+				color: var(--icon-hover-color, var(--linkHoverColor));
+			}
+		}
+	}
+}
+
+[data-icons-type*=":"] {
+	--icon-container-size: calc(var(--icon-size, 15px) * 2.5);
+}
+
+[data-icons-type*="square"] {
+	--border-radius: 2px;
+}
+
+[data-icons-type*="rounded"] {
+	--border-radius: 100%;
+}
+
+
+// icon shape color
+[data-icons-type*="solid"] {
+	.ct-icon-container {
+		background-color: var(--background-color);
+	}
+
+	> *:hover .ct-icon-container {
+		background-color: var(--background-hover-color);
+	}
+}
+
+[data-icons-type*="outline"] {
+	.ct-icon-container {
+		border: 1px solid var(--background-color);
+	}
+
+	> *:hover .ct-icon-container {
+		border-color: var(--background-hover-color);
+	}
+}

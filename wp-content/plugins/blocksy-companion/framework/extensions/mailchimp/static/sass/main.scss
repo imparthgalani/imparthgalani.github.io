@@ -1,0 +1,40 @@
+@import '../../../../../static/sass/common-frontend';
+@import 'widget';
+@import 'single-block';
+
+
+form[class*="ct-mailchimp"] {
+	.button {
+		--buttonFontWeight: 600;
+	}
+}
+
+// form messages
+.ct-mailchimp-message {
+	display: none;
+	font-size: 16px;
+
+	a {
+		text-decoration: underline;
+	}
+}
+
+.subscribe-error .ct-mailchimp-message {
+	display: block;
+	font-size: 14px;
+	color: #e42b2b;
+}
+
+.subscribe-success {
+	button.button,
+	input[type="text"],
+	input[type="email"],
+	.gdpr-confirm-policy,
+	.ct-mailchimp-description {
+		display: none;
+	}
+
+	.ct-mailchimp-message {
+		display: block;
+	}
+}

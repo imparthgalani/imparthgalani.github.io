@@ -1,0 +1,19 @@
+[data-type="core/file"] {
+	&[data-align="left"],
+	&[data-align="right"] {
+		.editor-block-list__block-edit {
+			width: 55%;
+		}
+	}
+}
+
+.wp-block-file {
+	padding: 20px;
+    border-radius: 5px;
+    border: 2px dashed rgba(0, 0, 0, 0.1);
+}
+
+.wp-block-file__content-wrapper {
+	display: flex;
+	justify-content: space-between;
+}

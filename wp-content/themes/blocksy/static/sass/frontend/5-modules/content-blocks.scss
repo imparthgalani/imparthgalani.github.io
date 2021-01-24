@@ -1,0 +1,93 @@
+// block position
+[data-block*="fixed"] {
+	position: fixed;
+	z-index: 100;
+	// top: calc(var(--admin-bar, 0px) + var(--frame-size, 0px) + var(--headerStickyHeight, 0px));
+	left: var(--frame-size, 0px);
+	right: var(--frame-size, 0px);
+}
+
+[data-block*="top"] {
+	top: calc(var(--admin-bar, 0px) + var(--frame-size, 0px));
+}
+
+[data-block*="bottom"] {
+	bottom: var(--frame-size, 0px);
+}
+
+
+.blocksy-hook-indicator {
+	position: relative;
+	padding: 6px 30px 6px 10px;
+	color: #614a00;
+	font-size: 12px;
+	font-weight: 500;
+	letter-spacing: initial;
+	text-transform: lowercase;
+	word-break: break-word;
+
+	// background: rgba(255, 205, 5, 0.4);
+	background: #FFEBAC;
+	border-radius: 3px;
+	border: 1px dashed #eabc4b;
+
+	&.blocksy-woo-indicator {
+		color: #6d4665;
+		background: #e4afc9;
+		border-color: #8a6282;
+	}
+
+	span {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 30px;
+		opacity: 0.5;
+		transition: opacity 0.15s ease;
+
+		&:before {
+			font-family: dashicons;
+			content: "\f464";
+			font-size: 17px;
+			line-height: 17px;
+			cursor: pointer;
+		}
+	}
+
+	&:hover span {
+		opacity: 1;
+	}
+}
+
+
+// indicator spacing
+.blocksy-hook-indicator {
+	margin: 15px var(--hookSideMargin, 0);
+
+	&[data-type*="full"] {
+		--hookSideMargin: 15px;
+	}
+
+	&:not([data-type*="top-margin"]) {
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	&:not([data-type*="bottom-margin"]) {
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+
+.blocksy-hook-indicator[data-type*="full"] {
+	margin-left: 15px;
+	margin-right: 15px;
+}

@@ -1,0 +1,26 @@
+.wp-block-table {
+	thead {
+		border-bottom: 0;
+	}
+
+	tfoot {
+		border-top: 0;
+	}
+
+	td, th {
+		border-color: var(--border-color) !important;
+	}
+
+	th {
+		font-weight: 700;
+		text-align: inherit;
+
+		&.has-text-align-center {
+			text-align: center;
+		}
+
+		&.has-text-align-right {
+			text-align: right;
+		}
+	}
+}

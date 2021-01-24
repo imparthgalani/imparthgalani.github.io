@@ -1,0 +1,22 @@
+.ct-header-cta {
+	display: inline-flex;
+	align-items: center;
+
+	// button size
+	[data-size="small"] {
+		--buttonMinHeight: 34px;
+		--padding: 0 15px;
+		--buttonFontSize: 13px;
+	}
+
+	[data-size="medium"] {
+		--buttonMinHeight: 42px;
+		--padding: 0 20px;
+	}
+
+	[data-size="large"] {
+		--buttonMinHeight: 50px;
+		--padding: 0 30px;
+		--buttonFontSize: 16px;
+	}	
+}

@@ -1,0 +1,40 @@
+.wp-full-overlay {
+	background-color: #eee;
+}
+
+#customize-preview {
+	height: initial;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	box-sizing: border-box;
+	background-color: transparent;
+
+	iframe {
+		height: calc(100% - 50px);
+		box-shadow: 0 0 25px rgba(0, 0, 0, 0.11),
+					0 0 0 1px rgba(0, 0, 0, 0.025);
+	}
+}
+
+.preview-desktop {
+	#customize-preview {
+		padding-left: 25px;
+		padding-right: 25px;
+
+		iframe {
+			width: calc(100% - 50px);
+		}
+	}
+}
+
+.preview-tablet {
+	#customize-preview {
+		max-height: 1080px;
+	}
+}
+
+.preview-mobile {
+	#customize-preview {
+		max-height: 650px;
+	}
+}

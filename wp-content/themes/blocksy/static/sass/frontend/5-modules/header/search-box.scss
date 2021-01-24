@@ -1,0 +1,17 @@
+.ct-search-box {
+	width: 100%;
+	max-width: var(--max-width, 250px);
+}
+
+[data-middle="search-input"] {
+
+	[data-column="middle"] {
+		[data-items] {
+			width: 100%;
+
+			.ct-search-box {
+				--max-width: 100%;
+			}
+		}
+	}
+}

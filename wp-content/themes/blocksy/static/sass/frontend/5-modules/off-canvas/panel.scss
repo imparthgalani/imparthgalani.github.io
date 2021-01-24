@@ -1,0 +1,51 @@
+[data-behaviour*='side'] {
+
+	> section {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		max-width: var(--side-panel-width, 500px);
+		box-shadow: var(--box-shadow);
+		transition: transform 0.25s ease-in-out;
+	}
+
+	&.active > section {
+		transform: translate3d(0, 0, 0);
+	}
+
+	&.ct-no-transition {
+		transition: none !important;
+	}
+}
+
+[data-behaviour*='right-side'] > section {
+	right: 0;
+	transform: translate3d(20%, 0, 0);
+}
+
+[data-behaviour*='left-side'] > section {
+	left: 0;
+	transform: translate3d(-20%, 0, 0);
+}
+
+// move main container
+// [data-panel*='in'],
+// [data-panel*='out'] {
+// 	#main-container {
+// 		transition: transform 0.25s ease-in-out,
+// 					left 0.25s ease-in-out;
+// 	}
+// }
+
+// [data-panel*='right'] {
+// 	#main-container {
+// 		transform: translate3d(-70px, 0, 0);
+// 		// left: -70px;
+// 	}
+// }
+
+// [data-panel*='left'] {
+// 	#main-container {
+// 		transform: translate3d(70px, 0, 0);
+// 	}
+// }

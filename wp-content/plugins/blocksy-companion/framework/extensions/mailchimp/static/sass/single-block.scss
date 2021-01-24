@@ -1,0 +1,70 @@
+.ct-mailchimp-block {
+	margin-top: 60px;
+	text-align: center;
+	color: var(--color);
+	padding: var(--padding);
+	background: var(--backgroundColor);
+	box-shadow: var(--box-shadow);
+	--linkInitialColor: var(--color);
+
+	> * {
+		&:first-child {
+			margin-top: 20px;
+		}
+
+		&:last-child {
+			margin-bottom: 20px;
+		}
+	}
+
+	> h3 {
+		--fontSize: 25px;
+	}
+
+	.ct-mailchimp-description {
+		&:not(:empty) {
+			// margin-top: 10px;
+			margin-bottom: 30px;
+		}
+	}
+
+	form {
+		max-width: 550px;
+		margin: 0 auto;
+
+		@include media-breakpoint-up (md) {
+			width: 85%;
+		}
+
+		button {
+			--buttonMinHeight: var(--formInputHeight);
+			--padding: 0 15px;
+			width: 100%;
+		}
+
+		[data-fields] {
+			display: grid;
+			grid-column-gap: 15px;
+			grid-row-gap: 15px;
+		}
+
+		[data-fields="1"] {
+
+			@include media-breakpoint-up (md) {
+				grid-template-columns: 65% 1fr;
+			}
+		}
+
+		[data-fields="2"] {
+			@include media-breakpoint-up (md) {
+				grid-template-columns: 32.5% 32.5% 1fr;
+			}
+		}
+	}
+
+	.ct-mailchimp-message,
+	.gdpr-confirm-policy {
+		margin-top: 15px;
+		--contentSpacing: 0;
+	}
+}

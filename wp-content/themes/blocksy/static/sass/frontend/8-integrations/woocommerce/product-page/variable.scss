@@ -1,0 +1,66 @@
+form.variations_form {
+
+	table.variations {
+		border: none;
+		margin-bottom: 40px;
+
+		tr {
+			display: flex;
+			flex-direction: column;
+
+			&:not(:last-child) {
+				margin-bottom: 1.5em;
+			}
+		}
+
+		td {
+			padding: 0;
+			border: none;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 10px;
+			--fontWeight: 500;
+		}
+
+		select {
+			width: 100%;
+			max-width: 100%;
+		}
+
+		// reset variations
+		.reset_variations {
+			margin-top: 1em;
+			font-size: 15px;
+			line-height: normal;
+			--linkInitialColor: var(--color);
+
+			display: none;
+
+			&[style*="visibility: hidden"] {
+				display: none !important;
+			}
+
+			&[style*="visibility: visible"] {
+				display: inline-block !important;				
+			}
+
+			&:before {
+				font-family: 'woo';
+				content: '\e982';
+				margin-right: 5px;
+				font-size: 12px;
+			}
+		}
+	}
+
+	.single_variation {
+		display: none;
+	}
+
+	.single_variation,
+	.wc-no-matching-variations {
+		margin-bottom: 40px;
+	}
+}

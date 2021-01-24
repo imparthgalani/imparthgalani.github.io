@@ -1,0 +1,39 @@
+html,
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6,
+label,
+figcaption,
+blockquote,
+blockquote p,
+.menu a,
+.site-title,
+.entry-meta,
+.mobile-menu,
+.widget-title,
+.contact-info,
+.ct-menu-badge,
+.entry-excerpt,
+.ct-post-title,
+.ct-breadcrumbs,
+.ct-header-text,
+.site-description,
+.page-description,
+.ct-footer-copyright,
+.ct-language-switcher,
+.entry-summary .price,
+.ct-header-account .ct-label,
+.ct-language-switcher ul[data-placement],
+.ct-widget > *:not(.widget-title) {
+	font-family: var(--fontFamily);
+	font-size: var(--fontSize);
+	font-weight: var(--fontWeight);
+	font-style: var(--fontStyle, inherit);
+	line-height: var(--lineHeight);
+	letter-spacing: var(--letterSpacing);
+	text-transform: var(--textTransform);
+	text-decoration: var(--textDecoration);
+}

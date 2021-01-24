@@ -1,0 +1,52 @@
+.ct-ie {
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+
+	.ct-unsuported-browser {
+		opacity: 1;
+		display: flex;
+		visibility: visible;
+	}
+}
+
+.ct-unsuported-browser {
+	position: fixed;
+	z-index: 9999999;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+	display: none;
+	visibility: hidden;
+	background: #fff;
+	color: #2c3e50;
+	text-align: center;
+
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	svg {
+		fill: currentColor;
+		margin-bottom: 20px;
+	}
+
+	h2,
+	p {
+		max-width: 650px;
+		padding: 0 30px;
+	}
+
+	h2 {
+		--fontSize: 23px;
+		--color: currentColor;
+		margin-bottom: 20px;
+	}
+
+	a {
+		color: #2872fa;
+		text-decoration: underline;
+	}
+}

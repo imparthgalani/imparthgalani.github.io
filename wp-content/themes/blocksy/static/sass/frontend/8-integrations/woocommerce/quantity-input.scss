@@ -1,0 +1,89 @@
+$arrows-width: 25%;
+
+div.quantity {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	flex: 0 0 var(--quantity-width, 110px);
+	max-width: var(--quantity-width, 110px);
+	height: var(--quantity-height, 55px);
+
+	.qty {
+		max-width: initial;
+		height: inherit;
+		border-radius: 3px !important;
+		border: 1px solid var(--quantity-initial-color, var(--buttonInitialColor));
+	}
+
+	input[type="number"] {
+		--formFontSize: 16px;
+		--formInputHeight: 100%;
+		font-weight: 500;
+		text-align: center;
+
+		// hide top & bottom arrows
+		-moz-appearance: textfield;
+		
+		&::-webkit-inner-spin-button,
+		&::-webkit-outer-spin-button {
+			-webkit-appearance: none;
+		}
+	}
+
+
+
+	.ct-increase, .ct-decrease {
+		position: absolute;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		right: 0;
+		width: $arrows-width;
+		max-width: 25px;
+		color: var(--quantity-arrows-initial-color, #fff);
+		cursor: pointer;
+		user-select: none;
+		background: var(--quantity-initial-color, var(--buttonInitialColor));
+		transition: all 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+		&:before {
+			font-family: 'woo';
+			content: '\e90c';
+			font-size: 13px;
+			font-weight: normal;
+			line-height: normal;
+		}
+
+		&:hover {
+			color: var(--quantity-arrows-hover-color, #fff);
+			background: var(--quantity-hover-color, var(--buttonHoverColor));
+		}
+
+		~ input[type="number"] {
+			padding: 0 calc(#{$arrows-width} + 7px) 0 7px;
+			border-right: 0;
+
+			// focus on input
+			&:focus {
+				border-color: var(--quantity-initial-color, var(--buttonInitialColor));
+				box-shadow: 0 0 0 1px var(--quantity-initial-color, var(--buttonInitialColor));
+			}
+		}
+	}
+
+	.ct-increase {
+		top: 0;
+		height: calc(50% - 1px);
+		border-top-right-radius: 3px;
+	}
+
+	.ct-decrease {
+		bottom: 0;
+		height: 50%;
+		border-bottom-right-radius: 3px;
+
+		&:before {
+			transform: rotate(180deg);
+		}
+	}
+}

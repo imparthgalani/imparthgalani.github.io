@@ -1,0 +1,38 @@
+.ct-option-widget-area {
+	> .customize-pane-child {
+		display: flex !important;
+		flex-direction: column;
+		position: relative !important;
+		padding: 0 !important;
+		margin-top: 25px !important;
+		border-bottom: none !important;
+		overflow: initial !important;
+
+		.customize-control {
+			--ui-padding: 0 8px;
+		}
+
+		.customize-control-sidebar_widgets {
+			order: 100;
+		}
+	}
+}
+
+// widgets top
+.customize-control-widget_form .widget-top {
+	.widget-title h3 {
+		padding: 13px 15px;
+	}
+
+	.widget-action {
+		padding: 8px;
+	}
+
+	.widget-reorder-nav span {
+		height: 39px;
+
+		&:before {
+			line-height: 39px;
+		}
+	}
+}

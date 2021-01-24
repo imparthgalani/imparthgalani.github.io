@@ -1,0 +1,74 @@
+.sub-menu {
+
+	--menu-item-padding: var(--dropdown-items-spacing, 13px) calc(var(--dropdown-items-spacing, 13px) * 1.5);
+
+	li {
+		border-top: var(--dropdown-divider);
+	}
+}
+
+.menu > .menu-item:not([class*="ct-mega-menu"]) {
+	.sub-menu li:first-child {
+		border-top: none;
+	}
+}
+
+
+// solid
+[data-dropdown*='solid'] .sub-menu li {
+
+	a:hover,
+	&.current-menu-item > a,
+	&.current-menu-ancestor > a {
+		background-color: var(--background-hover-color);
+	}
+
+	&:first-child {
+		border-top-left-radius: inherit;
+		border-top-right-radius: inherit;
+
+		> a {
+			border-radius: inherit;
+		}
+	}
+
+	&:last-child {
+		border-bottom-left-radius: inherit;
+		border-bottom-right-radius: inherit;
+
+		> a {
+			border-radius: inherit;
+		}
+	}
+}
+
+// padded
+[data-dropdown*='padded'] {
+	--dropdown-divider-margin: calc(var(--dropdown-items-spacing, 13px) - 5px);
+	--dropdown-items-padding: 16px;
+
+	.sub-menu  {
+		--menu-item-radius: 3px;
+		--menu-item-margin: var(--dropdown-divider-margin, 0);
+		--menu-item-padding: calc(var(--dropdown-items-spacing, 13px) - 7px) calc(var(--dropdown-items-spacing, 13px) - 4px);
+
+		li {
+			padding: var(--menu-item-margin) calc(var(--menu-item-margin, 0px) + var(--dropdown-items-padding, 0));
+
+			&:first-child {
+				padding-top: calc(var(--menu-item-margin, 0px) + var(--dropdown-items-padding, 0));
+			}
+
+			&:last-child {
+				padding-bottom: calc(var(--menu-item-margin, 0px) + var(--dropdown-items-padding, 0));
+			}
+
+
+			a:hover,
+			&.current-menu-item > a,
+			&.current-menu-ancestor > a {
+				background-color: var(--background-hover-color);
+			}
+		}
+	}
+}

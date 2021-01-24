@@ -1,0 +1,14 @@
+div.quantity {
+
+	&.woopq-type-select {
+
+		select {
+			--formPadding: 0 15px;
+		}
+
+		.ct-increase,
+		.ct-decrease {
+			display: none;
+		}
+	}
+}

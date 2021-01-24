@@ -1,0 +1,13 @@
+.error-404 {
+	padding: 70px 0;
+
+	.page-header {
+		text-align: center;
+	}
+
+	.search-form {
+		margin: 30px auto 0 auto;
+		max-width: 450px;
+		--linkInitialColor: var(--color);
+	}
+}

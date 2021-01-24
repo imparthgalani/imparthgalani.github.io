@@ -1,0 +1,42 @@
+$buttons-base:
+	'.button',
+	'.submit',
+	'.ct-button',
+	'.entry-tags a',
+	'.added_to_cart',
+	'.ct-button-ghost',
+	'input[type="submit"]',
+	'.wp-block-button__link',
+	'.wp-block-file .wp-block-file__button',
+	'.forminator-design--none .forminator-button',
+	'button[type="submit"]:not(.qubely-block-btn-anchor)',
+	// '.wpforms-submit',
+	// 'wp-block-jetpack-mailchimp button[type="submit"]',
+	// '.jetpack_subscription_widget button[type="submit"]'
+;
+
+
+#{$buttons-base} {
+	display: var(--display, inline-flex);
+	align-items: center;
+	justify-content: center;
+	min-height: var(--buttonMinHeight);
+	padding: var(--padding, 5px 25px);
+	border: none;
+	appearance: none;
+	cursor: pointer;
+	user-select: none;
+	text-align: center;
+	border-radius: var(--buttonBorderRadius);
+	transition: all 0.2s ease;
+
+
+	&:disabled, &.disabled {
+		opacity: .5;
+		pointer-events: none;
+	}
+
+	@include media-breakpoint-down (xs) {
+		--padding: 5px 15px;
+	}
+}

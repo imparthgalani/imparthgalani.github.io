@@ -1,0 +1,126 @@
+.ct-language-switcher {
+
+	ul {
+		--listIndent: 0;
+		--listItemSpacing: 0;
+		--listStyleType: none;
+		--contentSpacing: 0;
+
+		li {
+
+			a {
+				display: flex;
+				align-items: center;
+			}
+
+			img {
+				max-width: 18px;
+			}
+
+			span:not(:only-child) {
+				margin-left: 7px !important;
+			}
+		}
+	}
+
+
+	
+	&[data-type="inline"] ul {
+		display: inline-flex;
+		flex-wrap: wrap;
+		margin-top: -5px;
+
+		li {
+			margin-top: 5px;
+
+			&:not(:last-child) {
+				margin-right: var(--items-spacing, 20px);
+			}
+
+			&.current-lang {
+				--linkInitialColor: var(--linkHoverColor);
+			}
+		}
+	}
+
+
+	&[data-type="dropdown"] {
+		position: relative;
+
+		ul {
+			position: absolute;
+			margin-top: var(--margin-top);
+			border-radius: var(--border-radius);
+			background: var(--background-color);
+			box-shadow: var(--box-shadow);
+
+			opacity: 0;
+			visibility: hidden;
+			transform: translate3d(0, 10px, 0);
+			transition: opacity 0.2s ease, 
+						visibility 0.2s ease, 
+						transform 0.2s ease;
+
+			// modal placement
+			&[data-placement="right"] {
+				left: -15px;
+			}
+
+			&[data-placement="left"] {
+				right: -15px;
+			}
+
+			li {
+				&:not(:last-child) {
+					border-bottom: var(--border);
+				}
+
+				a {
+					padding: var(--padding) 15px;
+				}
+
+				&.current-lang {
+					display: none;
+				}
+			}
+
+			// drop-down bridge
+			&:before {
+				position: absolute;
+				content: '';
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: var(--margin-top);
+				transform: translateY(-100%);
+			}
+		}
+
+		&:hover,
+		&:focus-within {
+			ul {
+				opacity: 1;
+				visibility: visible;
+				transform: translate3d(0, 0, 0);
+			}
+		}
+	}
+}
+
+.ct-language {
+	color: var(--linkInitialColor);
+}
+
+.ct-active-language {
+	display: flex;
+	align-items: center;
+
+	span:not(:only-child) {
+		margin-left: 7px;
+	}
+
+	svg {
+		margin-top: 0.1em;
+		margin-left: 2px;
+	}
+}

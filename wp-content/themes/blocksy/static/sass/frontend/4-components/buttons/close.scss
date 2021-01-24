@@ -1,0 +1,59 @@
+.close-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: var(--position, relative);
+	top: var(--top, 0px);
+	right: var(--right, -10px);
+	z-index: 2;
+	cursor: pointer;
+	color: var(--closeButtonColor, rgba(255, 255, 255, 0.7));
+	width: var(--closeButtonSize, 34px);
+	height: var(--closeButtonSize, 34px);
+	transition: color 0.2s ease-out;
+
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		border-radius: var(--closeButtonRadius, 5px );
+		background: var(--closeButtonBackground, rgba(0, 0, 0, 0.5));
+		transition: transform 0.3s ease-out,
+					background 0.3s ease-out;
+	}
+
+	.closed {
+		--trigger-width: 14px;
+		transition: opacity 0.2s ease-out, 
+					transform 0.2s ease-out;
+
+		span {
+			--ty: 0;
+			background: transparent;
+
+			&:before {
+				--rotate: 45deg;
+			}
+
+			&:after {
+				--rotate: -45deg;
+			}
+		}
+	}
+
+	&:hover {
+		color: var(--closeButtonHoverColor, #fff);
+
+		&:before {
+			background: var(--closeButtonHoverBackground, rgba(0, 0, 0, 0.5));
+		}
+		
+		.closed {
+			opacity: 1;
+			transform: rotate(90deg);
+		}
+	}
+}

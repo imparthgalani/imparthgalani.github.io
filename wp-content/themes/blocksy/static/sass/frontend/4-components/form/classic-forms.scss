@@ -1,0 +1,21 @@
+[data-forms='classic'] select,
+[data-forms='classic'] textarea,
+[data-forms='classic'] input[type='url'],
+[data-forms='classic'] input[type='tel'],
+[data-forms='classic'] input[type='text'],
+[data-forms='classic'] input[type='date'],
+[data-forms='classic'] input[type='email'],
+[data-forms='classic'] input[type='number'],
+[data-forms='classic'] input[type='search'],
+[data-forms='classic'] input[type='password'],
+[data-forms='classic'] span.select2-container--default .select2-selection--single {
+	background-color: var(--formBackgroundInitialColor);
+
+	&:focus {
+		background-color: var(--formBackgroundFocusColor);
+	}
+}
+
+[data-forms='classic'] textarea {
+	--formPadding: 15px;
+}

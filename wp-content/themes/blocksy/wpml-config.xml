@@ -1,0 +1,12 @@
+<wpml-config>
+	<admin-texts>
+		<key name="theme_mods_blocksy">
+			<key name="blog_load_more_label" />
+			<key name="woo_load_more_label" />
+			<key name="related_label" />
+			<key name="cookie_consent_content" />
+			<key name="cookie_consent_button_text" />
+			<key name="forms_cookie_consent_content" />
+		</key>
+	</admin-texts>
+</wpml-config>

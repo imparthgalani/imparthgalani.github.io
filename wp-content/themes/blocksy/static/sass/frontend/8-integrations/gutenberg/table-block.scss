@@ -1,0 +1,21 @@
+.wp-block-table {
+	
+	.has-fixed-layout {
+		@include media-breakpoint-down (sm) {
+			table-layout: initial !important;
+			
+			td, th {
+				word-break: initial !important;
+			}
+		}
+	}
+
+	// stripes
+	&.is-style-stripes {
+		border: none;
+
+		table {
+			border: none;
+		}
+	}
+}

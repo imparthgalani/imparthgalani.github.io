@@ -1,0 +1,32 @@
+.ct-meta-box {
+
+	.ct-control {
+
+		> header {
+			--flex: 0 0 20%;
+			max-width: 20%;
+			align-self: flex-start;
+		}
+
+		> section {
+			width: 80%;
+			max-width: 700px;
+		}
+	}
+
+
+	// tabs
+	.ct-tabs {
+
+		> ul {
+			> li {
+				max-width: 120px;
+				background: #f3f3f3;
+
+				&.active:after {
+					background: #fff;
+				}
+			}
+		}
+	}
+}

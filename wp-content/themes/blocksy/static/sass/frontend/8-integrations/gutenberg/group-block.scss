@@ -1,0 +1,10 @@
+.wp-block-group {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	&.has-background {
+		padding-top: var(--contentSpacing);
+		padding-bottom: var(--contentSpacing);
+	}
+}

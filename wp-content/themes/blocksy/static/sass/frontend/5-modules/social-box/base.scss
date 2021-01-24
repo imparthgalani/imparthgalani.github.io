@@ -1,0 +1,25 @@
+.ct-social-box {
+	display: flex;
+	flex-wrap: var(--wrap, wrap);
+	margin-top: calc(var(--spacing, 15px) * -1);
+	margin-left: calc(var(--spacing, 15px) / -2);
+	margin-right: calc(var(--spacing, 15px) / -2);
+
+	a {
+		display: flex;
+		align-items: center;
+		margin-top: var(--spacing, 15px);
+		margin-left: calc(var(--spacing, 15px) / 2);
+		margin-right: calc(var(--spacing, 15px) / 2);
+	}
+
+	// icons label
+	.ct-label:not([hidden]) {
+		margin-left: 10px;
+		font-size: 13px;
+		font-weight: 500;
+		line-height: 1;
+		display: var(--visibility);
+		transition: color 0.12s cubic-bezier(.455,.03,.515,.955);
+	}
+}

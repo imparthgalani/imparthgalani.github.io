@@ -1,0 +1,73 @@
+.ct-freemius-optin-message {
+	position: relative;
+	
+	text-align: center;
+	border-radius: 3px;
+	background: #f5f7f9;
+
+	@media (max-width: 782px) {
+		padding: 50px 10% 10% 10%;
+	}
+
+	@media (min-width: 783px) {
+		padding: 60px 50px 50px 50px;
+	}
+
+	h2 {
+		margin-top: 0;
+	}
+
+	i {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: -25px;
+		left: 0;
+		right: 0;
+		margin: 0 auto;
+		width: 50px;
+		height: 50px;
+		background: #fff;
+		border-radius: 100%;
+		color: #0591c9;
+		border: 2px solid #DEECF3;
+
+		svg {
+			animation: ring-shake 5s ease-in-out infinite;
+			transform-origin: 50% 0%;
+		}
+	}
+
+	p {
+		max-width: 600px;
+		margin: 0 auto 20px auto !important;
+	}
+
+	.ct-button-primary {
+		--buttonHeight: 42px;
+		--buttonPadding: 20px;
+		--buttonFontSize: 14px;
+	}
+
+	+ .ct-first-steps-container {
+		margin-top: 55px;
+		padding-top: 50px;
+		border-top: 1px solid rgba(143, 163, 184, 0.15);
+	}
+}
+
+@keyframes ring-shake {
+	0% {  transform: rotate(-15deg) }
+	2% {  transform: rotate(15deg) }
+	4% {  transform: rotate(-18deg) }
+	6% {  transform: rotate(18deg) }
+	8% {  transform: rotate(-22deg) }
+	10% {  transform: rotate(22deg) }
+	12% {  transform: rotate(-18deg) }
+	14% {  transform: rotate(18deg) }
+	16% {  transform: rotate(-12deg) }
+	18% {  transform: rotate(12deg) }
+	20% {  transform: rotate(0deg) }
+	100% {  transform: rotate(0deg) }
+}

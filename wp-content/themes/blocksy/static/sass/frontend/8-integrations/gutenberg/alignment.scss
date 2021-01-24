@@ -1,0 +1,46 @@
+.alignleft {
+	float: left;
+	margin: 0.3em 1.5em 0.5em 0;
+}
+
+.alignright {
+	float: right;
+	margin: 0.3em 0 0.5em 1.5em;
+}
+
+.aligncenter {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.entry-content {
+	[class*="align-wrap"] {
+		margin-top: 0 !important;
+		margin-bottom: 0 !important;
+	}
+
+	@include media-breakpoint-down (sm) {
+		.alignleft, .alignright {
+			float: none;
+			max-width: 100%;
+			margin: 0 auto 1.5em auto;
+		}
+	}
+
+	@include media-breakpoint-up (md) {
+		.alignleft {
+			margin-right: var(--contentSpacing);
+		}
+
+		.alignright {
+			margin-left: var(--contentSpacing);
+		}
+	}
+
+	// fix for left & right alignments
+	&:after {
+		display: table;
+		clear: both;
+		content: '';
+	}
+}

@@ -1,0 +1,156 @@
+.ct-share-box[data-type="type-2"] {
+	position: fixed;
+	z-index: 200;
+	bottom: 0;
+	width: 50px;
+	padding: 25px;
+	cursor: pointer;
+	box-sizing: content-box;
+	
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+
+	// visibility
+	opacity: 0;
+	visibility: hidden;
+	transform: translate3d(0, 15px, 0);
+	transition: opacity 0.3s ease,
+				visibility 0.3s ease,
+				transform 0.3s ease;
+
+	&.ct-visible {
+		opacity: 1;
+		visibility: visible;
+		transform: translate3d(0, 0, 0);
+	}
+
+	> a, > span {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: relative;
+
+		&:before, &:after {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border-radius: 100%;
+			transition: background 0.25s cubic-bezier(0.2, 0.2, 0.1, 1), 
+						transform 0.25s cubic-bezier(0.2, 0.2, 0.1, 1),
+						opacity 0.25s cubic-bezier(0.2, 0.2, 0.1, 1);
+		}
+
+		&:before {
+			z-index: 2;
+			background: var(--background-color, var(--paletteColor1));
+		}
+
+		&:after {
+			z-index: 1;
+			opacity: 0;
+			box-shadow: 0px 8px 30px 0px var(--background-color-hover, var(--paletteColor2));
+		}
+
+		&:hover {
+			&:before {
+				transform: scale(1.2);
+				background: var(--background-color-hover, var(--paletteColor2));
+			}
+
+			&:after {
+				opacity: 0.8;
+			}
+		}
+	}
+
+	svg {
+		position: relative;
+		z-index: 3;
+		fill: var(--color);
+		-webkit-backface-visibility: hidden;
+		-webkit-transform: translateZ(0) scale(1.0, 1.0);
+	}
+
+
+	// box items
+	a {
+		width: 39px;
+		height: 39px;
+		--icon-size: 15px;
+	}
+
+
+	// box trigger
+	> span {
+		width: 50px;
+		height: 50px;
+		pointer-events: auto;
+	}
+
+	&:hover > span {
+		&:before {
+			transform: scale(1.2);
+			background: var(--background-color-hover, var(--paletteColor2));
+		}
+
+		&:after {
+			opacity: 0.8;
+		}
+	}
+
+
+	// box location
+	&[data-location="left"] {
+		left: 0;
+	}
+
+	&[data-location="right"] {
+		right: 0;
+	}
+}
+
+
+// items position
+$items: 11;
+
+.ct-share-box[data-type="type-2"] {
+	pointer-events: none;
+	
+	a {
+		--transition: none;
+		margin-bottom: 18px;
+		opacity: 0;
+		transform: translateY(calc(100% + 18px)) scale(0);
+
+		transition-duration: 0.25s;
+		transition-property: transform, opacity;
+		transition-timing-function: cubic-bezier(0.2, 0.2, 0.1, 1);
+
+		@for $i from 0 through $items - 1 {
+			&:nth-of-type(#{$i + 1}) {
+				transition-delay: #{$i * 0.03s};
+			}
+		}
+	}
+
+
+	&.active {
+		pointer-events: auto;
+
+		a {
+			opacity: 1;
+			transform: translateY(0) scale(1);
+
+			@for $i from 0 through $items - 1 {
+				&:nth-last-of-type(#{($i + 1)}) {
+					transition-delay: #{$i * 0.03s};
+				}
+			}
+		}
+	}
+}

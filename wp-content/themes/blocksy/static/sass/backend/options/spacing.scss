@@ -1,0 +1,61 @@
+.ct-option-spacing {
+	display: flex;
+	align-items: flex-start;
+
+	> span {
+		&:not(:last-of-type) {
+			margin-right: 4px;
+		}
+
+		input {
+			text-align: center;
+			position: relative;
+
+			&.inactive {
+				color: rgba(50, 55, 60, 0.5);
+				pointer-events: none;
+				background: rgba(255, 255, 255, 0.8);
+			}
+
+			&:focus {
+				+ small {
+					color: rgba(85, 93, 102, 0.8);
+				}
+			}
+		}
+
+		small {
+			display: block;
+			margin-top: 5px;
+			// padding-left: 3px;
+			font-size: 9px;
+			font-weight: 500;
+			line-height: normal;
+			text-align: center;
+			text-transform: uppercase;
+			color: rgba(85, 93, 102, 0.5);
+		}
+	}
+
+	.ct-spacing-controls {
+		margin-left: 4px;
+
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 35px;
+			height: 100%;
+			cursor: pointer;
+			color: #555d66;
+
+			&:hover {
+				color: var(--accentColor);
+			}
+
+			svg {
+				fill: currentColor;
+			}
+		}
+	}
+}

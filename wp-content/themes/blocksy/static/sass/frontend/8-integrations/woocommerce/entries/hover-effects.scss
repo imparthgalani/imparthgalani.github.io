@@ -1,0 +1,27 @@
+.products[data-hover="swap"] {
+
+	.ct-image-container .ct-swap {
+		opacity: 0;
+		transition: opacity 0.6s;
+	}
+
+	li:hover {
+		.ct-image-container .ct-swap {
+			opacity: 1;
+		}
+	}
+}
+
+
+.products[data-hover="zoom"] {
+
+	.ct-image-container img {
+		transition: transform 0.6s;
+	}
+
+	li:hover {
+		.ct-image-container img {
+			transform: scale3d(1.1, 1.1, 1);
+		}
+	}
+}

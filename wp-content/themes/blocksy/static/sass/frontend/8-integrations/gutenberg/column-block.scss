@@ -1,0 +1,11 @@
+.wp-block-columns {
+	margin-top: calc(var(--contentSpacing) * -1);
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	> * {
+		margin-top: var(--contentSpacing);
+	}
+}

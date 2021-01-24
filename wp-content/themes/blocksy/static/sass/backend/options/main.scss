@@ -1,0 +1,52 @@
+:root {
+	--accentColor: #0e8ecc;
+	--accentColorHover: #0071a1;
+	--optionBorderColor: #ddd;
+}
+
+$accent_color: #0e8ecc;
+
+@import 'options/general';
+@import 'options/ct-panel';
+@import 'options/input';
+@import 'options/ct-select';
+@import 'options/ct-layers';
+@import 'options/ct-inner-layers';
+@import 'options/switch';
+@import 'options/slider';
+@import 'options/radio';
+@import 'options/checkbox';
+@import 'options/number';
+@import 'options/image-picker';
+@import 'options/spacing';
+@import 'options/border';
+@import 'options/tabs';
+@import 'options/textarea';
+@import 'options/devices';
+@import 'options/visibility';
+@import 'options/attachment';
+@import 'options/responsive-controls';
+@import 'options/buttons-group';
+@import 'options/option-state';
+@import 'options/revert';
+@import 'options/notification';
+@import 'options/tooltip';
+@import 'options/value-changer';
+@import 'options/typography';
+@import 'options/image-position';
+@import 'options/ratio-picker';
+@import 'options/background/main';
+@import 'options/color/main';
+@import 'options/ct-editor';
+@import 'options/box-shadow';
+@import 'options/options-group';
+@import 'options/wp-editor';
+@import 'options/widget-area';
+@import 'options/widgets-backend';
+@import 'options/modal-tabs';
+@import 'options/woo-numbers';
+@import 'options/labeled-group';
+@import 'options/icon-picker';
+@import 'options/date-picker';
+@import 'options/option-modal';
+@import 'options/upload-button';

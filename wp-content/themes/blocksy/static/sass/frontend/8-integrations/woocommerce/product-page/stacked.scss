@@ -1,0 +1,22 @@
+[data-type*="stacked"] {
+	display: grid;
+	grid-template-columns: repeat(var(--columns, 1), 1fr);
+	grid-auto-rows: min-content;
+	grid-column-gap: var(--thumbs-spacing, 15px);
+	grid-row-gap: var(--thumbs-spacing, 15px);
+
+	.ct-image-container {
+
+		&:hover {
+			.woocommerce-product-gallery__trigger {
+				opacity: 1;
+			}			
+		}
+
+		.woocommerce-product-gallery__trigger {
+			opacity: 0;
+			transform: scale3d(0.9, 0.9, 1);
+			transition: opacity 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		}
+	}
+}

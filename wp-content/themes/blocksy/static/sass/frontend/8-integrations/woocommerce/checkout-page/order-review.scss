@@ -1,0 +1,46 @@
+.ct-order-review {
+	align-self: flex-start;
+	position: sticky;
+	top: 50px;
+	border: 2px solid var(--border-color);
+
+	@include media-breakpoint-down (sm) {
+		padding: 25px;
+	}
+
+	@include media-breakpoint-up (md) {
+		padding: 35px;
+	}
+
+
+	table.shop_table {
+		--table-padding: 1em 0;
+		border: none;
+
+		font-size: 15px;
+
+		tr {
+			--table-border-width: 0 0 1px 0;
+		}
+
+		.product-name, tfoot th {
+			text-align: left;
+		}
+
+		.product-total, tfoot td {
+			text-align: right;
+		}
+
+		.product-total {
+			vertical-align: top;
+		}
+
+		tfoot {
+			tr:last-child {
+				th, td {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.ct-woo-columns-and-rows {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-column-gap: 23px;
+
+	.ct-option-number {
+		--width: 100%;
+	}
+
+	&.ct-mobile > *:last-child {
+		opacity: 0.5;
+		pointer-events: none;
+	}
+}

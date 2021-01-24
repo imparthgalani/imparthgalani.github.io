@@ -1,0 +1,128 @@
+.ct-gradient-tab {
+	
+	.components-circular-option-picker {
+		margin: 0;
+		padding: 20px 14px 20px 14px;
+		box-sizing: border-box;
+	}
+
+	.components-circular-option-picker__swatches {
+		display: none;
+	}
+
+	.components-custom-gradient-picker__gradient-bar {
+		margin: 0;
+		box-sizing: border-box;
+	}
+
+	.components-custom-gradient-picker__markers-container,
+	.components-custom-gradient-picker__inserter {
+		height: 100%;
+	}
+
+	.components-custom-gradient-picker__ui-line {
+		margin: 18px 0;
+
+		> *:first-child {
+			width: 100%;
+			max-width: 130px;
+		}
+
+		.components-base-control__field {
+			margin-bottom: 0;
+		}
+		
+		.components-input-control__label {
+			display: none !important;
+		}
+	}
+
+	.components-circular-option-picker__custom-clear-wrapper {
+		justify-content: initial;
+	}
+
+	// popover
+	.components-popover {
+		position: relative;
+		top: 0 !important;
+		left: 0 !important;
+		right: 0 !important;
+		margin-top: 36px;
+		margin-left: -20px;
+		animation: none !important;
+		transform-origin: top center !important;
+
+		.components-popover__content {
+			left: initial;
+			min-width: var(--modalWidth, 295px);
+			margin: 0 !important;
+			border-radius: 0;
+			box-shadow: none;
+			border: none;
+			border-bottom: 1px solid #eee;
+			box-sizing: border-box;
+
+			> div {
+				padding: 0;
+			}
+
+			.components-color-picker {
+				--cpm-pv: 16px;
+			}
+		}
+	}
+
+	.components-custom-gradient-picker__remove-control-point {
+		margin-bottom: 15px;
+	}
+
+	.components-custom-gradient-picker__inserter {
+		.components-popover {
+			margin-top: 10px;
+		}
+	}
+}
+
+// swatches
+.ct-gradient-swatches {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	grid-column-gap: 19px;
+	grid-row-gap: 19px;
+	padding: 20px 14px;
+	margin: 0;
+	border-top: 1px dashed #eee;
+
+	li {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 28px;
+		height: 28px;
+		margin: auto;
+		cursor: pointer;
+		border-radius: 100%;
+		box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+		background-image: var(--background-image);
+		transition: box-shadow .1s ease;
+
+		&.active {
+			position: relative;
+			box-shadow: inset 0 0 0 1px rgba(0,0,0,.1),
+						0 0 0 2px #fff,
+						0 0 0 4px #606a73;
+
+			&:before {
+				margin-top: 1px;
+				position: absolute;
+				content: "\f15e";
+				font-family: 'dashicons';
+				font-size: 20px;
+				color: #fff;
+				text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+				-moz-osx-font-smoothing: grayscale;
+				-webkit-font-smoothing: antialiased;
+			}
+		}
+	}
+}

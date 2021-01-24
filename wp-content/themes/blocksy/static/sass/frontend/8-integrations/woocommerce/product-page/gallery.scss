@@ -1,0 +1,86 @@
+.ct-product-view {
+	@include media-breakpoint-down(md) {
+		margin-bottom: 3em;
+	}
+
+	.flexy-pills[data-type='thumbs'] {
+		--display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-column-gap: var(--thumbs-spacing, 15px);
+		grid-row-gap: var(--thumbs-spacing, 15px);
+		margin-top: var(--thumbs-spacing, 15px);
+
+		a {
+			transition: opacity 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+			&:not(.active) {
+				opacity: 0.8;
+			}
+
+			&:nth-child(4n) {
+				margin-right: 0;
+			}
+
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+// thumbnails on left
+.product.thumbs-left {
+	@include media-breakpoint-up(md) {
+		.flexy-container {
+			position: relative;
+			overflow: hidden;
+		}
+
+		.flexy {
+			width: calc(75% - 0.25em);
+			margin-left: calc(25% + 0.25em);
+		}
+
+		.flexy-pills[data-type='thumbs'] {
+			grid-template-columns: auto;
+			grid-auto-rows: minmax(105px, auto);
+			position: absolute;
+			overflow-y: auto;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: calc(25% + 0.25em);
+			margin-top: 0;
+			padding-right: var(--thumbs-spacing, 15px);
+
+			-ms-overflow-style: none;
+			scrollbar-width: none;
+			&::-webkit-scrollbar {
+				display: none;
+			}
+		}
+	}
+}
+
+
+// native woo gallery
+.woocommerce-product-gallery {
+	img {
+		display: block;
+		width: 100%;
+	}
+}
+
+.flex-control-thumbs {
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+
+	li {
+		width: 25%;
+		margin-bottom: 0;
+	}
+}

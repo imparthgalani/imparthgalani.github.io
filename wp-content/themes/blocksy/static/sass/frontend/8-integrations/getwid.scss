@@ -1,0 +1,61 @@
+.entry-content {
+
+	> .wp-block-getwid-section {
+
+		&.alignfull:not([class*="full-width"]) > .wp-block-getwid-section__wrapper {
+			padding-left: 0;
+			padding-right: 0;
+
+			> .wp-block-getwid-section__inner-wrapper {
+				width: var(--container-width);
+			}
+		}
+	}
+}
+
+
+// price box
+.wp-block-getwid-price-box {
+	border-radius: 5px;
+
+	.wp-block-getwid-price-box__amount {
+		font-size: 3em;
+		font-weight: bold;
+	}
+
+	.wp-block-getwid-price-box__period {
+		vertical-align: initial;
+	}
+
+	.wp-block-button__link {
+		--padding: 5px 55px;
+		--buttonMinHeight: 55px;
+		--buttonShadow: none;
+		--buttonTransform: none;
+	}
+}
+
+// progress bar
+.wp-block-getwid-progress-bar__bar {
+	height: 8px;
+	border-radius: 10px;
+
+	> * {
+		border-radius: 10px;
+	}
+}
+
+// button group
+.wp-block-getwid-button-group {
+	overflow: initial;
+}
+
+// spacer
+.wp-block-getwid-advanced-spacer {
+	margin-bottom: 0;
+}
+
+// counter
+.wp-block-getwid-counter__number {
+	font-weight: bold;
+}

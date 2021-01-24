@@ -1,0 +1,31 @@
+#ct-dashboard .ct-support-container {
+	text-align: center;
+	margin-top: 100px;
+	border-radius: 3px;
+	background: rgba(245, 247, 249, 1);
+
+	@media (max-width: 782px) {
+		padding: 10%;
+	}
+
+	@media (min-width: 783px) {
+		padding: 50px;
+	}
+
+	h2 {
+		margin-top: 0;
+	}
+
+	p {
+		display: block;
+		max-width: 600px;
+		text-align: center;
+		margin: 0 auto 20px auto !important;
+	}
+
+	.ct-button {
+		--buttonHeight: 42px;
+		--buttonPadding: 20px;
+		--buttonFontSize: 14px;
+	}
+}

@@ -1,0 +1,15 @@
+[data-items] > * {
+	margin: var(--margin, 0 10px);
+}
+
+[data-column="start"] [data-items="primary"] > * {
+	&:first-child {
+		--margin: 0 10px 0 0;
+	}
+}
+
+[data-column="end"] [data-items="primary"] > * {
+	&:last-child {
+		--margin: 0 0 0 10px;
+	}
+}

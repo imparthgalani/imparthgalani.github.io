@@ -1,0 +1,120 @@
+/**
+ * container possible states with data-flexy attribute:
+ * no: future slider, to be initialized
+ * no:scalerotate: future slider with scaleRotate effect
+ * empty string: flexy is initialized properly
+ *
+ * One can customize content of the :after attribute in order to enable/disable
+ * the slider effect of flexy. The JS will detect this moment and remove/restore
+ * the data-flexy attribute.
+ */
+
+.flexy-container {
+	&:not([data-flexy]) {
+		.flexy-items {
+			flex-wrap: wrap;
+		}
+	}
+}
+
+.flexy {
+	position: relative;
+}
+
+[data-flexy='no'] {
+	.flexy-items > * {
+		order: 2;
+		transform: translate3d(-100%, 0, 0);
+	}
+
+	.flexy-items > *:last-child {
+		order: 1;
+	}
+}
+
+.flexy-items {
+	display: flex;
+	will-change: transform, max-height;
+
+	> * {
+		cursor: pointer;
+	}
+
+	&[data-height="dynamic"] {
+		max-height: var(--sliderHeight, initial);
+		transition: max-height 0.2s ease;
+	}
+}
+
+.flexy-items > * {
+	flex: 0 0 100%;
+	max-width: 100%;
+}
+
+// Disable click event while dragging
+[data-flexy-dragging] {
+	cursor: ew-resize;
+	.flexy-items > * {
+		pointer-events: none;
+	}
+}
+
+// Flexy view
+[data-flexy-view='boxed'] {
+	overflow: hidden;
+}
+
+// Hide arrows and pills when flexy is disabled
+.flexy-container {
+	&:not([data-flexy]) {
+		.flexy-pills,
+		[class*='flexy-arrow'] {
+			display: none;
+			visibility: hidden;
+		}
+	}
+
+	&[data-flexy] {
+		.flexy-pills,
+		[class*='flexy-arrow'] {
+			display: var(--display, flex);
+			visibility: visible;
+		}
+	}
+}
+
+.flexy-pills {
+	a {
+		display: flex;
+		cursor: pointer;
+	}
+
+	&[data-type='circle'] {
+		justify-content: center;
+
+		a {
+			align-items: center;
+			justify-content: center;
+			width: 30px;
+			height: 30px;
+
+			&:before {
+				content: '';
+				width: 6px;
+				height: 6px;
+				border-radius: 100%;
+				box-shadow: inset 0 0 0 5px
+					var(--flexyInitialPill, rgba(44, 62, 80, 0.9));
+				transition: box-shadow 0.2s ease, transform 0.2s ease;
+			}
+
+			&.active {
+				&:before {
+					transform: scale3d(2, 2, 1);
+					box-shadow: inset 0 0 0 1px
+						var(--flexyActivePill, rgba(44, 62, 80, 0.9));
+				}
+			}
+		}
+	}
+}

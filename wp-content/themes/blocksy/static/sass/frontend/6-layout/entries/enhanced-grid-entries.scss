@@ -1,0 +1,24 @@
+[data-layout="enhanced-grid"] {
+	display: grid;
+	grid-column-gap: var(--cardsGap, 30px);
+	grid-row-gap: var(--cardsGap, 30px);
+	
+	@include media-breakpoint-up (md) {
+		grid-template-columns: repeat( 6, 1fr);
+	}
+
+	> article {
+		@include media-breakpoint-only (md) {
+			grid-column: span 3;
+		}
+
+		@include media-breakpoint-up (lg) {
+			grid-column: span 2;
+
+			&:nth-child(5n+1),
+			&:nth-child(5n+2) {
+				grid-column: span 3;
+			}
+		}
+	}
+}

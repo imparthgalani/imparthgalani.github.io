@@ -1,0 +1,26 @@
+.wp-block-separator {
+	clear: both;
+	margin-top: calc(var(--contentSpacing) + 10px);
+	margin-bottom: calc(var(--contentSpacing) + 10px);
+	max-width: var(--block-max-width);
+
+	&:not(.is-style-dots) {
+		height: 2px;
+		border: none;
+		border-radius: 2px;
+
+		&:not(.is-style-wide) {
+			--block-max-width: 20%;
+		}
+	}
+
+	&.is-style-dots {
+		&:before {
+			font-size: 30px;
+		}
+	}
+
+	&.is-style-wide {
+		width: 100%;
+	}
+}

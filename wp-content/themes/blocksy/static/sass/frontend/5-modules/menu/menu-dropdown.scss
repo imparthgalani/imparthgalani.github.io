@@ -1,0 +1,110 @@
+[data-submenu] {
+	position: relative;
+}
+
+// drop-down
+.animated-submenu > .sub-menu {
+	position: absolute;
+	z-index: 10;
+	top: var(--top, 100%);
+	min-width: 100px;
+	margin-top: var(--dropdown-top-offset, 0);
+	border-radius: var(--border-radius);
+	width: var(--dropdown-width, 200px);
+	background-color: var(--background-color);
+	box-shadow: var(--box-shadow);
+
+	// drop-down bridge
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: var(--dropdown-top-offset, 0);
+		transform: translateY(-100%);
+	}
+}
+
+
+// first drop-down
+.menu > [data-submenu='right'] > .sub-menu {
+	left: 0;
+}
+
+.menu > [data-submenu='left'] > .sub-menu {
+	right: 0;
+}
+
+[data-submenu] .menu-item:not([data-submenu]) {
+	> ul {
+		position: fixed;
+	}
+}
+
+
+// other drop-downs
+.animated-submenu [data-submenu] > ul {
+	--top: 0;
+	margin-top: 0;
+
+	&:before {
+		width: 5px;
+		height: 100%;
+		transform: initial;
+	}
+}
+
+.animated-submenu [data-submenu='right'] {
+	> ul {
+		right: -5px;
+		margin-right: -100%;
+
+		&:before {
+			left: -5px;
+			right: initial;
+		}
+	}
+}
+
+.animated-submenu [data-submenu='left'] {
+	> ul {
+		left: -5px;
+		margin-left: -100%;
+
+		&:before {
+			left: initial;
+			right: -5px;
+		}
+	}
+}
+
+// third dropdown
+[data-dropdown*='padded'] .animated-submenu [data-submenu]:not(:first-child) > ul {
+	--top: calc(var(--dropdown-items-padding, 0) * -1);
+}
+
+// child indicator
+.child-indicator {
+	margin-left: 5px;
+
+	svg {
+		fill: currentColor;
+	}
+}
+
+.animated-submenu > a {
+	justify-content: space-between;
+}
+
+.animated-submenu [data-submenu='left'] > a {
+	.child-indicator svg {
+		transform: rotate(90deg);
+	}
+}
+
+.animated-submenu [data-submenu='right'] > a {
+	.child-indicator svg {
+		transform: rotate(-90deg);
+	}
+}

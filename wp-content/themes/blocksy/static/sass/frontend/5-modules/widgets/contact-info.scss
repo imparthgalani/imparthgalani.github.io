@@ -1,0 +1,38 @@
+[class*="ct-contact-info"] {
+
+	ul {
+		--contentSpacing: 0;
+	}
+
+	li {
+		display: grid;
+		grid-template-columns: auto 1fr;
+		grid-column-gap: 15px;
+		align-items: center;
+	}
+
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		color: var(--color);
+	}
+
+	.contact-title {
+		font-weight: 600;
+	}
+
+	.ct-contact-info-text {
+		margin-bottom: 20px;
+	}
+}
+
+
+// widget
+.ct-contact-info-widget {
+	--listItemSpacing: 20px;
+
+	.contact-info {
+		font-size: 15px;
+		line-height: 1.4;
+	}
+}

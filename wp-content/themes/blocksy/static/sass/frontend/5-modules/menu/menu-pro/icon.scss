@@ -1,0 +1,19 @@
+.menu-item {
+	// hover & active color
+	// &:hover,
+	// &.current-menu-item,
+	// &.current-menu-ancestor {
+	// 	--icon-color: var(--icon-hover-color, var(--linkHoverColor));
+	// }
+
+	// icon position
+	.ct-icon-container {
+		&.ct-left {
+			margin-right: 0.5em;
+		}
+
+		&.ct-right {
+			margin-left: 0.5em;
+		}
+	}
+}

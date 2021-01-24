@@ -1,0 +1,11 @@
+[data-footer*='reveal'] {
+	.site-main {
+		z-index: 1;
+		box-shadow: var(--box-shadow);
+	}
+
+	.ct-footer {
+		position: var(--position);
+		bottom: 0;
+	}
+}

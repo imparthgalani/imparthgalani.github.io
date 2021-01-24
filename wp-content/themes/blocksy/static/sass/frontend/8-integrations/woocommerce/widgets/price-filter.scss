@@ -1,0 +1,86 @@
+.widget_price_filter {
+
+	.ui-slider {
+		position: relative;
+		z-index: 1;
+		height: 3px;
+		margin-bottom: 40px;
+
+		&:before {
+			position: absolute;
+			content: '';
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			opacity: 0.3;
+			background-color: var(--paletteColor1);
+		}
+
+		.ui-slider-range {
+			position: absolute;
+			z-index: 1;
+			display: block;
+			height: 100%;
+			opacity: 0.7;
+			background-color: var(--paletteColor1);
+		}
+
+		.ui-slider-handle {
+			position: absolute;
+			z-index: 2;
+			top: calc(50% - 9px);
+			width: 18px;
+			height: 18px;
+			cursor: pointer;
+			background: #fff;
+			border-radius: 100%;
+			box-shadow: inset 0px 0px 0px 18px var(--paletteColor1);
+			transition: box-shadow 0.2s ease-in-out,
+						transform 0.2s ease-in-out;
+
+			&:last-child {
+				margin-left: -18px;
+			}
+
+			&:focus {
+				outline: none;
+			}
+
+			&:hover {
+				box-shadow: inset 0px 0px 0px 3px var(--paletteColor1);
+			}
+
+			&.ui-state-active {
+				transform: scale(1.2);
+				box-shadow: inset 0px 0px 0px 2.5px var(--paletteColor1);
+			}
+		}
+	}
+
+	.price_slider_amount {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		#min_price, #max_price, .clear {
+			display: none;
+		}
+
+		.price_label {
+			order: 1;
+			font-size: 15px;
+			font-weight: 500;
+		}
+
+		.button {
+			--height: 35px;
+			--padding: 0 20px;
+			--buttonFontSize: 14px;
+			// --buttonShadow: none;
+			// --buttonTransform: none;
+
+			order: 2;
+		}
+	}
+}

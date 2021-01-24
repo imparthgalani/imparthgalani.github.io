@@ -1,0 +1,85 @@
+.ct-trigger {
+	display: flex;
+	align-items: center;
+	width: var(--trigger-width, 18px);
+	height: var(--trigger-width, 18px);
+	
+	span {
+		position: relative;
+		width: inherit;
+		height: 2px;
+		border-radius: 2px;
+		background: currentColor;
+		transition: background 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+
+		&:before, &:after {
+			position: absolute;
+			content: '';
+			width: inherit;
+			height: inherit;
+			border-radius: inherit;
+			background: currentColor;
+			transition: width 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955),
+						transform 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+		}
+
+		&:before {
+			transform: translateY(var(--ty, -6px)) translateX(var(--tx, 0)) rotate(var(--rotate, 0));
+		}
+
+		&:after {
+			transform: translateY(var(--ty, 6px)) translateX(var(--tx, 0)) rotate(var(--rotate, 0));
+		}
+	}
+
+	// type 2
+	&[data-type="type-2"] span {
+		&:before {
+			--tx: 8px;
+			width: 10px;
+		}
+
+		&:after {
+			--tx: 3px;
+			width: 15px;
+		}
+	}
+
+	// type 3
+	&[data-type="type-3"] span {
+		&:before {
+			--tx: 6px;
+			width: 12px;
+		}
+
+		&:after {
+			--tx: 0px;
+			width: 12px;
+		}
+	}
+}
+
+// hover action
+.ct-header-trigger {
+	&:hover {
+		[data-type="type-2"] span {
+			&:before, &:after {
+				--tx: 0;
+			}
+		}
+
+		[data-type="type-3"] span {
+			&:before, &:after {
+				--tx: 0;
+				width: 100%;
+			}
+		}
+	}
+}
+
+// hide trigger when off-canvas is oppened
+[data-panel*='in'] .ct-header-trigger {
+	@include media-breakpoint-down (md) {
+		opacity: 0;
+	}
+}

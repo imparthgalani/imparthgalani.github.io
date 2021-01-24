@@ -1,0 +1,99 @@
+.entry-card {
+	display: flex;
+
+	.entry-title {
+		margin: initial;
+		--linkInitialColor: var(--headingColor);
+	}
+
+	.entry-excerpt {
+		color: var(--color);
+		word-break: break-word;
+	}
+
+	.entry-meta {
+		color: var(--color);
+		--linkInitialColor: var(--color);
+	}
+
+	.ct-ghost {
+		margin: 0 !important;
+		flex: 1 0 auto;
+	}
+
+	.entry-divider {
+		margin-left: calc(var(--cardSpacing) * -1);
+		margin-right: calc(var(--cardSpacing) * -1);
+		border-bottom: var(--entry-divider);
+	}
+}
+
+// elements spacing
+[data-layout="grid"],
+[data-layout="classic"],
+[data-layout="enhanced-grid"] {
+	.entry-card {
+		flex-direction: column;
+		
+		> * {
+			&:not(:last-child) {
+				margin-top: var(--margin-top, 0px);
+				margin-bottom: var(--margin-bottom, 20px);
+
+				&.entry-meta {
+					--margin-bottom: 15px;
+				}
+			}
+
+			+ .ct-image-container {
+				--margin-top: 5px;
+			}
+		}
+
+		> .ct-image-container {
+			+ * {
+				--margin-top: 10px;
+			}
+		}
+	}
+}
+
+[data-layout="simple"] {
+	.card-content {
+		display: flex;
+		flex-direction: column;
+		
+		> * {
+			&:not(:last-child) {
+				margin-bottom: 20px;
+
+				&.entry-meta {
+					// because the meta li ads margin-bottom 5px
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+}
+
+
+// Boxed card
+[data-cards="boxed"] .entry-card {
+	padding: var(--cardSpacing);
+	background: var(--cardBackground);
+	border: var(--border, none);
+	box-shadow: var(--box-shadow);
+	border-radius: var(--borderRadius);
+	overflow: hidden;
+}
+
+
+// Simple card
+[data-cards="simple"] {
+	overflow: hidden;
+	
+	.entry-card {
+		padding-bottom: var(--cardsGap, 30px);
+		border-bottom: var(--border);
+	}
+}

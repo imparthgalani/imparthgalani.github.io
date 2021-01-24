@@ -1,0 +1,35 @@
+.ugb-main-block.alignfull {
+
+	&.ugb--has-block-background {
+		padding-left: 0;
+		padding-right: 0;
+
+		> .ugb-inner-block--center,
+		> .ugb-inner-block--wide {
+			width: var(--container-width) !important;
+		}
+
+		> .ugb-inner-block--wide {
+			max-width: var(--block-wide-max-width);
+			min-width: initial !important;
+		}
+	}
+}
+
+.ugb-main-block {
+	margin-top: 0;
+}
+
+// shadows
+.ugb--shadow-6 {
+	box-shadow: 0 20px 80px 0 rgba(193,199,212,0.25) !important;
+}
+
+// header
+.ugb-header.ugb-header--v3 {
+
+	.ugb-header__item {
+		padding-left: 0;
+		padding-right: 0;
+	}
+}

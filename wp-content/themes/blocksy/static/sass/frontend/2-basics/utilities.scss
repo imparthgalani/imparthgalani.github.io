@@ -1,0 +1,81 @@
+@include media-breakpoint-down (sm) {
+	.ct-hidden-sm {
+		display: none !important;
+	}
+}
+
+@include media-breakpoint-only (md) {
+	.ct-hidden-md {
+		display: none !important;
+	}
+}
+
+@include media-breakpoint-up (lg) {
+	.ct-hidden-lg {
+		display: none !important;
+	}
+}
+
+
+// Hidden elements
+[hidden] {
+	display: none !important;
+}
+
+
+// No image
+.ct-no-image {
+	background: rgba(233, 235, 239, 0.8);
+
+	&:before {
+		position: absolute;
+		content: '';
+		opacity: 0.3;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		margin: auto;
+		height: 50px;
+		color: #536065;
+		text-align: center;
+		padding-top: 50px;
+		background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='%23536065' stroke-width='1' stroke-linecap='round' stroke-linejoin='round'%3E%3Crect x='3' y='3' width='18' height='18' rx='2' ry='2'/%3E%3Ccircle cx='8.5' cy='8.5' r='1.5'/%3E%3Cpath d='M21 15l-5-5L5 21'/%3E%3C/svg%3E");
+		background-size: 30px;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+
+// align center
+.aligncenter {
+	clear: both;
+	display: block;
+	text-align: center;
+}
+
+
+// hidden elements
+.sticky,
+.wp-caption,
+.bypostauthor,
+.wp-caption-text,
+.gallery-caption,
+.screen-reader-text {
+	background: transparent;
+}
+
+// spin animation
+@keyframes spin {
+	0% { transform:rotate(0deg) }
+	100% { transform:rotate(360deg) }
+}
+
+// shake animation
+@keyframes shake {
+	10%, 90% { transform: translate3d(-4px, 0, 0) }
+	20%, 80% { transform: translate3d(5px, 0, 0) }
+	30%, 50%, 70% { transform: translate3d(-7px, 0, 0) }
+	40%, 60% { transform: translate3d(7px, 0, 0) }
+}

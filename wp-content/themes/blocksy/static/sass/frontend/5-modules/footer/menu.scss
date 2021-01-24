@@ -1,0 +1,16 @@
+.footer-menu {
+	margin: var(--margin);
+	
+	ul {
+		flex-wrap: wrap;
+		justify-content: var(--horizontal-alignment);
+		position: relative;
+		margin-top: calc(var(--menu-items-spacing, 25px) / 2 * -1);
+		margin-left: calc(var(--menu-items-spacing, 25px) / 2 * -1);
+		margin-right: calc(var(--menu-items-spacing, 25px) / 2 * -1);
+
+		li {
+			margin-top: calc(var(--menu-items-spacing, 25px) / 2);
+		}
+	}
+}

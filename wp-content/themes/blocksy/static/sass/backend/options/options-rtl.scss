@@ -1,0 +1,376 @@
+body.rtl {
+	// color picker
+	.ct-color-picker-single:not(:last-child) {
+		margin-right: initial;
+		margin-left: 10px;
+	}
+
+	.ct-color-picker-skins li:not(:last-child) {
+		margin-right: initial;
+		margin-left: 15.7px;
+	}
+
+	.ct-color-picker-modal .wp-picker-holder .iris-slider {
+		margin-left: initial;
+		margin-right: 15px;
+	}
+
+	// spacing
+	.ct-option-spacing {
+		> span {
+			&:not(:last-of-type) {
+				margin-right: initial;
+				margin-left: 4px;
+			}
+		}
+
+		.ct-spacing-controls {
+			margin-left: initial;
+			margin-right: 4px;
+		}
+	}
+
+	// revert button
+	.ct-control {
+		.ct-revert {
+			left: initial;
+			right: 0;
+			transform: translate3d(15px, 0, 0);
+		}
+
+		&:hover {
+			.ct-revert:not([disabled]) {
+				transform: translate3d(20px, 0, 0);
+			}
+		}
+	}
+
+	// buttons group
+	.ct-buttons-group li {
+		&:first-child {
+			border-radius: 0 3px 3px 0;
+		}
+
+		&:last-child {
+			border-radius: 3px 0 0 3px;
+		}
+
+		&:not(:first-child) {
+			margin-left: initial;
+			margin-right: -1px;
+		}
+	}
+
+	// conditions
+	.ct-condition-type {
+		input {
+			padding: 0 30px 0 0;
+		}
+
+		span {
+			left: initial;
+			right: 6px;
+		}
+	}
+
+	// slider
+	.ct-slider {
+		margin-left: 14px;
+		margin-right: initial;
+
+		span {
+			left: initial;
+			right: var(--position);
+		}
+
+		div {
+			left: initial;
+			right: 0;
+		}
+
+		&:before {
+			left: initial;
+			right: 0;
+		}
+	}
+
+	.ct-option-slider .ct-slider-input {
+		margin-left: initial;
+		margin-right: 7%;
+	}
+
+	// responsive controls
+	.ct-responsive-controls {
+		li {
+			margin-right: 0;
+
+			&.ct-desktop {
+				margin-left: 18px;
+			}
+
+			&.ct-tablet {
+				margin-left: 17px;
+			}
+		}
+	}
+
+	// select
+	.ct-select-input {
+		input {
+			--padding: 0 8px 0 0;
+		}
+
+		&:after {
+			right: initial;
+			left: 8px;
+		}
+	}
+
+	.ct-select-dropdown .ct-select-dropdown-item.selected:after {
+		right: initial;
+		left: 6px;
+	}
+
+	// tabs
+	.ct-options-container .ct-tabs > ul > li:not(:first-child) {
+		margin-left: initial;
+		margin-right: 7px;
+	}
+
+	// customizer panel
+	.ct-customizer-panel-option {
+		button {
+			right: initial;
+			left: -24px;
+
+			&:after {
+				content: '\f341';
+			}
+		}
+
+		.ct-option-switch + button {
+			transform: translate3d(7px, 0, 0);
+		}
+	}
+
+	.ct-panel.ct-click-allowed .ct-customizer-panel-option button {
+		transform: translate3d(0, 0, 0);
+	}
+
+	.customize-panel-actions button {
+		padding: 0 0 0 24px;
+		border-left: 1px solid #ddd;
+		border-right: 4px solid #fff;
+
+		&:before {
+			content: '\f345';
+		}
+
+		&:hover {
+			border-right-color: var(--accent);
+		}
+	}
+
+	// switch
+	.ct-option-switch {
+		margin-left: initial;
+		margin-right: auto;
+
+		&.ct-active span {
+			transform: translate3d(-20px, 0, 0);
+		}
+
+		&:before {
+			left: initial;
+			right: 7px;
+		}
+	}
+
+	// icon picker
+	.ct-icon-picker-value > div {
+		margin-left: initial;
+		margin-right: 15px;
+	}
+
+	// modal tabs
+	.ct-modal-tabs li:not(:last-child) {
+		border-right: none;
+		border-left: 1px solid #eee;
+	}
+
+	// background modal
+	.ct-background-modal
+		.ct-color-picker-modal
+		.ct-color-picker-skins
+		li:not(:last-child) {
+		margin-right: initial;
+		margin-left: 14.5px;
+	}
+
+	.ct-attachment .actions > *:not(:last-child) {
+		margin-right: initial;
+		margin-left: 15px;
+	}
+
+	// radio & checkbox
+	.ct-radio-option input[type='radio'],
+	.ct-color-palettes li input[type='radio'],
+	.ct-option-checkbox input[type='checkbox'] {
+		margin: 0 0 0 8px;
+	}
+
+	.ct-option-checkbox input[type='checkbox']:checked:before {
+		margin: -2px -2px 0 0;
+	}
+
+	.ct-radio-option[data-inline] label:not(:last-child) {
+		margin-right: initial;
+		margin-left: 15px;
+	}
+
+	// border
+	.ct-option-border > *:first-child {
+		margin-left: initial;
+		margin-right: 15px;
+	}
+
+	// shadow
+	.ct-box-shadow-values {
+		margin-right: initial;
+		margin-left: 15px;
+		padding-right: initial;
+		padding-left: 8px;
+
+		button {
+			margin-right: initial;
+			margin-left: 10px;
+			border-right: none;
+			border-left: 1px solid rgba(221, 221, 221, 0.5);
+		}
+	}
+
+	// ratio
+	.ct-ratio-predefined button {
+		margin-left: initial;
+		margin-right: 12px;
+	}
+
+	.ct-ratio-preview {
+		.ct-ratio-key {
+			margin: 0 0 0 7px;
+			padding: 0 0 0 7px;
+			border-right: none;
+			border-left: 1px solid #ddd;
+		}
+
+		.ct-width-key {
+			margin: 0 7px 0 0;
+			padding: 0 7px 0 0;
+			border-left: none;
+			border-right: 1px solid #ddd;
+		}
+	}
+
+	// typography
+	.ct-typohraphy-value {
+		padding-right: initial;
+		padding-left: 8px;
+
+		> div {
+			padding-left: 0;
+			padding-right: 8px;
+		}
+	}
+
+	.ct-typography-top {
+		.ct-weight {
+			margin-left: initial;
+			margin-right: 7%;
+		}
+
+		.ct-font svg {
+			right: initial;
+			left: 8px;
+		}
+
+		.ct-back {
+			margin-right: -44px;
+			margin-left: 12px;
+		}
+
+		&.ct-switch-panel .ct-back {
+			margin-right: 0;
+		}
+	}
+
+	.ct-typography-variant ul li {
+		&:first-child {
+			border-radius: 0 3px 3px 0;
+		}
+
+		&:last-child {
+			border-radius: 3px 0 0 3px;
+		}
+
+		+ li {
+			margin-left: initial;
+			margin-right: -1px;
+		}
+	}
+
+	// layers
+	.ct-add-layer-controls button {
+		margin-left: initial !important;
+		margin-right: 10px !important;
+	}
+
+	.ct-layer-controls > *:not(:last-child) {
+		border-right: none;
+		border-left: 1px solid var(--optionBorderColor);
+	}
+
+	// gradient
+	.components-custom-gradient-picker__gradient-bar {
+		padding-left: 3px;
+		padding-right: 21px;
+	}
+
+	.ct-gradient-tab {
+		.components-angle-picker-control__angle-circle {
+			margin-right: 0;
+			margin-left: 6px;
+		}
+
+		.components-popover {
+			right: initial !important;
+		}
+	}
+
+	// option modal
+	.ct-option-modal {
+		left: var(--modal-x-offset);
+		right: initial;
+
+		&:before {
+			left: initial;
+			right: var(--option-modal-arrow-position, calc(100% - 55px));
+		}
+	}
+
+	&.wp-customizer {
+		.ct-option-modal {
+			right: 12px;
+		}
+	}
+
+	// modal react dialog
+	[data-reach-dialog-overlay] {
+		left: 0;
+		right: var(--modal-left, 160px);
+	}
+}
+
+.ct-select-dropdown {
+	right: initial;
+	left: var(--modal-x-offset);
+}

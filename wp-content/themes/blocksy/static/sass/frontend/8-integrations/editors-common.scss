@@ -1,0 +1,24 @@
+.content-wide {
+	overflow: hidden;
+
+
+	.ct-container {
+		--block-max-width: var(--container-max-width);
+		--block-wide-max-width: calc(var(--container-max-width) + var(--wide-offset) * 2);
+	}
+
+	.ct-container-narrow {
+		--block-max-width: var(--narrow-container-max-width);
+		--block-wide-max-width: calc(var(--narrow-container-max-width) + var(--wide-offset) * 2);
+	}
+
+
+	[data-structure] {
+		.entry-content {
+			width: calc(100vw - (var(--frame-size, 0px) * 2));
+			margin-left: calc( 50% - (50vw - var(--frame-size, 0px)));
+			margin-right: calc( 50% - (50vw - var(--frame-size, 0px)));
+		}
+	}
+
+}

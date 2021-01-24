@@ -1,0 +1,66 @@
+.entry-summary {
+	form.cart {
+		margin-top: 40px;
+		padding-top: 40px;
+		border-top: 1px solid var(--border-color);
+
+		&:before, &:after {
+			content: '';
+			display: table;
+		}
+
+		&:after {
+			clear: both;
+		}
+	}
+
+	// buttons
+	@include media-breakpoint-down (xs) {
+		--buttonMinHeight: 45px;
+	}
+
+	@include media-breakpoint-up (sm) {
+		--buttonMinHeight: 55px;
+	}
+
+	.added_to_cart {
+		--buttonTextInitialColor: var(--color);
+		--buttonTextHoverColor: var(--color);
+		--buttonInitialColor: rgba(224,229,235,0.6);
+		--buttonHoverColor: rgba(224,229,235,1);
+	}
+}
+
+
+// only for simple and variable products
+.ct-cart-actions {
+	display: flex;
+	flex-wrap: wrap;
+	grid-row-gap: 15px;
+
+	.quantity {
+		margin-right: 15px;
+		--quantity-height: var(--buttonMinHeight);
+
+		@include media-breakpoint-down (xs) {
+			--quantity-width: 90px;
+		}
+	}
+
+	.single_add_to_cart_button {
+		flex: 1;
+
+		@include media-breakpoint-up (sm) {
+			&:not(.added) {
+				max-width: var(--button-width);
+			}
+		}
+	}
+
+	.added_to_cart {
+		@include media-breakpoint-up (sm) {
+			flex: 1;
+			margin-left: 15px;
+		}
+	}
+}

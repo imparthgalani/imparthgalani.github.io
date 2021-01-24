@@ -1,0 +1,32 @@
+body,
+.ct-panel,
+[data-row],
+.ct-footer,
+.ct-floating-bar,
+.ct-account-form,
+.ct-trending-block,
+.ct-panel > section,
+.footer-widgets-area,
+.ct-comments-container,
+.ct-related-posts-container,
+.hero-section[data-type='type-2'],
+[class*='ct-mega-menu'] > .sub-menu,
+[data-structure*='boxed'] > section,
+[data-structure="boxed"] .tutor-col-8 {
+	background-color: var(--background-color);
+	background-image: var(--overlay-color, none), var(--background-image);
+	background-size: var(--background-size);
+	background-repeat: var(--background-repeat);
+	background-position: var(--background-position);
+	background-attachment: var(--background-attachment);
+
+	--overlay-color: linear-gradient( var(--overlay), var(--overlay));
+}
+
+// apply background to site-main when sticky footer is enabled
+[data-footer*='reveal'] {
+	#main-container,
+	.site-main {
+		background: inherit;
+	}
+}
