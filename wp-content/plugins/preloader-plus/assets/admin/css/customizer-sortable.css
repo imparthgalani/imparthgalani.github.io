@@ -1,0 +1,24 @@
+.customize-control-preloader-plus-sortable ul li {
+	padding:8px 10px;
+	line-height:20px;
+	border:1px solid #ccc;
+	background:#fff;
+}
+
+.customize-control-preloader-plus-sortable ul li .dashicons.dashicons-menu {
+	float:right;
+}
+
+.customize-control-preloader-plus-sortable ul li .dashicons.visibility {
+	color:#49aed8;
+	margin-right:10px;
+}
+
+.customize-control-preloader-plus-sortable ul li.invisible {
+	color:#aaa;
+	border:1px dashed #aaa;
+}
+
+.customize-control-preloader-plus-sortable ul li.invisible .dashicons.visibility {
+	color:#aaa;
+}

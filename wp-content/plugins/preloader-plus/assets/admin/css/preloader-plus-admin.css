@@ -1,0 +1,50 @@
+#toplevel_page_preloader_plus_setting_page .wp-menu-image > img {
+  width: 18px;
+}
+
+/*
+** Reminder for rating
+*/
+.notice.preloader-plus-reminder {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: left;
+  padding: 0;
+}
+.preloader-plus-message {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.preloader-plus-message span > a {
+  font-weight:600;
+}
+
+.preloader-plus-message b {
+  margin-bottom:20px;
+  line-height:1.7;
+}
+
+.preloader-plus-message span > a:not(:last-child) {
+  margin-right:10px;
+}
+
+.preloader-plus-message  a.delete-rate-reminder,
+.preloader-plus-message a.ask-later{
+ color:#999;
+}
+
+@media(max-width:400px) {
+  .notice.preloader-plus-reminder #preloader-plus-author-avatar {
+    display: none;
+  }
+}
+
+@media(max-width:768px) {
+  .preloader-plus-message span > a:not(:last-child) {
+  margin-bottom:20px;
+}
+}

@@ -15,7 +15,13 @@ class ThemeIntegration {
 					'orderby' => 'post_date',
 
 					// yes | no
-					'has_pagination' => 'yes'
+					'has_pagination' => 'yes',
+
+					// yes | no
+					'ignore_sticky_posts' => 'no',
+
+					'term_ids' => null,
+					'post_ids' => null
 				]
 			);
 

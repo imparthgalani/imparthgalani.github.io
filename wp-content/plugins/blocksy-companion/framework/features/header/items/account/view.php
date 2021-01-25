@@ -79,7 +79,7 @@ if ($current_user_id) {
 
 	if ($loggedin_text === 'username') {
 		$user = wp_get_current_user();
-		$loggedin_label = $user->user_nicename;
+		$loggedin_label = $user->display_name;
 	}
 
 	if ($loggedin_media === 'avatar') {

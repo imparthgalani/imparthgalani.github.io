@@ -5,7 +5,7 @@ Requires PHP: 7.0
 Tested up to: 5.6
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Stable tag: 1.7.50
+Stable tag: 1.7.52
 
 == Description ==
 
@@ -23,6 +23,13 @@ It runs and adds its enhancements only if the Blocksy theme is installed and act
 2. Activate the plugin by going to **Plugins** page in WordPress admin and clicking on **Activate** link.
 
 == Changelog ==
+1.7.52: 2021-01-25
+- New: Add term filtering for blocksy_posts shortcode
+
+1.7.51: 2021-01-24
+- Improvement: Header: Account element use user display name instead of username
+- Improvement: Floating cart take sticky header height into account
+
 1.7.50: 2021-01-24
 - Fix: Demo importer: Allow nav menu items of type post_type_archive
 - Fix: Allow sideloading SVG images
