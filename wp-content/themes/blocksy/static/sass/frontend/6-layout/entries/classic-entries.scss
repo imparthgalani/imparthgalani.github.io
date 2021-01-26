@@ -1,7 +1,0 @@
-[data-layout="classic"] {
-	article {
-		&:not(:last-child) {
-			margin-bottom: var(--cardsGap, 30px);
-		}
-	}
-}
