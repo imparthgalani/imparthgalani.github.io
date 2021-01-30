@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'eae-icons';
+  src:  url('fonts/eae-icons.eot?gyovjt');
+  src:  url('fonts/eae-icons.eot?gyovjt#iefix') format('embedded-opentype'),
+    url('fonts/eae-icons.ttf?gyovjt') format('truetype'),
+    url('fonts/eae-icons.woff?gyovjt') format('woff'),
+    url('fonts/eae-icons.svg?gyovjt#eae-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="eae-"], [class*=" eae-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'eae-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.eae-progress-bar:before {
+  content: "\e907";
+  color: #556068;
+}
+.eae-dual-button:before {
+  content: "\e906";
+  color: #556068;
+}
+.eae-compare-table:before {
+  content: "\e905";
+  color: #556068;
+}
+.eae-ba:before {
+  content: "\e904";
+  color: #556068;
+}
+.eae-timer:before {
+  content: "\e900";
+  color: #556068;
+}
+.eae-timeline:before {
+  content: "\e901";
+  color: #556068;
+}
+.eae-popup:before {
+  content: "\e902";
+  color: #556068;
+}
+.eae-info-circle:before {
+  content: "\e903";
+  color: #556068;
+}
