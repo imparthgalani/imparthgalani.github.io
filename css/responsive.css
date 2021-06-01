@@ -1,0 +1,624 @@
+/*==============================================================================
+
+ * Template Name: Parth - Creative Personal Portfolio
+ * Template URI: (https://imparthgalani.me/)
+ * Author: Parth - (https://imparthgalani.me/)
+ * Description: Personal Portfolio Template
+ * Version: 1.0
+ * Copyright 2021 Parth
+
+ ==============================================================================*/
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 1199px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Large devices (desktops, 991px and down) */
+
+@media (max-width: 991px) {
+    .header_bg {
+        background-color: #222329;
+    }
+
+    .nav-btn {
+        position: absolute;
+        top: 0;
+        right: 20px;
+        font-size: 30px;
+        display: inline-block;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .menu_items {
+        text-align: center;
+        position: fixed;
+        width: 100%;
+        left: 0;
+        background: rgb(34, 35, 41);
+        padding-bottom: 20px;
+        top: calc(-100% - 85px);
+        transition: .3s;
+        -webkit-transition: .3s;
+        -moz-transition: .3s;
+        -ms-transition: .3s;
+        -o-transition: .3s;
+        z-index: 9998;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .menu_items.show {
+        top: 85px;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .header_fixed .menu_items.show {
+        top: 75px;
+    }
+
+    .menu_items li,
+    .header_fixed .menu_items li {
+        display: block;
+        height: inherit;
+        line-height: 45px;
+        height: 45px;
+    }
+
+    .menu_item {
+        padding: 0;
+        display: inline-block;
+    }
+
+    .menu_items .menu_item::after {
+        width: 4px;
+        left: calc(50% - 2px);
+    }
+
+    .menu_items .menu_item.active::after {
+        width: 50px;
+        left: calc(50% - 25px);
+    }
+
+    .menu_items li:last-child .menu_item.active::after {
+        left: calc(50% - 25px);
+    }
+
+    .works .row>.col-lg-10,
+    .services .row>.col-lg-10 {
+        padding: 0 65px;
+    }
+
+    .work_wrapper,
+    .blog_wrapper,
+    .contact_wrapper {
+        padding: 100px 50px;
+    }
+
+    .about,
+    .resume {
+        padding: 0 50px;
+    }
+
+    .skill-box {
+        margin: 15px 15px;
+    }
+
+    .contact_item {
+        display: inline-block;
+        margin-right: 40px;
+        margin-bottom: 30px;
+    }
+
+    .about_info h4 {
+        font-size: 23px;
+    }
+
+    .landing_content h1 {
+        font-size: 60px;
+    }
+}
+
+/* Medium devices (tablets, 768px and down) */
+
+@media (max-width: 768px) {
+    .home_wrapper {
+        height: 600px;
+    }
+
+    .hero-social-list {
+        display: none;
+    }
+
+    .about_info h4 {
+        margin-top: 50px;
+    }
+
+    .arrow-dashed-img {
+        display: none;
+    }
+
+    .skill-box {
+        margin: 15px 15px;
+    }
+
+    .services .row>.col-lg-10 {
+        padding: 0 45px;
+    }
+
+    .counter,
+    .call-to-action,
+    .testimonials,
+    .work_wrapper,
+    .blog_wrapper,
+    .contact_wrapper {
+        padding: 100px 30px;
+    }
+
+    .counter .row .col-lg-10 .row .col-sm-6:nth-child(1),
+    .counter .row .col-lg-10 .row .col-sm-6:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
+    .work-popup {
+        padding: 60px 15px;
+    }
+
+    .about_img .about_img_1.bottom {
+        top: -65px;
+    }
+
+    .about_img .about_img_2 {
+        top: 12px;
+    }
+
+    .about,
+    .resume {
+        padding: 0 30px;
+    }
+
+    .heading strong.filltext {
+        font-size: 66px;
+    }
+
+    .call-to-action .button {
+        margin-top: 0;
+        margin-right: 0em;
+        float: right;
+    }
+}
+
+/* Small devices (mobile, 575px and down) */
+@media (max-width: 575px) {
+    .heading h2 {
+        font-size: 18px;
+        font-weight: 900;
+        margin-bottom: 95px;
+        margin-top: -6px;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 1;
+        color: #fff;
+        letter-spacing: 1px;
+        line-height: 55px;
+    }
+
+    .heading strong.filltext {
+        font-size: 26px;
+        text-transform: uppercase;
+        -webkit-text-fill-color: transparent;
+        -webkit-text-stroke: 2px #171c1e;
+        position: absolute;
+        letter-spacing: 8px;
+        left: 0;
+        right: 0;
+        top: 1.5px;
+        z-index: -1;
+    }
+
+    .heading small {
+        font-weight: 900;
+        letter-spacing: 0.2rem;
+        color: rgb(0, 123, 255);
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    #particles-js {
+        display: none;
+    }
+
+    .home_wrapper {
+        height: 640px;
+    }
+
+    .landing_content h5 {
+        font-size: 22px;
+    }
+
+    .landing_content h4 {
+        font-size: 22px;
+        margin-top: 15px;
+    }
+
+    .hero-social-list {
+        display: none;
+    }
+
+    .hero-email-link {
+        display: none;
+    }
+
+    .about .button {
+        width: 320px;
+        text-align: center;
+    }
+
+    .about_info h4 {
+        font-size: 20px;
+    }
+
+    .about_info p.about_desc {
+        font-size: 16px;
+    }
+
+    .about_info p.about_desc span {
+        font-size: 17px;
+    }
+
+    .Resume_Title {
+        font-size: 25px;
+    }
+
+    .resume_wrapper .resume-box h5 {
+        font-size: 17px
+    }
+
+    .resume_wrapper .resume-box .place {
+        font-size: 14px;
+    }
+
+    .Certify_single_item img {
+        width: 90%;
+        height: 90px;
+    }
+
+    .resume_items_Certify .button {
+        margin-top: 2px;
+    }
+
+    .stage-img {
+        width: 80%;
+    }
+
+    .how-i-work-item .text {
+        padding: 20px;
+    }
+
+    .call-to-action h6 {
+        font-size: 18px;
+    }
+
+    .m_left {
+        margin-left: 0px;
+    }
+
+    .skill-box {
+        margin: 15px 15px;
+    }
+
+    .landing_content h1 {
+        font-size: 42px;
+        margin-bottom: 15px;
+    }
+
+    .work_details_text h2 {
+        font-size: 25px;
+    }
+
+    .work-popup {
+        padding: 60px 0px;
+    }
+
+    .work-popup .work-info h4 {
+        font-size: 25px;
+    }
+
+    .work-popup .work-details-2 .work-info {
+        margin-bottom: 60px;
+    }
+
+    .layout-fixed {
+        padding-right: 0;
+    }
+
+    .layout-fixed header {
+        width: 100%;
+    }
+
+    .about_img .about_img_1.bottom {
+        top: -55px;
+    }
+
+    .about_img .about_img_2 {
+        top: 20px;
+    }
+
+    .filter-buttons {
+        margin-bottom: 40px;
+    }
+
+    .filter-buttons button {
+        padding: 0 10px;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    .follow-by-email-address {
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .call-to-action .button {
+        margin-top: 20px;
+        margin-right: 5em;
+        float: right;
+    }
+}
+
+/* extraSmall devices ( 400px and down) */
+@media (max-width: 400px) {
+    header {
+        height: 70px;
+        line-height: 70px;
+    }
+
+    .header_fixed .menu_items,
+    .menu_items {
+        top: calc(-100% - 70px);
+    }
+
+    .menu_items.show {
+        top: 70px;
+    }
+
+    .section_title {
+        margin-bottom: 110px;
+    }
+
+    .logo img {
+        height: 26px;
+    }
+
+    .hero-social-list {
+        display: none;
+    }
+
+    .about_wrapper,
+    .resume_wrapper {
+        padding: 75px 0;
+        margin-top: 75px;
+    }
+
+    .m_left {
+        margin-left: 0px;
+    }
+
+    .skill-box {
+        margin: 15px 15px;
+    }
+
+    .counter,
+    .call-to-action,
+    .testimonials,
+    .work_wrapper,
+    .blog_wrapper,
+    .contact_wrapper {
+        padding: 75px 15px;
+    }
+
+    .clients,
+    .services {
+        padding: 75px 0;
+    }
+
+    .about,
+    .resume {
+        padding: 0 15px;
+    }
+
+    .about .button {
+        width: 300px;
+        text-align: center;
+    }
+
+    .services .row>.col-lg-10 {
+        padding: 0 30px;
+    }
+
+    .landing_content h1 {
+        font-size: 38px;
+        margin-bottom: 15px;
+    }
+
+    .landing_content h4 {
+        font-size: 17px;
+    }
+
+    .landing_content h5 {
+        font-size: 20px;
+    }
+
+    .section_title {
+        font-size: 25px;
+    }
+
+    .Resume_Title {
+        font-size: 20px;
+    }
+
+    .resume_wrapper .resume-box h5 {
+        font-size: 14px;
+    }
+
+    .resume_wrapper .resume-box .place {
+        font-size: 12px;
+    }
+
+    .text-skill {
+        font-size: 14px;
+    }
+
+    .stage-img {
+        width: 75%;
+    }
+
+    .how-i-work-item .text {
+        padding: 16px;
+    }
+
+    .counter span {
+        font-size: 25px;
+        letter-spacing: 2px;
+    }
+
+    .counter h4 {
+        margin-bottom: 12px;
+        font-size: 16px;
+    }
+
+    .counter i {
+        margin-bottom: 12px;
+    }
+
+    .call-to-action h6 {
+        font-size: 17px;
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 700;
+        letter-spacing: 1.1px;
+    }
+
+    .call-to-action .button {
+        margin-top: 20px;
+        margin-right: 5em;
+        float: right;
+    }
+
+    .testimonial_single_item p {
+        line-height: 170%;
+    }
+
+    .no-bg-img .home_wrapper {
+        padding-top: 120px;
+    }
+
+    .about_info h4 {
+        font-size: 20px;
+    }
+}
+
+/* extraSmall devices ( 320px and down) */
+@media (max-width: 320px) {
+    .hero-social-list {
+        display: none;
+    }
+
+    .hero-email-link {
+        display: none;
+    }
+
+    .skill-box {
+        margin: 15px 15px;
+    }
+
+    .button {
+        font-size: 12px;
+    }
+
+    .call-to-action .button {
+        margin-top: 40px;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        float: right;
+        font-size: 12px;
+    }
+
+    .landing_content h5 {
+        font-size: 17px;
+    }
+
+    .landing_content h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .landing_content h4 {
+        font-size: 13px;
+    }
+
+    .about .button {
+        width: 220px;
+        text-align: center;
+    }
+
+    .Resume_Title {
+        font-size: 16px;
+    }
+
+    .resume_wrapper .resume-box h5 {
+        font-size: 12px;
+    }
+
+    .resume_wrapper .resume-box .place {
+        font-size: 10px;
+    }
+
+    .text-skill {
+        font-size: 12px;
+    }
+
+    .service_single_item h6 {
+        font-size: 16px;
+    }
+
+    .how-i-work-item .text h5 {
+        color: #fff;
+        font-size: 15px;
+    }
+
+    .how-i-work-item .text {
+        padding: 14px;
+    }
+
+    .how-i-work-item .number span {
+        width: 70px;
+        height: 72px;
+        font-size: 25px;
+        font-weight: 700;
+        position: relative;
+        line-height: 74px;
+        border-radius: 50%;
+        color: #fff;
+        display: inline-block;
+        font-family: "Poppins", sans-serif;
+        background: #1b1b1b;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+    .call-to-action h6 {
+        font-size: 12px;
+    }
+}

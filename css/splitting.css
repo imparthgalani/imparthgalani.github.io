@@ -1,0 +1,270 @@
+/* Recommended styles for Splitting */
+.splitting .word,
+.splitting .char {
+  display: inline-block;
+}
+
+/* Psuedo-element chars */
+.splitting .char {
+  position: relative;
+}
+
+/**
+ * Populate the psuedo elements with the character to allow for expanded effects
+ * Set to `display: none` by default; just add `display: block` when you want
+ * to use the psuedo elements
+ */
+.splitting .char::before,
+.splitting .char::after {
+  content: attr(data-char);
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  transition: inherit;
+  user-select: none;
+}
+
+/* Expanded CSS Variables */
+
+.splitting {
+  /* The center word index */
+  --word-center: calc((var(--word-total) - 1) / 2);
+
+  /* The center character index */
+  --char-center: calc((var(--char-total) - 1) / 2);
+
+  /* The center character index */
+  --line-center: calc((var(--line-total) - 1) / 2);
+}
+
+.splitting .word {
+  /* Pecent (0-1) of the word's position */
+  --word-percent: calc(var(--word-index) / var(--word-total));
+
+  /* Pecent (0-1) of the line's position */
+  --line-percent: calc(var(--line-index) / var(--line-total));
+}
+
+.splitting .char {
+  /* Percent (0-1) of the char's position */
+  --char-percent: calc(var(--char-index) / var(--char-total));
+
+  /* Offset from center, positive & negative */
+  --char-offset: calc(var(--char-index) - var(--char-center));
+
+  /* Absolute distance from center, only positive */
+  --distance: calc(
+     (var(--char-offset) * var(--char-offset)) / var(--char-center)
+  );
+
+  /* Distance from center where -1 is the far left, 0 is center, 1 is far right */
+  --distance-sine: calc(var(--char-offset) / var(--char-center));
+
+  /* Distance from center where 1 is far left/far right, 0 is center */
+  --distance-percent: calc((var(--distance) / var(--char-center)));
+}
+
+.slide-vertical .char,
+.slide-horizontal .char {
+  overflow: hidden;
+  color: transparent;
+}
+.slide-vertical .char:before, .slide-vertical .char:after,
+.slide-horizontal .char:before,
+.slide-horizontal .char:after {
+  visibility: visible;
+  color: #FFF;
+  transition: -webkit-transform 0.1s cubic-bezier(0.9, 0, 0.2, 1);
+  transition: transform 0.1s cubic-bezier(0.9, 0, 0.2, 1);
+  transition: transform 0.1s cubic-bezier(0.9, 0, 0.2, 1), -webkit-transform 0.5s cubic-bezier(0.9, 0, 0.2, 1);
+  transition-delay: calc( 0.1s + ( 0.02s * ( var(--char-index)) ) );
+}
+.slide-vertical .char:before,
+.slide-horizontal .char:before {
+  transition-delay: calc( 0.01s * ( var(--char-index)) );
+}
+.slide-vertical:hover .char:before,
+.slide-horizontal:hover .char:before {
+  transition-delay: calc( 0.1s + ( 0.02s * ( var(--char-index)) ) );
+}
+.slide-vertical:hover .char:after,
+.slide-horizontal:hover .char:after {
+  transition-delay: calc( 0.01s * ( var(--char-index)) );
+}
+
+.slide-vertical .char:before {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+}
+.slide-vertical:hover .char:before {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%);
+}
+.slide-vertical:hover .char:after {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
+.slide-horizontal .char:before {
+  -webkit-transform: translateX(110%);
+          transform: translateX(110%);
+}
+.slide-horizontal:hover .char:before {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+}
+.slide-horizontal:hover .char:after {
+  -webkit-transform: translateX(-110%);
+          transform: translateX(-110%);
+}
+
+/* Small devices (mobile, 575px and down) */
+@media (max-width: 575px) {
+  .wiggle-it-mob .char {
+    -webkit-transform-origin: center 50%;
+            transform-origin: center 50%;
+    -webkit-animation: wiggle-char 0.25s linear infinite both;
+            animation: wiggle-char 0.25s linear infinite both;
+    -webkit-animation-delay: calc(-0.02s * var(--char-index) );
+            animation-delay: calc(-0.02s * var(--char-index) );
+  }
+}
+
+.wiggle-it:hover .char {
+  -webkit-transform-origin: center 50%;
+          transform-origin: center 50%;
+  -webkit-animation: wiggle-char 0.25s linear infinite both;
+          animation: wiggle-char 0.25s linear infinite both;
+  -webkit-animation-delay: calc(-0.02s * var(--char-index) );
+          animation-delay: calc(-0.02s * var(--char-index) );
+}
+
+@-webkit-keyframes wiggle-char {
+  0%, 50%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  75% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+}
+
+@keyframes wiggle-char {
+  0%, 50%, 100% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  75% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+}
+
+.blur-it .char {
+  color: white;
+  transition: opacity 0.2s linear;
+}
+.blur-it .char:before, .blur-it .char:after {
+  visibility: visible;
+  opacity: 0;
+}
+.blur-it:hover .char {
+  color: rgba(255, 255, 255, 0.5);
+}
+.blur-it:hover .char:before, .blur-it:hover .char:after {
+  opacity: 0.8;
+  -webkit-animation: blur 0.6s linear infinite alternate;
+          animation: blur 0.6s linear infinite alternate;
+  -webkit-animation-delay: calc( -0.2s * var(--distance-percent) );
+          animation-delay: calc( -0.2s * var(--distance-percent) );
+}
+.blur-it:hover .char:after {
+  -webkit-animation-delay: calc( 0.3s + (-0.2s * var(--distance-percent)) );
+          animation-delay: calc( 0.3s + (-0.2s * var(--distance-percent)) );
+}
+
+@-webkit-keyframes blur {
+  0% {
+    -webkit-transform: translate(-0.1em, 0) scale(0.9) rotate(-2deg);
+            transform: translate(-0.1em, 0) scale(0.9) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translate(0, 0) scale(1.1) rotate(0deg);
+            transform: translate(0, 0) scale(1.1) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(0.1em, 0) scale(0.9) rotate(2deg);
+            transform: translate(0.1em, 0) scale(0.9) rotate(2deg);
+  }
+}
+
+@keyframes blur {
+  0% {
+    -webkit-transform: translate(-0.1em, 0) scale(0.9) rotate(-2deg);
+            transform: translate(-0.1em, 0) scale(0.9) rotate(-2deg);
+  }
+  50% {
+    -webkit-transform: translate(0, 0) scale(1.1) rotate(0deg);
+            transform: translate(0, 0) scale(1.1) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(0.1em, 0) scale(0.9) rotate(2deg);
+            transform: translate(0.1em, 0) scale(0.9) rotate(2deg);
+  }
+}
+
+.title-slide-in {
+  opacity: 0;
+}
+
+.title-slide-in.splitting {
+  opacity: 1;
+}
+
+.title-slide-in .char {
+  -webkit-animation: slide-in 1.75s cubic-bezier(0, 0.75, 0, 1) 0s both, will-change 2s linear;
+          animation: slide-in 1.75s cubic-bezier(0, 0.75, 0, 1) 0s both, will-change 2s linear;
+  -webkit-animation-delay: calc(1.3s * var(--char-percent));
+          animation-delay: calc(1.3s * var(--char-percent));
+  opacity: 1;
+}
+@-webkit-keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(150%) scaleX(0.5);
+            transform: translateX(150%) scaleX(0.5);
+  }
+}
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateX(150%) scaleX(0.5);
+            transform: translateX(150%) scaleX(0.5);
+  }
+}
+@-webkit-keyframes will-change {
+  0% {
+    will-change: transform;
+  }
+  100% {
+    will-change: auto;
+  }
+}
+@keyframes will-change {
+  0% {
+    will-change: transform;
+  }
+  100% {
+    will-change: auto;
+  }
+}
