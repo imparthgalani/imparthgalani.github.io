@@ -1,8 +1,8 @@
 /*==============================================================================
 
  * Template Name: Parth - Creative Personal Portfolio
- * Template URI:  Parth - (https://imparthgalani.me/)
- * Author: Parth - (https://imparthgalani.me/)
+ * Template URI:  Parth - (https://parthgalani.me/)
+ * Author: Parth - (https://parthgalani.me/)
  * Description: Personal Portfolio
  * Version: 1.0
  * Copyright 2021 Parth
